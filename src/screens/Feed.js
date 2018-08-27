@@ -22,6 +22,7 @@ import MaterialIcon from "react-native-vector-icons/MaterialIcons";
 import FontAwesome from "react-native-vector-icons/FontAwesome";
 import axios from "axios";
 import { bindActionCreators } from "redux";
+import { CheckBox } from "react-native-elements";
 import { connect } from "react-redux";
 import authStorage from "../utils/authStorage";
 import { format } from "date-fns";
@@ -36,9 +37,6 @@ import {
   fetchPrizes,
   fetchPrizesSuccess,
   fetchPrizesError,
-  fetchAllPrizes,
-  fetchAllPrizesSuccess,
-  fetchAllPrizesError,
   showPrizes,
   dataSort,
   dataFilter,
@@ -46,6 +44,8 @@ import {
   fetcAdvertsSuccess,
   fetcAdvertsError
 } from "../actions/actions";
+import AlertErrorOutline from "material-ui/SvgIcon";
+import { FETCH_PRIZE_BY_ID_SUCCESS } from "../constants/constants";
 
 //import styles from "./FeedStyle";
 const prizeArray = [
@@ -80,7 +80,8 @@ class Feed extends PureComponent {
       textValue: "FILTER",
       searchResults: [],
       searchQuery: "",
-      searching: false
+      searching: false,
+      onlyShowPastPrizes: false
     };
 
     this.handleSearch = debounce(this.handleSearch, 700);
@@ -101,7 +102,7 @@ class Feed extends PureComponent {
     // This is for the bottom section of the page for Adverts
     this.props.fetchAdverts();
     //console.log(this.props.prizes);
-    this.props.fetchAllPrizes();
+    //this.props.fetchAllPrizes();
   }
 
   // SEARCH BY ART PRIZES TITLE
@@ -117,6 +118,7 @@ class Feed extends PureComponent {
 
   handleSearch = () => {
     const { allPrizeList } = this.props.prizes;
+
     const results = [];
 
     if (!this.state.searchQuery) {
@@ -145,11 +147,13 @@ class Feed extends PureComponent {
     });
   };
 
-  // handleFilterSearchText = data => {
-  //   const { filterSearch } = this.props.prizes;
-  //   if (!filterSearch) return true;
-  //   //return data.title.toLowerCase().includes(filterSearch.toLowerCase());
-  // };
+  handlePastPrizes = () => {
+    const { allPrizeList, prizeList } = this.props.prizes;
+
+    this.setState({
+      onlyShowPastPrizes: !this.state.onlyShowPastPrizes
+    });
+  };
 
   // SORT BY DAYS CALLING SOON..
   handleChangeSort = value => {
@@ -160,8 +164,6 @@ class Feed extends PureComponent {
     const { filterSort } = this.props.prizes;
     switch (filterSort) {
       case "Calling Soon": {
-        console.log(item1.close_date);
-        console.log(item2.close_date);
         // SHOW DAYS IN NUMERICAL ASCENDING ORDER
         return new Date(item2.close_date).getTime() <=
           new Date(item1.close_date).getTime()
@@ -191,10 +193,11 @@ class Feed extends PureComponent {
 
   handleFilterAdverts = item1 => {
     const { filterAdverts } = this.props.adverts;
-    switch (filterAdverts) {
-      default:
-        return new Date() > item1.toDate ? 1 : -1;
-    }
+    const currentDate = new Date().getTime();
+    const prizeCloseDate = new Date(item1.toDate).getTime();
+    console.log({ currentDate, prizeCloseDate }, currentDate < prizeCloseDate);
+
+    return currentDate < prizeCloseDate;
   };
   // FILTER FUNCTIONS...
   handleFilter = value => {
@@ -206,6 +209,14 @@ class Feed extends PureComponent {
 
   handleFilterByType = item => {
     const { filterType } = this.props.prizes;
+    const { onlyShowPastPrizes } = this.state;
+
+    const currentDate = Date.now();
+    const prizeCloseDate = new Date(item.close_date).getTime();
+
+    if (onlyShowPastPrizes) {
+      return currentDate > prizeCloseDate;
+    }
 
     if (filterType.length === 0) return true;
 
@@ -253,16 +264,30 @@ class Feed extends PureComponent {
     headerTitleStyle: { alignSelf: "center" }
   };
   render() {
+    const { fetchingAds, adverterror, advertData } = this.props.adverts;
     const {
       fetching,
       error,
       prizeList,
       filterSearch,
-      filterSort
+      filterSort,
+      loading,
+      allprizeserror,
+      allPrizeList
     } = this.props.prizes;
-    const { fetchingAds, adverterror, advertData } = this.props.adverts;
-    const { loading, allprizeserror, allPrizeList } = this.props.prizes;
-    const { searchResults, searchQuery, searching } = this.state;
+    const {
+      searchResults,
+      onlyShowPastPrizes,
+      searchQuery,
+      searching
+    } = this.state;
+
+    const prizesToDisplay = onlyShowPastPrizes ? allPrizeList : prizeList;
+
+    const prizesDisplayFilter =
+      searchQuery.length === 0 && prizeList != null && Array.isArray(prizeList)
+        ? prizesToDisplay.filter(this.handleFilterByType).sort(this.handleSort)
+        : [];
 
     return (
       /* this.props.searchBar toggles search bar on click */
@@ -280,12 +305,15 @@ class Feed extends PureComponent {
             <LinearGradient
               colors={["#7B1FA2", "#4527A0"]}
               style={{
-                margin: 0
+                margin: 0,
+                flexDirection: "row"
               }}
             >
               <TextInput
                 style={{
                   height: 35,
+                  alignItems: "stretch",
+                  flexGrow: 1,
                   borderRadius: 10,
                   marginVertical: 3,
                   marginHorizontal: 3,
@@ -293,11 +321,27 @@ class Feed extends PureComponent {
                   color: "#767676",
                   fontFamily: "OpenSans-Regular",
                   fontSize: 14,
+                  marginLeft: 25,
                   backgroundColor: "#FFFFFF"
                 }}
-                placeholder="Search ...."
+                placeholder="Search ..."
+                placeholderTextColor="#767676"
                 onChangeText={this.handleChangeSearch}
                 value={searchQuery}
+              />
+              <CheckBox
+                checked={this.state.onlyShowPastPrizes}
+                title="Include Past Prizes "
+                containerStyle={{
+                  backgroundColor: "transparent",
+                  borderColor: "transparent",
+                  marginRight: 20,
+                  padding: 0
+                }}
+                textStyle={{
+                  color: "white"
+                }}
+                onPress={this.handlePastPrizes}
               />
             </LinearGradient>
           )}
@@ -313,7 +357,6 @@ class Feed extends PureComponent {
           <DropDown onPress={this.handleChangeSort} />
           <FilterList onPress={this.handleFilter} />
         </View>
-        {console.log(allPrizeList, prizeList)}
 
         <ScrollView>
           {searchQuery.length > 0 ? (
@@ -347,36 +390,28 @@ class Feed extends PureComponent {
                 />
               ))
             )
-          ) : prizeList != null &&
-          prizeList instanceof Array &&
-          prizeList.length > 0 ? (
-            prizeList
-              .filter(this.handleFilterByType)
-              .sort(this.handleSort)
-              .map((prize, index, array) => (
-                <Card
-                  id={prize.id}
-                  key={prize.id}
-                  title={prize.title}
-                  prizeAmount={parseInt(prize.PrizeAmount).toLocaleString("en")}
-                  country={prize.country}
-                  state={prize.state}
-                  navigationFn={this.props.navigation.navigate}
-                  prizeLogo={prize.prize_logo}
-                  sponsored={prize.sponsored}
-                  prizeType={prize.prize_type}
-                  eligibility={prize.eligibility}
-                  currencyType={prize.Currency}
-                  navigate={prize.id}
-                  viewCount={prize.ViewCount}
-                  followCount={prize.FollowCount}
-                  intentionToEnterCount={prize.IntentToEnterCount}
-                  daysCount={distanceInWordsStrict(
-                    prize.close_date,
-                    new Date()
-                  )}
-                />
-              ))
+          ) : prizesDisplayFilter.length > 0 ? (
+            prizesDisplayFilter.map(prize => (
+              <Card
+                id={prize.id}
+                key={prize.id}
+                title={prize.title}
+                prizeAmount={parseInt(prize.PrizeAmount).toLocaleString("en")}
+                country={prize.country}
+                state={prize.state}
+                navigationFn={this.props.navigation.navigate}
+                prizeLogo={prize.prize_logo}
+                sponsored={prize.sponsored}
+                prizeType={prize.prize_type}
+                eligibility={prize.eligibility}
+                currencyType={prize.Currency}
+                navigate={prize.id}
+                viewCount={prize.ViewCount}
+                followCount={prize.FollowCount}
+                intentionToEnterCount={prize.IntentToEnterCount}
+                daysCount={distanceInWordsStrict(prize.close_date, new Date())}
+              />
+            ))
           ) : fetching ? (
             <ActivityIndicator
               color="#9C68E8"
@@ -435,7 +470,7 @@ function matchDispatchToProps(dispatch) {
   return bindActionCreators(
     {
       fetchPrizes,
-      fetchAllPrizes,
+
       showPrizes,
       dataSort,
       dataFilter,

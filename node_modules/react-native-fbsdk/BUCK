@@ -1,4 +1,4 @@
-include_defs("xplat//js/JS_DEFS.bzl")
+include_defs("xplat//js/JS_DEFS")
 
 js_library(
     name = "react-native-fbsdk",

@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Fri Aug 03 14:42:17 AEST 2018
+#Mon Aug 27 16:53:38 AEST 2018
 5.base=/Users/acrow/projects/artprizes/art-prizes-native/android/app/build/intermediates/transforms/stripDebugSymbol/debug/0
 42.base=/Users/acrow/projects/artprizes/art-prizes-native/android/app/build/intermediates/assets/debug
 22.path=fonts/Open Sans.ttf

@@ -156,7 +156,7 @@ class ArtDescription extends PureComponent {
     const { fetching, error, selectedPrize } = this.props.prizes;
     //const { fetchingAds, errorAdvert, selectedAd } = this.props.advertsId;
     const { fetchingAds, adverterror, advertData } = this.props.adverts;
-    console.log("You have Selected *************************" + advertData);
+    // console.log("You have Selected *************************" + advertData);
     //alert(advertData.find(selectedPrize.id));
     const renderIntendToEnter = () => (
       <Text
@@ -238,7 +238,7 @@ class ArtDescription extends PureComponent {
           >
             <TouchableOpacity style={{ borderRightWidth: 0.5, width: 100 }}>
               <Text onPress={() => this.handleWatchList(id)}>
-                <MaterialCommunityIcons name="set-none" size={18} />
+                <MaterialCommunityIcons name="set-none" size={16} />
                 {renderFollowCount()}
               </Text>
             </TouchableOpacity>
@@ -287,8 +287,11 @@ class ArtDescription extends PureComponent {
                 color: "#007AFF"
               }}
             >
-              {distanceInWordsStrict(selectedPrize.close_date, new Date())} to
-              go
+              {distanceInWordsStrict(selectedPrize.close_date, new Date())}
+              {new Date(selectedPrize.close_date).getTime() >
+              new Date().getTime()
+                ? "to go"
+                : " ago"}
             </Text>
             <View style={styles.container}>
               <View>
@@ -547,6 +550,7 @@ class ArtDescription extends PureComponent {
             <ScrollView>
               <HTML
                 html={selectedPrize.description}
+                uri={selectedPrize.description}
                 imagesMaxWidth={Dimensions.get("window").width}
                 containerStyle={{ marginLeft: 50, marginRight: 50 }}
               />

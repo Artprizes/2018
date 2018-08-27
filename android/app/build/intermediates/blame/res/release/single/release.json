@@ -69,7 +69,7 @@
     },
     {
         "merged": "/Users/acrow/projects/artprizes/art-prizes-native/android/app/build/intermediates/res/merged/release/xml_preferences.xml.flat",
-        "source": "/Users/acrow/.gradle/caches/transforms-1/files-1.1/react-native-0.53.0.aar/ea7938767143a34bf98eae3ca5a2325d/res/xml/preferences.xml"
+        "source": "/Users/acrow/.gradle/caches/transforms-1/files-1.1/react-native-0.53.3.aar/dfcaebed22a01282819a84f3b58b5bfe/res/xml/preferences.xml"
     },
     {
         "merged": "/Users/acrow/projects/artprizes/art-prizes-native/android/app/build/intermediates/res/merged/release/drawable-xxhdpi-v4_abc_textfield_search_activated_mtrl_alpha.9.png.flat",
@@ -141,7 +141,7 @@
     },
     {
         "merged": "/Users/acrow/projects/artprizes/art-prizes-native/android/app/build/intermediates/res/merged/release/anim_catalyst_push_up_in.xml.flat",
-        "source": "/Users/acrow/.gradle/caches/transforms-1/files-1.1/react-native-0.53.0.aar/ea7938767143a34bf98eae3ca5a2325d/res/anim/catalyst_push_up_in.xml"
+        "source": "/Users/acrow/.gradle/caches/transforms-1/files-1.1/react-native-0.53.3.aar/dfcaebed22a01282819a84f3b58b5bfe/res/anim/catalyst_push_up_in.xml"
     },
     {
         "merged": "/Users/acrow/projects/artprizes/art-prizes-native/android/app/build/intermediates/res/merged/release/drawable-xxhdpi-v4_messenger_bubble_small_white.png.flat",
@@ -221,7 +221,7 @@
     },
     {
         "merged": "/Users/acrow/projects/artprizes/art-prizes-native/android/app/build/intermediates/res/merged/release/anim_catalyst_fade_in.xml.flat",
-        "source": "/Users/acrow/.gradle/caches/transforms-1/files-1.1/react-native-0.53.0.aar/ea7938767143a34bf98eae3ca5a2325d/res/anim/catalyst_fade_in.xml"
+        "source": "/Users/acrow/.gradle/caches/transforms-1/files-1.1/react-native-0.53.3.aar/dfcaebed22a01282819a84f3b58b5bfe/res/anim/catalyst_fade_in.xml"
     },
     {
         "merged": "/Users/acrow/projects/artprizes/art-prizes-native/android/app/build/intermediates/res/merged/release/drawable_com_facebook_button_background.xml.flat",
@@ -309,7 +309,7 @@
     },
     {
         "merged": "/Users/acrow/projects/artprizes/art-prizes-native/android/app/build/intermediates/res/merged/release/layout_redbox_item_frame.xml.flat",
-        "source": "/Users/acrow/.gradle/caches/transforms-1/files-1.1/react-native-0.53.0.aar/ea7938767143a34bf98eae3ca5a2325d/res/layout/redbox_item_frame.xml"
+        "source": "/Users/acrow/.gradle/caches/transforms-1/files-1.1/react-native-0.53.3.aar/dfcaebed22a01282819a84f3b58b5bfe/res/layout/redbox_item_frame.xml"
     },
     {
         "merged": "/Users/acrow/projects/artprizes/art-prizes-native/android/app/build/intermediates/res/merged/release/drawable-xxhdpi-v4_abc_menu_hardkey_panel_mtrl_mult.9.png.flat",
@@ -369,7 +369,7 @@
     },
     {
         "merged": "/Users/acrow/projects/artprizes/art-prizes-native/android/app/build/intermediates/res/merged/release/layout_dev_loading_view.xml.flat",
-        "source": "/Users/acrow/.gradle/caches/transforms-1/files-1.1/react-native-0.53.0.aar/ea7938767143a34bf98eae3ca5a2325d/res/layout/dev_loading_view.xml"
+        "source": "/Users/acrow/.gradle/caches/transforms-1/files-1.1/react-native-0.53.3.aar/dfcaebed22a01282819a84f3b58b5bfe/res/layout/dev_loading_view.xml"
     },
     {
         "merged": "/Users/acrow/projects/artprizes/art-prizes-native/android/app/build/intermediates/res/merged/release/drawable-mdpi-v4_com_facebook_button_like_icon_selected.png.flat",
@@ -741,7 +741,7 @@
     },
     {
         "merged": "/Users/acrow/projects/artprizes/art-prizes-native/android/app/build/intermediates/res/merged/release/layout_fps_view.xml.flat",
-        "source": "/Users/acrow/.gradle/caches/transforms-1/files-1.1/react-native-0.53.0.aar/ea7938767143a34bf98eae3ca5a2325d/res/layout/fps_view.xml"
+        "source": "/Users/acrow/.gradle/caches/transforms-1/files-1.1/react-native-0.53.3.aar/dfcaebed22a01282819a84f3b58b5bfe/res/layout/fps_view.xml"
     },
     {
         "merged": "/Users/acrow/projects/artprizes/art-prizes-native/android/app/build/intermediates/res/merged/release/drawable-hdpi-v4_abc_ab_share_pack_mtrl_alpha.9.png.flat",
@@ -817,7 +817,7 @@
     },
     {
         "merged": "/Users/acrow/projects/artprizes/art-prizes-native/android/app/build/intermediates/res/merged/release/layout_redbox_view.xml.flat",
-        "source": "/Users/acrow/.gradle/caches/transforms-1/files-1.1/react-native-0.53.0.aar/ea7938767143a34bf98eae3ca5a2325d/res/layout/redbox_view.xml"
+        "source": "/Users/acrow/.gradle/caches/transforms-1/files-1.1/react-native-0.53.3.aar/dfcaebed22a01282819a84f3b58b5bfe/res/layout/redbox_view.xml"
     },
     {
         "merged": "/Users/acrow/projects/artprizes/art-prizes-native/android/app/build/intermediates/res/merged/release/drawable-xxxhdpi-v4_abc_ic_star_half_black_16dp.png.flat",
@@ -965,7 +965,7 @@
     },
     {
         "merged": "/Users/acrow/projects/artprizes/art-prizes-native/android/app/build/intermediates/res/merged/release/layout_redbox_item_title.xml.flat",
-        "source": "/Users/acrow/.gradle/caches/transforms-1/files-1.1/react-native-0.53.0.aar/ea7938767143a34bf98eae3ca5a2325d/res/layout/redbox_item_title.xml"
+        "source": "/Users/acrow/.gradle/caches/transforms-1/files-1.1/react-native-0.53.3.aar/dfcaebed22a01282819a84f3b58b5bfe/res/layout/redbox_item_title.xml"
     },
     {
         "merged": "/Users/acrow/projects/artprizes/art-prizes-native/android/app/build/intermediates/res/merged/release/color_abc_primary_text_material_light.xml.flat",
@@ -1385,7 +1385,7 @@
     },
     {
         "merged": "/Users/acrow/projects/artprizes/art-prizes-native/android/app/build/intermediates/res/merged/release/anim_catalyst_slide_down.xml.flat",
-        "source": "/Users/acrow/.gradle/caches/transforms-1/files-1.1/react-native-0.53.0.aar/ea7938767143a34bf98eae3ca5a2325d/res/anim/catalyst_slide_down.xml"
+        "source": "/Users/acrow/.gradle/caches/transforms-1/files-1.1/react-native-0.53.3.aar/dfcaebed22a01282819a84f3b58b5bfe/res/anim/catalyst_slide_down.xml"
     },
     {
         "merged": "/Users/acrow/projects/artprizes/art-prizes-native/android/app/build/intermediates/res/merged/release/drawable_com_facebook_send_button_icon.xml.flat",
@@ -1601,7 +1601,7 @@
     },
     {
         "merged": "/Users/acrow/projects/artprizes/art-prizes-native/android/app/build/intermediates/res/merged/release/anim_catalyst_push_up_out.xml.flat",
-        "source": "/Users/acrow/.gradle/caches/transforms-1/files-1.1/react-native-0.53.0.aar/ea7938767143a34bf98eae3ca5a2325d/res/anim/catalyst_push_up_out.xml"
+        "source": "/Users/acrow/.gradle/caches/transforms-1/files-1.1/react-native-0.53.3.aar/dfcaebed22a01282819a84f3b58b5bfe/res/anim/catalyst_push_up_out.xml"
     },
     {
         "merged": "/Users/acrow/projects/artprizes/art-prizes-native/android/app/build/intermediates/res/merged/release/drawable-xxhdpi-v4_abc_textfield_search_default_mtrl_alpha.9.png.flat",
@@ -1673,7 +1673,7 @@
     },
     {
         "merged": "/Users/acrow/projects/artprizes/art-prizes-native/android/app/build/intermediates/res/merged/release/anim_catalyst_slide_up.xml.flat",
-        "source": "/Users/acrow/.gradle/caches/transforms-1/files-1.1/react-native-0.53.0.aar/ea7938767143a34bf98eae3ca5a2325d/res/anim/catalyst_slide_up.xml"
+        "source": "/Users/acrow/.gradle/caches/transforms-1/files-1.1/react-native-0.53.3.aar/dfcaebed22a01282819a84f3b58b5bfe/res/anim/catalyst_slide_up.xml"
     },
     {
         "merged": "/Users/acrow/projects/artprizes/art-prizes-native/android/app/build/intermediates/res/merged/release/drawable-xxhdpi-v4_com_facebook_button_icon_blue.png.flat",
@@ -1977,7 +1977,7 @@
     },
     {
         "merged": "/Users/acrow/projects/artprizes/art-prizes-native/android/app/build/intermediates/res/merged/release/anim_catalyst_fade_out.xml.flat",
-        "source": "/Users/acrow/.gradle/caches/transforms-1/files-1.1/react-native-0.53.0.aar/ea7938767143a34bf98eae3ca5a2325d/res/anim/catalyst_fade_out.xml"
+        "source": "/Users/acrow/.gradle/caches/transforms-1/files-1.1/react-native-0.53.3.aar/dfcaebed22a01282819a84f3b58b5bfe/res/anim/catalyst_fade_out.xml"
     },
     {
         "merged": "/Users/acrow/projects/artprizes/art-prizes-native/android/app/build/intermediates/res/merged/release/drawable-xhdpi-v4_abc_switch_track_mtrl_alpha.9.png.flat",

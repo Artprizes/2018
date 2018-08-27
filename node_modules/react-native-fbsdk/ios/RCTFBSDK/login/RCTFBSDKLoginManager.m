@@ -44,11 +44,6 @@ RCT_EXPORT_MODULE(FBLoginManager);
   return self;
 }
 
-+ (BOOL)requiresMainQueueSetup
-{
-  return YES;
-}
-
 #pragma mark - React Native Methods
 
 RCT_EXPORT_METHOD(setLoginBehavior:(FBSDKLoginBehavior)behavior)

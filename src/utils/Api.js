@@ -9,7 +9,7 @@ class Api {
   };
 
   call = (options = {}) => {
-    console.log(this.token);
+    // console.log(this.token);
     return Observable.ajax({
       ...options,
       url: `https://api.art-prizes.com/api${options.url}/${this.token}`

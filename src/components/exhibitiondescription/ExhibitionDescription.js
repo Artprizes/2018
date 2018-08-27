@@ -275,7 +275,10 @@ class ExhibitionDescription extends PureComponent {
               }}
             >
               {distanceInWordsStrict(selectedExhibition.close_date, new Date())}{" "}
-              to go
+              {new Date(selectedExhibition.close_date).getTime() >
+              new Date().getTime()
+                ? "to go"
+                : "ago"}
             </Text>
             <View style={styles.container}>
               <View>
@@ -533,6 +536,7 @@ class ExhibitionDescription extends PureComponent {
             <ScrollView>
               <HTML
                 html={selectedExhibition.description}
+                uri={selectedExhibition.description}
                 imagesMaxWidth={Dimensions.get("window").width}
                 containerStyle={{ marginLeft: 50, marginRight: 50 }}
               />

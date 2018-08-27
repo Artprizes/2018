@@ -5,6 +5,7 @@
 	};
 	objectVersion = 46;
 	objects = {
+
 /* Begin PBXBuildFile section */
 		006DFA44BBD1448186CDC486 /* libBVLinearGradient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AD7CB9467ACF4A42A190C1C8 /* libBVLinearGradient.a */; };
 		00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302AC1ABCB8CE00DB3ED1 /* libRCTActionSheet.a */; };
@@ -60,7 +61,7 @@
 		92918252647240E6B2C9CC98 /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 74F3DC27AF644EDCAE74ADAB /* Zocial.ttf */; };
 		AAD2C6F0ADD348A6AAF58855 /* libRNSVG.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 67D54073A34C4EA5A24D8FA8 /* libRNSVG.a */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
-		B78F0D26209C35F200F10FB5 /* ios in Resources */ = {isa = PBXBuildFile; fileRef = B78F0CF7209C35F200F10FB5 /* ios */; };
+		B78F0D26209C35F200F10FB5 /* (null) in Resources */ = {isa = PBXBuildFile; };
 		B7D1481320AD3DC700D800E0 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7D1480F20AD3DC600D800E0 /* Bolts.framework */; };
 		B7D1482620AD3EFC00D800E0 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7D1482220AD3EFC00D800E0 /* FBSDKLoginKit.framework */; };
 		B7D1482820AD3EFC00D800E0 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7D1482420AD3EFC00D800E0 /* FBSDKCoreKit.framework */; };
@@ -764,7 +765,6 @@
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
-				B78F0CF7209C35F200F10FB5 /* ios */,
 				5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */,
 				146833FF1AC3E56700842450 /* React.xcodeproj */,
 				00C302A71ABCB8CE00DB3ED1 /* RCTActionSheet.xcodeproj */,
@@ -1500,7 +1500,7 @@
 				29905F2A84654238BA52265C /* Octicons.ttf in Resources */,
 				F03AE17916CC44CF8C4F5648 /* Roboto_medium.ttf in Resources */,
 				12E218AC50D64C6289B46DC4 /* Roboto.ttf in Resources */,
-				B78F0D26209C35F200F10FB5 /* ios in Resources */,
+				B78F0D26209C35F200F10FB5 /* (null) in Resources */,
 				0EF94385C8954176BD94EC69 /* rubicon-icon-font.ttf in Resources */,
 				522468D1FCB14EDEAA566A09 /* SimpleLineIcons.ttf in Resources */,
 				92918252647240E6B2C9CC98 /* Zocial.ttf in Resources */,
@@ -1652,9 +1652,7 @@
 				INFOPLIST_FILE = artprizesnativeTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lc++",
@@ -1683,9 +1681,7 @@
 				INFOPLIST_FILE = artprizesnativeTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lc++",
@@ -1709,7 +1705,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
-					/Users/rahul/Documents/FacebookSDK,
+					"~/Documents/FacebookSDK",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1751,7 +1747,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
-					/Users/rahul/Documents/FacebookSDK,
+					"~/Documents/FacebookSDK",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1805,9 +1801,7 @@
 				);
 				INFOPLIST_FILE = "artprizesnative-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lc++",
@@ -1845,9 +1839,7 @@
 				);
 				INFOPLIST_FILE = "artprizesnative-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lc++",
@@ -1873,9 +1865,7 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "artprizesnative-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.artprizesnative-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
@@ -1897,9 +1887,7 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "artprizesnative-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.artprizesnative-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;

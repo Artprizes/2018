@@ -10,7 +10,7 @@ MERGED from [:react-native-popover-menu] /Users/acrow/projects/artprizes/art-pri
 MERGED from [:react-native-vector-icons] /Users/acrow/projects/artprizes/art-prizes-native/node_modules/react-native-vector-icons/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [:react-native-linear-gradient] /Users/acrow/projects/artprizes/art-prizes-native/node_modules/react-native-linear-gradient/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [:react-native-spinkit] /Users/acrow/projects/artprizes/art-prizes-native/node_modules/react-native-spinkit/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-16:12
-MERGED from [com.facebook.react:react-native:0.53.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/react-native-0.53.0.aar/ea7938767143a34bf98eae3ca5a2325d/AndroidManifest.xml:2:1-15:12
+MERGED from [com.facebook.react:react-native:0.53.3] /Users/acrow/.gradle/caches/transforms-1/files-1.1/react-native-0.53.3.aar/dfcaebed22a01282819a84f3b58b5bfe/AndroidManifest.xml:2:1-15:12
 MERGED from [com.github.zawadz88.materialpopupmenu:material-popup-menu:1.4.1] /Users/acrow/.gradle/caches/transforms-1/files-1.1/material-popup-menu-1.4.1.aar/427a7b1d627eab11a0d4959294ac125e/AndroidManifest.xml:2:1-14:12
 MERGED from [com.facebook.android:facebook-android-sdk:4.35.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.35.0.aar/784ae67e24135fd5b602d60dee7725da/AndroidManifest.xml:21:1-31:12
 MERGED from [com.facebook.android:facebook-login:4.35.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-login-4.35.0.aar/336adb7e935607fd1090cb66fed41032/AndroidManifest.xml:21:1-31:12
@@ -67,8 +67,8 @@ ADDED from /Users/acrow/projects/artprizes/art-prizes-native/android/app/src/mai
 		ADDED from /Users/acrow/projects/artprizes/art-prizes-native/android/app/src/main/AndroidManifest.xml:6:22-64
 uses-permission#android.permission.SYSTEM_ALERT_WINDOW
 ADDED from /Users/acrow/projects/artprizes/art-prizes-native/android/app/src/main/AndroidManifest.xml:7:5-77
-MERGED from [com.facebook.react:react-native:0.53.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/react-native-0.53.0.aar/ea7938767143a34bf98eae3ca5a2325d/AndroidManifest.xml:11:5-78
-MERGED from [com.facebook.react:react-native:0.53.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/react-native-0.53.0.aar/ea7938767143a34bf98eae3ca5a2325d/AndroidManifest.xml:11:5-78
+MERGED from [com.facebook.react:react-native:0.53.3] /Users/acrow/.gradle/caches/transforms-1/files-1.1/react-native-0.53.3.aar/dfcaebed22a01282819a84f3b58b5bfe/AndroidManifest.xml:11:5-78
+MERGED from [com.facebook.react:react-native:0.53.3] /Users/acrow/.gradle/caches/transforms-1/files-1.1/react-native-0.53.3.aar/dfcaebed22a01282819a84f3b58b5bfe/AndroidManifest.xml:11:5-78
 	android:name
 		ADDED from /Users/acrow/projects/artprizes/art-prizes-native/android/app/src/main/AndroidManifest.xml:7:22-75
 uses-sdk
@@ -87,8 +87,8 @@ MERGED from [:react-native-linear-gradient] /Users/acrow/projects/artprizes/art-
 MERGED from [:react-native-linear-gradient] /Users/acrow/projects/artprizes/art-prizes-native/node_modules/react-native-linear-gradient/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-spinkit] /Users/acrow/projects/artprizes/art-prizes-native/node_modules/react-native-spinkit/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-spinkit] /Users/acrow/projects/artprizes/art-prizes-native/node_modules/react-native-spinkit/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.react:react-native:0.53.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/react-native-0.53.0.aar/ea7938767143a34bf98eae3ca5a2325d/AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.react:react-native:0.53.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/react-native-0.53.0.aar/ea7938767143a34bf98eae3ca5a2325d/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.53.3] /Users/acrow/.gradle/caches/transforms-1/files-1.1/react-native-0.53.3.aar/dfcaebed22a01282819a84f3b58b5bfe/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.53.3] /Users/acrow/.gradle/caches/transforms-1/files-1.1/react-native-0.53.3.aar/dfcaebed22a01282819a84f3b58b5bfe/AndroidManifest.xml:7:5-9:41
 MERGED from [com.github.zawadz88.materialpopupmenu:material-popup-menu:1.4.1] /Users/acrow/.gradle/caches/transforms-1/files-1.1/material-popup-menu-1.4.1.aar/427a7b1d627eab11a0d4959294ac125e/AndroidManifest.xml:8:5-10:41
 MERGED from [com.github.zawadz88.materialpopupmenu:material-popup-menu:1.4.1] /Users/acrow/.gradle/caches/transforms-1/files-1.1/material-popup-menu-1.4.1.aar/427a7b1d627eab11a0d4959294ac125e/AndroidManifest.xml:8:5-10:41
 MERGED from [com.facebook.android:facebook-android-sdk:4.35.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.35.0.aar/784ae67e24135fd5b602d60dee7725da/AndroidManifest.xml:24:5-26:41
@@ -169,8 +169,8 @@ MERGED from [:react-native-fbsdk] /Users/acrow/projects/artprizes/art-prizes-nat
 MERGED from [:react-native-fbsdk] /Users/acrow/projects/artprizes/art-prizes-native/node_modules/react-native-fbsdk/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:28:5-20
 MERGED from [:react-native-spinkit] /Users/acrow/projects/artprizes/art-prizes-native/node_modules/react-native-spinkit/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:11:5-14:19
 MERGED from [:react-native-spinkit] /Users/acrow/projects/artprizes/art-prizes-native/node_modules/react-native-spinkit/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:11:5-14:19
-MERGED from [com.facebook.react:react-native:0.53.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/react-native-0.53.0.aar/ea7938767143a34bf98eae3ca5a2325d/AndroidManifest.xml:13:5-20
-MERGED from [com.facebook.react:react-native:0.53.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/react-native-0.53.0.aar/ea7938767143a34bf98eae3ca5a2325d/AndroidManifest.xml:13:5-20
+MERGED from [com.facebook.react:react-native:0.53.3] /Users/acrow/.gradle/caches/transforms-1/files-1.1/react-native-0.53.3.aar/dfcaebed22a01282819a84f3b58b5bfe/AndroidManifest.xml:13:5-20
+MERGED from [com.facebook.react:react-native:0.53.3] /Users/acrow/.gradle/caches/transforms-1/files-1.1/react-native-0.53.3.aar/dfcaebed22a01282819a84f3b58b5bfe/AndroidManifest.xml:13:5-20
 MERGED from [com.github.zawadz88.materialpopupmenu:material-popup-menu:1.4.1] /Users/acrow/.gradle/caches/transforms-1/files-1.1/material-popup-menu-1.4.1.aar/427a7b1d627eab11a0d4959294ac125e/AndroidManifest.xml:12:5-20
 MERGED from [com.github.zawadz88.materialpopupmenu:material-popup-menu:1.4.1] /Users/acrow/.gradle/caches/transforms-1/files-1.1/material-popup-menu-1.4.1.aar/427a7b1d627eab11a0d4959294ac125e/AndroidManifest.xml:12:5-20
 MERGED from [com.facebook.android:facebook-android-sdk:4.35.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.35.0.aar/784ae67e24135fd5b602d60dee7725da/AndroidManifest.xml:28:5-29:19

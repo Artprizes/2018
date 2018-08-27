@@ -539,6 +539,7 @@ class IntendedToEnterDescription extends PureComponent {
             <ScrollView>
               <HTML
                 html={selectedPrize.description}
+                uri={selectedPrize.description}
                 imagesMaxWidth={Dimensions.get("window").width}
                 containerStyle={{ marginLeft: 50, marginRight: 50 }}
               />

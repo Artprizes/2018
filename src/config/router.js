@@ -78,12 +78,12 @@ export const Tabs = TabNavigator(
     tabBarOptions: {
       style: {
         padding: 0,
-        height: 60,
-        width: 450,
-        alignSelf: 'center'
+        height: 30,
+        width: 350,
+        alignSelf: 'center',
         // alignItems: 'center',
-        // margin: 10,
-        // marginTop: 10
+        margin: 10,
+        marginTop: 10
 
         // shadowColor: '#9C68E8',
 
