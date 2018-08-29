@@ -16,45 +16,46 @@ const AuthStack = StackNavigator(
       navigationOptions: {
         title: 'Back',
         drawerIcon: <MaterialIcon name="home" size={30} color="white" />,
-        drawerLockMode: 'locked-closed',
-      },
+        drawerLockMode: 'locked-closed'
+      }
     },
     SignUp: {
       screen: SignUp,
       navigationOptions: {
         title: 'Sign Up',
-        drawerIcon: <FontAwesome name="sign-in" size={30} color="white" />,
-      },
+        drawerIcon: <FontAwesome name="sign-in" size={30} color="white" />
+      }
     },
     Login: {
       screen: Login,
       navigationOptions: {
         title: 'Log In',
-        drawerIcon: <MaterialIcon name="input" size={30} color="white" />,
-      },
+        drawerIcon: <MaterialIcon name="input" size={30} color="white" />
+      }
     },
     ResetPassword: {
       screen: ResetPassword,
       navigationOptions: {
         title: 'Reset Password',
-        drawerIcon: <MaterialIcon name="input" size={30} color="white" />,
-      },
-    },
+        drawerIcon: <MaterialIcon name="input" size={30} color="white" />
+      }
+    }
   },
   {
-    initialRouteName: 'LandingPage',
+    initialRouteName: 'LandingPage'
     // headerMode: "none"
-  },
+  }
 );
 
-export const Navigator = (isLoggedIn) => SwitchNavigator(
+export const Navigator = isLoggedIn =>
+  SwitchNavigator(
     {
       auth: { screen: AuthStack },
       app: { screen: DrawerStack },
       loading: { screen: Loading }
     },
     {
-      initialRouteName: "loading",
-      headerMode: "none"
+      initialRouteName: 'loading',
+      headerMode: 'none'
     }
   );

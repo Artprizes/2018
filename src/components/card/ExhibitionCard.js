@@ -1,4 +1,4 @@
-import React, { PureComponent } from 'react';
+import React, { PureComponent } from "react";
 import {
   StyleSheet,
   View,
@@ -7,27 +7,27 @@ import {
   ScrollView,
   Button,
   TouchableOpacity
-} from 'react-native';
-import { Grid, Row, Col } from 'react-native-easy-grid';
-import styles from './style';
-import { Icon } from 'react-native-elements';
-import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
-import Entypo from 'react-native-vector-icons/Entypo';
-import EvilIcons from 'react-native-vector-icons/EvilIcons';
+} from "react-native";
+import { Grid, Row, Col } from "react-native-easy-grid";
+import styles from "./style";
+import { Icon } from "react-native-elements";
+import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
+import Entypo from "react-native-vector-icons/Entypo";
+import EvilIcons from "react-native-vector-icons/EvilIcons";
 
 class ExhibitionCard extends PureComponent {
   constructor(props) {
     super(props);
 
     this.state = {
-      selectedColor: ''
+      selectedColor: ""
     };
   }
   componentDidMount() {
     this._getRandomColor();
   }
   _getRandomColor() {
-    const item = Math.floor(Math.random() * 16777216);
+    const item = Math.floor(Math.random() * 99999);
     this.setState({
       selectedColor: item
     });
@@ -53,16 +53,16 @@ class ExhibitionCard extends PureComponent {
     // console.log(this.props, "props inside Exhibition Cart component received from feed");
 
     const renderSponsored = () =>
-      (sponsored ? (
+      sponsored ? (
         <View style={styles.sponsored}>
           <Text style={styles.sponsoredText}>
             {sponsored ? " sponsored " : null}
           </Text>
         </View>
-      ) : null);
+      ) : null;
 
     const renderImages = () =>
-      (prizeLogo != null ? (
+      prizeLogo != null ? (
         <View>
           <Image
             style={{ width: 80, height: 100 }}
@@ -79,12 +79,12 @@ class ExhibitionCard extends PureComponent {
             height: 100
           }}
         />
-      ));
+      );
 
     return (
       <View style={styles.wrapper}>
         <TouchableOpacity
-          onPress={() => navigationFn('ExhibitionDescription', { id })}
+          onPress={() => navigationFn("ExhibitionDescription", { id })}
         >
           <View style={styles.container} key={id}>
             <View style={styles.imageAvtar}>{renderImages()}</View>
@@ -92,7 +92,7 @@ class ExhibitionCard extends PureComponent {
               <Text style={styles.title}>{title.substr(0, 100)}</Text>
               <View
                 style={{
-                  flexDirection: 'row'
+                  flexDirection: "row"
                 }}
               >
                 <Text style={styles.subtitle}>Genre:{prizeType}</Text>
@@ -100,12 +100,12 @@ class ExhibitionCard extends PureComponent {
 
               <View
                 style={{
-                  flexDirection: 'row'
+                  flexDirection: "row"
                 }}
               >
                 <View
                   style={{
-                    flexDirection: 'row',
+                    flexDirection: "row",
                     flexGrow: 5
                   }}
                 >
@@ -126,12 +126,12 @@ class ExhibitionCard extends PureComponent {
 
               <View
                 style={{
-                  flexDirection: 'row'
+                  flexDirection: "row"
                 }}
               >
                 <View
                   style={{
-                    flexDirection: 'row'
+                    flexDirection: "row"
                   }}
                 >
                   <Entypo
@@ -144,7 +144,7 @@ class ExhibitionCard extends PureComponent {
                 </View>
                 <View
                   style={{
-                    flexDirection: 'row',
+                    flexDirection: "row",
                     marginLeft: 10
                   }}
                 >
@@ -158,7 +158,7 @@ class ExhibitionCard extends PureComponent {
                 </View>
                 <View
                   style={{
-                    flexDirection: 'row',
+                    flexDirection: "row",
                     marginLeft: 10
                   }}
                 >
@@ -173,13 +173,13 @@ class ExhibitionCard extends PureComponent {
                 </View>
                 <View
                   style={{
-                    flexDirection: 'row',
+                    flexDirection: "row",
                     marginLeft: 10
                   }}
                 />
                 <Text style={styles.values}>
                   {currencyType}
-                  {prizeAmount.toLocaleString('en')}
+                  {prizeAmount.toLocaleString("en")}
                 </Text>
               </View>
             </View>

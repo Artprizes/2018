@@ -77,30 +77,13 @@ export const Tabs = TabNavigator(
     tabBarPosition: 'top',
     tabBarOptions: {
       style: {
-        padding: 0,
-        height: 30,
-        width: 350,
-        alignSelf: 'center',
-        // alignItems: 'center',
-        margin: 10,
-        marginTop: 10
-
-        // shadowColor: '#9C68E8',
-
-        // shadowOffset: {
-        //   width: 0,
-        //   height: 0,
-        // },
-        // shadowRadius: 1,
-        // shadowOpacity: 4.0
+        width: '100%'
       },
       activeBackgroundColor: '#7B1FA2',
       activeTintColor: '#FFFFFF',
       labelStyle: {
         fontFamily: 'OpenSans-Regular',
-        fontSize: 14,
-        textAlign: 'center',
-        padding: 3
+        fontSize: 14
       }
     }
   }

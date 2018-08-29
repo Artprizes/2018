@@ -55,3 +55,12 @@ To create developer cert
 (6) go to certs, identifiers and profiles
 (7) go to production
 (8) download cert
+
+Android
+
+cd android
+
+./gradlew assembleRelease
+
+
+then sign in android app

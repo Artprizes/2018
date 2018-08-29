@@ -292,7 +292,7 @@ class IntendedToEnterDescription extends PureComponent {
               <View style={{ flexDirection: "column" }}>
                 <Text style={styles.title}>Application Close</Text>
                 <Text style={styles.titleContents}>
-                  {format(selectedPrize.close_date, "DD MMMM YYYY")}
+                  {format(selectedPrize.close_date, "do MMM YYYY")}
                 </Text>
               </View>
             </View>
@@ -308,8 +308,8 @@ class IntendedToEnterDescription extends PureComponent {
               <View style={{ flexDirection: "column" }}>
                 <Text style={styles.title}>Application dates</Text>
                 <Text style={styles.titleContents}>
-                  {format(selectedPrize.ApplicationsStartDate, "DD MMMM YYYY")}{" "}
-                  - {format(selectedPrize.close_date, "DD MMMM YYYY")}
+                  {format(selectedPrize.ApplicationsStartDate, "do MMM YYYY")} -{" "}
+                  {format(selectedPrize.close_date, "do MMM YYYY")}
                 </Text>
               </View>
             </View>
@@ -325,7 +325,7 @@ class IntendedToEnterDescription extends PureComponent {
               <View style={{ flexDirection: "column" }}>
                 <Text style={styles.title}>Announced</Text>
                 <Text style={styles.titleContents}>
-                  {format(selectedPrize.ExhibitionStartDate, "DD MMMM YYYY")}
+                  {format(selectedPrize.ExhibitionStartDate, "do MMM YYYY")}
                 </Text>
               </View>
             </View>
@@ -451,10 +451,7 @@ class IntendedToEnterDescription extends PureComponent {
               <View style={{ flexDirection: "column" }}>
                 <Text style={styles.title}>Finalist Notified</Text>
                 <Text style={styles.titleContents}>
-                  {format(
-                    selectedPrize.finalists_notified_date,
-                    "DD MMMM YYYY"
-                  )}
+                  {format(selectedPrize.finalists_notified_date, "do MMM YYYY")}
                 </Text>
               </View>
             </View>
@@ -502,10 +499,10 @@ class IntendedToEnterDescription extends PureComponent {
               <View style={{ flexDirection: "column" }}>
                 <Text style={styles.title}>Last updated </Text>
                 <Text style={styles.titleContents}>
-                  {format(selectedPrize.updated, "DD MMMM YYYY")}
+                  {format(selectedPrize.updated, "do MMM YYYY")}
                 </Text>
                 <Text style={styles.titleContents}>
-                  {format(selectedPrize.ExhibitionStartDate, "DD MMMM YYYY")}
+                  {format(selectedPrize.ExhibitionStartDate, "do MMM YYYY")}
                 </Text>
               </View>
             </View>

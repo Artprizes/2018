@@ -1,9 +1,18 @@
 import React, { PureComponent } from "react";
-import { View, Text, Image, Linking } from "react-native";
+import {
+  View,
+  Text,
+  Image,
+  Linking,
+  ScrollView,
+  TouchableHighlight
+} from "react-native";
 import styles from "./style";
 import call from "react-native-phone-call";
 
-import { SocialIcon } from "react-native-elements";
+import { SocialIcon, Icon } from "react-native-elements";
+import SimpleLineIcons from "react-native-vector-icons/SimpleLineIcons";
+import Entypo from "react-native-vector-icons/Entypo";
 
 const args = {
   number: "+61 412 477 556",
@@ -23,48 +32,92 @@ export default class About extends PureComponent {
   render() {
     return (
       <View style={styles.wrapper}>
-        <View style={styles.iconsContainer}>
-          <Text style={{ margin: 30 }}>Publisher</Text>
-          <SocialIcon
-            raised
-            type="linkedin"
-            onPress={() =>
-              Linking.openURL("https://au.linkedin.com/in/martin-shub-1693661")
-            }
-          />
-          <SocialIcon
-            raised
-            type="phone"
-            iconColor="blue"
-            onPress={() => call(args)}
-          />
-          <SocialIcon
-            type="google-plus-official"
-            raised
-            onPress={() => Linking.openURL("mailto:martin@art-prizes.com")}
-          />
-        </View>
-        <View style={styles.iconsContainer}>
-          <Image
-            source={require("../../assets/discoverymedia1.png")}
-            style={{
-              width: 400,
-              height: 200,
-              alignSelf: "center"
-            }}
-          />
-        </View>
-        <View style={styles.iconsContainer}>
-          <Text
-            style={{
-              justifyContent: "center",
-              fontFamily: "open sans",
-              fontSize: 18
-            }}
-          >
-            artprizes v 3.0.3
-          </Text>
-        </View>
+        <ScrollView>
+          <View style={styles.header}>
+            <Text
+              style={{
+                marginTop: 20,
+                padding: 30,
+                fontSize: 18
+              }}
+            >
+              Publisher: Martin Shub
+            </Text>
+          </View>
+          <View style={styles.socialIcons}>
+            <SocialIcon
+              type="facebook"
+              onPress={() =>
+                Linking.openURL("https://www.facebook.com/ArtPrizes/")
+              }
+            />
+            <SocialIcon
+              type="instagram"
+              onPress={() =>
+                Linking.openURL("https://www.instagram.com/artprizes/")
+              }
+            />
+            <SocialIcon
+              type="linkedin"
+              onPress={() =>
+                Linking.openURL(
+                  "https://au.linkedin.com/in/martin-shub-1693661"
+                )
+              }
+            />
+            <SocialIcon
+              type="twitter"
+              onPress={() =>
+                Linking.openURL("https://twitter.com/austArtprizes")
+              }
+            />
+            <Entypo name="old-phone" size={24} onPress={() => call(args)} />
+          </View>
+          <View style={styles.iconsContainer}>
+            <TouchableHighlight
+              onPress={() => Linking.openURL("https://art-prizes.com/")}
+            >
+              <Image
+                source={require("../../assets/discoverymedia1.png")}
+                style={{
+                  width: 600,
+                  height: 300,
+                  alignItems: "stretch"
+                  // alignSelf: "center"
+                }}
+              />
+            </TouchableHighlight>
+          </View>
+          <View style={styles.iconsContainer}>
+            <Text
+              style={{
+                justifyContent: "center",
+                fontFamily: "open sans",
+                fontSize: 18
+              }}
+            >
+              artprizes v 3.0.3
+            </Text>
+            <Text style={{ marginTop: 20 }}>
+              {" "}
+              Copyright © Discovery Media 2018
+            </Text>
+            <Text style={{ marginTop: 20 }}>Developed By</Text>
+            <TouchableHighlight
+              onPress={() => Linking.openURL("http://gada.io//")}
+            >
+              <Image
+                source={require("../../assets/GadaLogo.png")}
+                style={{
+                  width: 250,
+                  height: 200,
+                  alignItems: "stretch"
+                  // alignSelf: "center"
+                }}
+              />
+            </TouchableHighlight>
+          </View>
+        </ScrollView>
       </View>
     );
   }

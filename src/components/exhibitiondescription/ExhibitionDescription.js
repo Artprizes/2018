@@ -277,7 +277,7 @@ class ExhibitionDescription extends PureComponent {
               {distanceInWordsStrict(selectedExhibition.close_date, new Date())}{" "}
               {new Date(selectedExhibition.close_date).getTime() >
               new Date().getTime()
-                ? "to go"
+                ? " to go"
                 : "ago"}
             </Text>
             <View style={styles.container}>
@@ -292,7 +292,7 @@ class ExhibitionDescription extends PureComponent {
               <View style={{ flexDirection: "column" }}>
                 <Text style={styles.title}>Application Close</Text>
                 <Text style={styles.titleContents}>
-                  {format(selectedExhibition.close_date, "DD MMMM YYYY")}
+                  {format(selectedExhibition.close_date, "do MMM YYYY")}
                 </Text>
               </View>
             </View>
@@ -310,9 +310,9 @@ class ExhibitionDescription extends PureComponent {
                 <Text style={styles.titleContents}>
                   {format(
                     selectedExhibition.ApplicationsStartDate,
-                    "DD MMMM YYYY"
+                    "do MMM YYYY"
                   )}{" "}
-                  - {format(selectedExhibition.close_date, "DD MMMM YYYY")}
+                  - {format(selectedExhibition.close_date, "do MMM YYYY")}
                 </Text>
               </View>
             </View>
@@ -330,7 +330,7 @@ class ExhibitionDescription extends PureComponent {
                 <Text style={styles.titleContents}>
                   {format(
                     selectedExhibition.ExhibitionStartDate,
-                    "DD MMMM YYYY"
+                    "do MMM YYYY"
                   )}
                 </Text>
               </View>
@@ -446,7 +446,7 @@ class ExhibitionDescription extends PureComponent {
                 <Text style={styles.titleContents}>
                   {format(
                     selectedExhibition.finalists_notified_date,
-                    "DD MMMM YYYY"
+                    "do MMM YYYY"
                   )}
                 </Text>
               </View>
@@ -496,12 +496,12 @@ class ExhibitionDescription extends PureComponent {
               <View style={{ flexDirection: "column" }}>
                 <Text style={styles.title}>Last updated </Text>
                 <Text style={styles.titleContents}>
-                  {format(selectedExhibition.updated, "DD MMMM YYYY")}
+                  {format(selectedExhibition.updated, "do MMM YYYY")}
                 </Text>
                 <Text style={styles.titleContents}>
                   {format(
                     selectedExhibition.ExhibitionStartDate,
-                    "DD MMMM YYYY"
+                    "do MMM YYYY"
                   )}
                 </Text>
               </View>

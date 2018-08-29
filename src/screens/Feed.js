@@ -191,11 +191,14 @@ class Feed extends PureComponent {
     }
   };
 
-  handleFilterAdverts = item1 => {
+  handleFilterAdverts = item => {
     const { filterAdverts } = this.props.adverts;
     const currentDate = new Date().getTime();
-    const prizeCloseDate = new Date(item1.toDate).getTime();
-    console.log({ currentDate, prizeCloseDate }, currentDate < prizeCloseDate);
+    const prizeCloseDate = new Date(item.toDate).getTime();
+    console.log(
+      { currentDate: new Date(), prizeCloseDate: new Date(item.toDate) },
+      currentDate < prizeCloseDate
+    );
 
     return currentDate < prizeCloseDate;
   };
@@ -257,7 +260,7 @@ class Feed extends PureComponent {
   static navigationOptions = {
     headerTitle: (
       <Image
-        style={{ width: 100, height: 100 }}
+        style={{ width: 100, height: 100, alignSelf: "center" }}
         source={require("../assets/ap_512by512.png")}
       />
     ),
@@ -331,7 +334,7 @@ class Feed extends PureComponent {
               />
               <CheckBox
                 checked={this.state.onlyShowPastPrizes}
-                title="Include Past Prizes "
+                title="All Prizes "
                 containerStyle={{
                   backgroundColor: "transparent",
                   borderColor: "transparent",

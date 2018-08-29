@@ -28,7 +28,7 @@ class Card extends Component {
     this._getRandomColor();
   }
   _getRandomColor() {
-    const item = Math.floor(Math.random() * 16777216);
+    const item = Math.floor(Math.random() * 99999);
     this.setState({
       selectedColor: item
     });

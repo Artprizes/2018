@@ -1,5 +1,5 @@
 import React, { PureComponent } from "react";
-import { ActivityIndicator, Text, View } from "react-native";
+import { ActivityIndicator, Text, View, Image } from "react-native";
 import Storage from "../Storage";
 import Api from "./utils/Api";
 
@@ -32,6 +32,7 @@ class Loading extends PureComponent {
       >
         <ActivityIndicator />
         <Text>Loading..</Text>
+        <Text style={styles.text}> Art Prizes Planner ... V 3.0 </Text>
       </View>
     );
   }
