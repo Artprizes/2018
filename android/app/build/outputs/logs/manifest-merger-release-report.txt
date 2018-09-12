@@ -1,16 +1,16 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/acrow/projects/artprizes/art-prizes-native/android/app/src/main/AndroidManifest.xml:1:1-34:12
-INJECTED from /Users/acrow/projects/artprizes/art-prizes-native/android/app/src/main/AndroidManifest.xml:1:1-34:12
-INJECTED from /Users/acrow/projects/artprizes/art-prizes-native/android/app/src/main/AndroidManifest.xml:1:1-34:12
-INJECTED from /Users/acrow/projects/artprizes/art-prizes-native/android/app/src/main/AndroidManifest.xml:1:1-34:12
-MERGED from [:react-native-svg] /Users/acrow/projects/artprizes/art-prizes-native/node_modules/react-native-svg/android/build/intermediates/manifests/full/release/AndroidManifest.xml:2:1-11:12
-MERGED from [:react-native-fbsdk] /Users/acrow/projects/artprizes/art-prizes-native/node_modules/react-native-fbsdk/android/build/intermediates/manifests/full/release/AndroidManifest.xml:21:1-30:12
-MERGED from [:react-native-popover-menu] /Users/acrow/projects/artprizes/art-prizes-native/node_modules/react-native-popover-menu/android/build/intermediates/manifests/full/release/AndroidManifest.xml:2:1-11:12
-MERGED from [:react-native-vector-icons] /Users/acrow/projects/artprizes/art-prizes-native/node_modules/react-native-vector-icons/android/build/intermediates/manifests/full/release/AndroidManifest.xml:2:1-11:12
-MERGED from [:react-native-linear-gradient] /Users/acrow/projects/artprizes/art-prizes-native/node_modules/react-native-linear-gradient/android/build/intermediates/manifests/full/release/AndroidManifest.xml:2:1-11:12
-MERGED from [:react-native-spinkit] /Users/acrow/projects/artprizes/art-prizes-native/node_modules/react-native-spinkit/android/build/intermediates/manifests/full/release/AndroidManifest.xml:2:1-16:12
-MERGED from [com.facebook.react:react-native:0.53.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/react-native-0.53.0.aar/ea7938767143a34bf98eae3ca5a2325d/AndroidManifest.xml:2:1-15:12
+ADDED from /Users/acrow/projects/artprizes/2018/android/app/src/main/AndroidManifest.xml:1:1-34:12
+INJECTED from /Users/acrow/projects/artprizes/2018/android/app/src/main/AndroidManifest.xml:1:1-34:12
+INJECTED from /Users/acrow/projects/artprizes/2018/android/app/src/main/AndroidManifest.xml:1:1-34:12
+INJECTED from /Users/acrow/projects/artprizes/2018/android/app/src/main/AndroidManifest.xml:1:1-34:12
+MERGED from [:react-native-svg] /Users/acrow/projects/artprizes/2018/node_modules/react-native-svg/android/build/intermediates/manifests/full/release/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-fbsdk] /Users/acrow/projects/artprizes/2018/node_modules/react-native-fbsdk/android/build/intermediates/manifests/full/release/AndroidManifest.xml:21:1-30:12
+MERGED from [:react-native-popover-menu] /Users/acrow/projects/artprizes/2018/node_modules/react-native-popover-menu/android/build/intermediates/manifests/full/release/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-vector-icons] /Users/acrow/projects/artprizes/2018/node_modules/react-native-vector-icons/android/build/intermediates/manifests/full/release/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-linear-gradient] /Users/acrow/projects/artprizes/2018/node_modules/react-native-linear-gradient/android/build/intermediates/manifests/full/release/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-spinkit] /Users/acrow/projects/artprizes/2018/node_modules/react-native-spinkit/android/build/intermediates/manifests/full/release/AndroidManifest.xml:2:1-16:12
+MERGED from [com.facebook.react:react-native:0.53.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/react-native-0.53.0.aar/55273a3ef959669350df80f956f0ca38/AndroidManifest.xml:2:1-15:12
 MERGED from [com.github.zawadz88.materialpopupmenu:material-popup-menu:1.4.1] /Users/acrow/.gradle/caches/transforms-1/files-1.1/material-popup-menu-1.4.1.aar/427a7b1d627eab11a0d4959294ac125e/AndroidManifest.xml:2:1-14:12
 MERGED from [com.facebook.android:facebook-android-sdk:4.36.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.36.0.aar/7b882c7efe7e11273be7dcf10f3a53b8/AndroidManifest.xml:21:1-31:12
 MERGED from [com.facebook.android:facebook-login:4.36.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-login-4.36.0.aar/18668c34a34b59a2f11904e4da251631/AndroidManifest.xml:21:1-31:12
@@ -43,51 +43,51 @@ MERGED from [com.facebook.fresco:imagepipeline:1.3.0] /Users/acrow/.gradle/cache
 MERGED from [com.facebook.fresco:imagepipeline-base:1.3.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.3.0.aar/957c496cc14de24676babd3b78bedecf/AndroidManifest.xml:2:1-9:12
 MERGED from [com.facebook.fresco:fbcore:1.3.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/fbcore-1.3.0.aar/b394c458fae2c6f57f974e1dabd36451/AndroidManifest.xml:2:1-9:12
 MERGED from [com.android.support:cardview-v7:25.0.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/cardview-v7-25.0.0.aar/4556d57be2f5d06bef239ce0a0907ec0/AndroidManifest.xml:17:1-24:12
-INJECTED from /Users/acrow/projects/artprizes/art-prizes-native/android/app/src/main/AndroidManifest.xml:1:1-34:12
-INJECTED from /Users/acrow/projects/artprizes/art-prizes-native/android/app/src/main/AndroidManifest.xml:1:1-34:12
-INJECTED from /Users/acrow/projects/artprizes/art-prizes-native/android/app/src/main/AndroidManifest.xml:1:1-34:12
+INJECTED from /Users/acrow/projects/artprizes/2018/android/app/src/main/AndroidManifest.xml:1:1-34:12
+INJECTED from /Users/acrow/projects/artprizes/2018/android/app/src/main/AndroidManifest.xml:1:1-34:12
+INJECTED from /Users/acrow/projects/artprizes/2018/android/app/src/main/AndroidManifest.xml:1:1-34:12
 	package
-		ADDED from /Users/acrow/projects/artprizes/art-prizes-native/android/app/src/main/AndroidManifest.xml:2:5-34
-		INJECTED from /Users/acrow/projects/artprizes/art-prizes-native/android/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/acrow/projects/artprizes/art-prizes-native/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/acrow/projects/artprizes/2018/android/app/src/main/AndroidManifest.xml:2:5-34
+		INJECTED from /Users/acrow/projects/artprizes/2018/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/acrow/projects/artprizes/2018/android/app/src/main/AndroidManifest.xml
 	android:versionName
-		ADDED from /Users/acrow/projects/artprizes/art-prizes-native/android/app/src/main/AndroidManifest.xml:4:5-30
-		INJECTED from /Users/acrow/projects/artprizes/art-prizes-native/android/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/acrow/projects/artprizes/art-prizes-native/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/acrow/projects/artprizes/2018/android/app/src/main/AndroidManifest.xml:4:5-30
+		INJECTED from /Users/acrow/projects/artprizes/2018/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/acrow/projects/artprizes/2018/android/app/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from /Users/acrow/projects/artprizes/art-prizes-native/android/app/src/main/AndroidManifest.xml:1:11-69
+		ADDED from /Users/acrow/projects/artprizes/2018/android/app/src/main/AndroidManifest.xml:1:11-69
 	android:versionCode
-		ADDED from /Users/acrow/projects/artprizes/art-prizes-native/android/app/src/main/AndroidManifest.xml:3:5-28
-		INJECTED from /Users/acrow/projects/artprizes/art-prizes-native/android/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/acrow/projects/artprizes/art-prizes-native/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/acrow/projects/artprizes/2018/android/app/src/main/AndroidManifest.xml:3:5-28
+		INJECTED from /Users/acrow/projects/artprizes/2018/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/acrow/projects/artprizes/2018/android/app/src/main/AndroidManifest.xml
 uses-permission#android.permission.INTERNET
-ADDED from /Users/acrow/projects/artprizes/art-prizes-native/android/app/src/main/AndroidManifest.xml:6:5-67
+ADDED from /Users/acrow/projects/artprizes/2018/android/app/src/main/AndroidManifest.xml:6:5-67
 	android:name
-		ADDED from /Users/acrow/projects/artprizes/art-prizes-native/android/app/src/main/AndroidManifest.xml:6:22-64
+		ADDED from /Users/acrow/projects/artprizes/2018/android/app/src/main/AndroidManifest.xml:6:22-64
 uses-permission#android.permission.SYSTEM_ALERT_WINDOW
-ADDED from /Users/acrow/projects/artprizes/art-prizes-native/android/app/src/main/AndroidManifest.xml:7:5-77
-MERGED from [com.facebook.react:react-native:0.53.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/react-native-0.53.0.aar/ea7938767143a34bf98eae3ca5a2325d/AndroidManifest.xml:11:5-78
-MERGED from [com.facebook.react:react-native:0.53.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/react-native-0.53.0.aar/ea7938767143a34bf98eae3ca5a2325d/AndroidManifest.xml:11:5-78
+ADDED from /Users/acrow/projects/artprizes/2018/android/app/src/main/AndroidManifest.xml:7:5-77
+MERGED from [com.facebook.react:react-native:0.53.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/react-native-0.53.0.aar/55273a3ef959669350df80f956f0ca38/AndroidManifest.xml:11:5-78
+MERGED from [com.facebook.react:react-native:0.53.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/react-native-0.53.0.aar/55273a3ef959669350df80f956f0ca38/AndroidManifest.xml:11:5-78
 	android:name
-		ADDED from /Users/acrow/projects/artprizes/art-prizes-native/android/app/src/main/AndroidManifest.xml:7:22-75
+		ADDED from /Users/acrow/projects/artprizes/2018/android/app/src/main/AndroidManifest.xml:7:22-75
 uses-sdk
-ADDED from /Users/acrow/projects/artprizes/art-prizes-native/android/app/src/main/AndroidManifest.xml:9:5-11:41
-INJECTED from /Users/acrow/projects/artprizes/art-prizes-native/android/app/src/main/AndroidManifest.xml:9:5-11:41
-INJECTED from /Users/acrow/projects/artprizes/art-prizes-native/android/app/src/main/AndroidManifest.xml:9:5-11:41
-MERGED from [:react-native-svg] /Users/acrow/projects/artprizes/art-prizes-native/node_modules/react-native-svg/android/build/intermediates/manifests/full/release/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-svg] /Users/acrow/projects/artprizes/art-prizes-native/node_modules/react-native-svg/android/build/intermediates/manifests/full/release/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-fbsdk] /Users/acrow/projects/artprizes/art-prizes-native/node_modules/react-native-fbsdk/android/build/intermediates/manifests/full/release/AndroidManifest.xml:24:5-26:41
-MERGED from [:react-native-fbsdk] /Users/acrow/projects/artprizes/art-prizes-native/node_modules/react-native-fbsdk/android/build/intermediates/manifests/full/release/AndroidManifest.xml:24:5-26:41
-MERGED from [:react-native-popover-menu] /Users/acrow/projects/artprizes/art-prizes-native/node_modules/react-native-popover-menu/android/build/intermediates/manifests/full/release/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-popover-menu] /Users/acrow/projects/artprizes/art-prizes-native/node_modules/react-native-popover-menu/android/build/intermediates/manifests/full/release/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-vector-icons] /Users/acrow/projects/artprizes/art-prizes-native/node_modules/react-native-vector-icons/android/build/intermediates/manifests/full/release/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-vector-icons] /Users/acrow/projects/artprizes/art-prizes-native/node_modules/react-native-vector-icons/android/build/intermediates/manifests/full/release/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-linear-gradient] /Users/acrow/projects/artprizes/art-prizes-native/node_modules/react-native-linear-gradient/android/build/intermediates/manifests/full/release/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-linear-gradient] /Users/acrow/projects/artprizes/art-prizes-native/node_modules/react-native-linear-gradient/android/build/intermediates/manifests/full/release/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-spinkit] /Users/acrow/projects/artprizes/art-prizes-native/node_modules/react-native-spinkit/android/build/intermediates/manifests/full/release/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-spinkit] /Users/acrow/projects/artprizes/art-prizes-native/node_modules/react-native-spinkit/android/build/intermediates/manifests/full/release/AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.react:react-native:0.53.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/react-native-0.53.0.aar/ea7938767143a34bf98eae3ca5a2325d/AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.react:react-native:0.53.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/react-native-0.53.0.aar/ea7938767143a34bf98eae3ca5a2325d/AndroidManifest.xml:7:5-9:41
+ADDED from /Users/acrow/projects/artprizes/2018/android/app/src/main/AndroidManifest.xml:9:5-11:41
+INJECTED from /Users/acrow/projects/artprizes/2018/android/app/src/main/AndroidManifest.xml:9:5-11:41
+INJECTED from /Users/acrow/projects/artprizes/2018/android/app/src/main/AndroidManifest.xml:9:5-11:41
+MERGED from [:react-native-svg] /Users/acrow/projects/artprizes/2018/node_modules/react-native-svg/android/build/intermediates/manifests/full/release/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-svg] /Users/acrow/projects/artprizes/2018/node_modules/react-native-svg/android/build/intermediates/manifests/full/release/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-fbsdk] /Users/acrow/projects/artprizes/2018/node_modules/react-native-fbsdk/android/build/intermediates/manifests/full/release/AndroidManifest.xml:24:5-26:41
+MERGED from [:react-native-fbsdk] /Users/acrow/projects/artprizes/2018/node_modules/react-native-fbsdk/android/build/intermediates/manifests/full/release/AndroidManifest.xml:24:5-26:41
+MERGED from [:react-native-popover-menu] /Users/acrow/projects/artprizes/2018/node_modules/react-native-popover-menu/android/build/intermediates/manifests/full/release/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-popover-menu] /Users/acrow/projects/artprizes/2018/node_modules/react-native-popover-menu/android/build/intermediates/manifests/full/release/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-vector-icons] /Users/acrow/projects/artprizes/2018/node_modules/react-native-vector-icons/android/build/intermediates/manifests/full/release/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-vector-icons] /Users/acrow/projects/artprizes/2018/node_modules/react-native-vector-icons/android/build/intermediates/manifests/full/release/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-linear-gradient] /Users/acrow/projects/artprizes/2018/node_modules/react-native-linear-gradient/android/build/intermediates/manifests/full/release/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-linear-gradient] /Users/acrow/projects/artprizes/2018/node_modules/react-native-linear-gradient/android/build/intermediates/manifests/full/release/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-spinkit] /Users/acrow/projects/artprizes/2018/node_modules/react-native-spinkit/android/build/intermediates/manifests/full/release/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-spinkit] /Users/acrow/projects/artprizes/2018/node_modules/react-native-spinkit/android/build/intermediates/manifests/full/release/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.53.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/react-native-0.53.0.aar/55273a3ef959669350df80f956f0ca38/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.53.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/react-native-0.53.0.aar/55273a3ef959669350df80f956f0ca38/AndroidManifest.xml:7:5-9:41
 MERGED from [com.github.zawadz88.materialpopupmenu:material-popup-menu:1.4.1] /Users/acrow/.gradle/caches/transforms-1/files-1.1/material-popup-menu-1.4.1.aar/427a7b1d627eab11a0d4959294ac125e/AndroidManifest.xml:8:5-10:41
 MERGED from [com.github.zawadz88.materialpopupmenu:material-popup-menu:1.4.1] /Users/acrow/.gradle/caches/transforms-1/files-1.1/material-popup-menu-1.4.1.aar/427a7b1d627eab11a0d4959294ac125e/AndroidManifest.xml:8:5-10:41
 MERGED from [com.facebook.android:facebook-android-sdk:4.36.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.36.0.aar/7b882c7efe7e11273be7dcf10f3a53b8/AndroidManifest.xml:24:5-26:41
@@ -150,26 +150,26 @@ MERGED from [com.facebook.fresco:fbcore:1.3.0] /Users/acrow/.gradle/caches/trans
 MERGED from [com.facebook.fresco:fbcore:1.3.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/fbcore-1.3.0.aar/b394c458fae2c6f57f974e1dabd36451/AndroidManifest.xml:5:5-7:41
 MERGED from [com.android.support:cardview-v7:25.0.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/cardview-v7-25.0.0.aar/4556d57be2f5d06bef239ce0a0907ec0/AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:cardview-v7:25.0.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/cardview-v7-25.0.0.aar/4556d57be2f5d06bef239ce0a0907ec0/AndroidManifest.xml:20:5-43
-INJECTED from /Users/acrow/projects/artprizes/art-prizes-native/android/app/src/main/AndroidManifest.xml:9:5-11:41
-INJECTED from /Users/acrow/projects/artprizes/art-prizes-native/android/app/src/main/AndroidManifest.xml:9:5-11:41
+INJECTED from /Users/acrow/projects/artprizes/2018/android/app/src/main/AndroidManifest.xml:9:5-11:41
+INJECTED from /Users/acrow/projects/artprizes/2018/android/app/src/main/AndroidManifest.xml:9:5-11:41
 	tools:overrideLibrary
 		ADDED from [com.android.support:appcompat-v7:25.0.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.0.0.aar/d98dfa35080ca3cdbc054172396b705e/AndroidManifest.xml:23:9-75
 	android:targetSdkVersion
-		ADDED from /Users/acrow/projects/artprizes/art-prizes-native/android/app/src/main/AndroidManifest.xml:11:9-38
-		INJECTED from /Users/acrow/projects/artprizes/art-prizes-native/android/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/acrow/projects/artprizes/art-prizes-native/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/acrow/projects/artprizes/2018/android/app/src/main/AndroidManifest.xml:11:9-38
+		INJECTED from /Users/acrow/projects/artprizes/2018/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/acrow/projects/artprizes/2018/android/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		ADDED from /Users/acrow/projects/artprizes/art-prizes-native/android/app/src/main/AndroidManifest.xml:10:9-35
-		INJECTED from /Users/acrow/projects/artprizes/art-prizes-native/android/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/acrow/projects/artprizes/art-prizes-native/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/acrow/projects/artprizes/2018/android/app/src/main/AndroidManifest.xml:10:9-35
+		INJECTED from /Users/acrow/projects/artprizes/2018/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/acrow/projects/artprizes/2018/android/app/src/main/AndroidManifest.xml
 application
-ADDED from /Users/acrow/projects/artprizes/art-prizes-native/android/app/src/main/AndroidManifest.xml:13:5-32:19
-MERGED from [:react-native-fbsdk] /Users/acrow/projects/artprizes/art-prizes-native/node_modules/react-native-fbsdk/android/build/intermediates/manifests/full/release/AndroidManifest.xml:28:5-20
-MERGED from [:react-native-fbsdk] /Users/acrow/projects/artprizes/art-prizes-native/node_modules/react-native-fbsdk/android/build/intermediates/manifests/full/release/AndroidManifest.xml:28:5-20
-MERGED from [:react-native-spinkit] /Users/acrow/projects/artprizes/art-prizes-native/node_modules/react-native-spinkit/android/build/intermediates/manifests/full/release/AndroidManifest.xml:11:5-14:19
-MERGED from [:react-native-spinkit] /Users/acrow/projects/artprizes/art-prizes-native/node_modules/react-native-spinkit/android/build/intermediates/manifests/full/release/AndroidManifest.xml:11:5-14:19
-MERGED from [com.facebook.react:react-native:0.53.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/react-native-0.53.0.aar/ea7938767143a34bf98eae3ca5a2325d/AndroidManifest.xml:13:5-20
-MERGED from [com.facebook.react:react-native:0.53.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/react-native-0.53.0.aar/ea7938767143a34bf98eae3ca5a2325d/AndroidManifest.xml:13:5-20
+ADDED from /Users/acrow/projects/artprizes/2018/android/app/src/main/AndroidManifest.xml:13:5-32:19
+MERGED from [:react-native-fbsdk] /Users/acrow/projects/artprizes/2018/node_modules/react-native-fbsdk/android/build/intermediates/manifests/full/release/AndroidManifest.xml:28:5-20
+MERGED from [:react-native-fbsdk] /Users/acrow/projects/artprizes/2018/node_modules/react-native-fbsdk/android/build/intermediates/manifests/full/release/AndroidManifest.xml:28:5-20
+MERGED from [:react-native-spinkit] /Users/acrow/projects/artprizes/2018/node_modules/react-native-spinkit/android/build/intermediates/manifests/full/release/AndroidManifest.xml:11:5-14:19
+MERGED from [:react-native-spinkit] /Users/acrow/projects/artprizes/2018/node_modules/react-native-spinkit/android/build/intermediates/manifests/full/release/AndroidManifest.xml:11:5-14:19
+MERGED from [com.facebook.react:react-native:0.53.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/react-native-0.53.0.aar/55273a3ef959669350df80f956f0ca38/AndroidManifest.xml:13:5-20
+MERGED from [com.facebook.react:react-native:0.53.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/react-native-0.53.0.aar/55273a3ef959669350df80f956f0ca38/AndroidManifest.xml:13:5-20
 MERGED from [com.github.zawadz88.materialpopupmenu:material-popup-menu:1.4.1] /Users/acrow/.gradle/caches/transforms-1/files-1.1/material-popup-menu-1.4.1.aar/427a7b1d627eab11a0d4959294ac125e/AndroidManifest.xml:12:5-20
 MERGED from [com.github.zawadz88.materialpopupmenu:material-popup-menu:1.4.1] /Users/acrow/.gradle/caches/transforms-1/files-1.1/material-popup-menu-1.4.1.aar/427a7b1d627eab11a0d4959294ac125e/AndroidManifest.xml:12:5-20
 MERGED from [com.facebook.android:facebook-android-sdk:4.36.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.36.0.aar/7b882c7efe7e11273be7dcf10f3a53b8/AndroidManifest.xml:28:5-29:19
@@ -217,47 +217,47 @@ MERGED from [com.android.support:support-compat:25.0.0] /Users/acrow/.gradle/cac
 MERGED from [com.android.support:cardview-v7:25.0.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/cardview-v7-25.0.0.aar/4556d57be2f5d06bef239ce0a0907ec0/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:cardview-v7:25.0.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/cardview-v7-25.0.0.aar/4556d57be2f5d06bef239ce0a0907ec0/AndroidManifest.xml:22:5-20
 	android:supportsRtl
-		ADDED from [:react-native-spinkit] /Users/acrow/projects/artprizes/art-prizes-native/node_modules/react-native-spinkit/android/build/intermediates/manifests/full/release/AndroidManifest.xml:13:9-35
+		ADDED from [:react-native-spinkit] /Users/acrow/projects/artprizes/2018/node_modules/react-native-spinkit/android/build/intermediates/manifests/full/release/AndroidManifest.xml:13:9-35
 	android:label
-		ADDED from /Users/acrow/projects/artprizes/art-prizes-native/android/app/src/main/AndroidManifest.xml:16:7-39
+		ADDED from /Users/acrow/projects/artprizes/2018/android/app/src/main/AndroidManifest.xml:16:7-39
 	android:icon
-		ADDED from /Users/acrow/projects/artprizes/art-prizes-native/android/app/src/main/AndroidManifest.xml:17:7-41
+		ADDED from /Users/acrow/projects/artprizes/2018/android/app/src/main/AndroidManifest.xml:17:7-41
 	android:allowBackup
-		ADDED from /Users/acrow/projects/artprizes/art-prizes-native/android/app/src/main/AndroidManifest.xml:15:7-33
+		ADDED from /Users/acrow/projects/artprizes/2018/android/app/src/main/AndroidManifest.xml:15:7-33
 	android:theme
-		ADDED from /Users/acrow/projects/artprizes/art-prizes-native/android/app/src/main/AndroidManifest.xml:18:7-38
+		ADDED from /Users/acrow/projects/artprizes/2018/android/app/src/main/AndroidManifest.xml:18:7-38
 	android:name
-		ADDED from /Users/acrow/projects/artprizes/art-prizes-native/android/app/src/main/AndroidManifest.xml:14:7-38
+		ADDED from /Users/acrow/projects/artprizes/2018/android/app/src/main/AndroidManifest.xml:14:7-38
 activity#com.artprizesnative.MainActivity
-ADDED from /Users/acrow/projects/artprizes/art-prizes-native/android/app/src/main/AndroidManifest.xml:19:7-28:18
+ADDED from /Users/acrow/projects/artprizes/2018/android/app/src/main/AndroidManifest.xml:19:7-28:18
 	android:label
-		ADDED from /Users/acrow/projects/artprizes/art-prizes-native/android/app/src/main/AndroidManifest.xml:21:9-41
+		ADDED from /Users/acrow/projects/artprizes/2018/android/app/src/main/AndroidManifest.xml:21:9-41
 	android:windowSoftInputMode
-		ADDED from /Users/acrow/projects/artprizes/art-prizes-native/android/app/src/main/AndroidManifest.xml:23:9-51
+		ADDED from /Users/acrow/projects/artprizes/2018/android/app/src/main/AndroidManifest.xml:23:9-51
 	android:configChanges
-		ADDED from /Users/acrow/projects/artprizes/art-prizes-native/android/app/src/main/AndroidManifest.xml:22:9-79
+		ADDED from /Users/acrow/projects/artprizes/2018/android/app/src/main/AndroidManifest.xml:22:9-79
 	android:name
-		ADDED from /Users/acrow/projects/artprizes/art-prizes-native/android/app/src/main/AndroidManifest.xml:20:9-37
+		ADDED from /Users/acrow/projects/artprizes/2018/android/app/src/main/AndroidManifest.xml:20:9-37
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/acrow/projects/artprizes/art-prizes-native/android/app/src/main/AndroidManifest.xml:24:9-27:25
+ADDED from /Users/acrow/projects/artprizes/2018/android/app/src/main/AndroidManifest.xml:24:9-27:25
 action#android.intent.action.MAIN
-ADDED from /Users/acrow/projects/artprizes/art-prizes-native/android/app/src/main/AndroidManifest.xml:25:13-65
+ADDED from /Users/acrow/projects/artprizes/2018/android/app/src/main/AndroidManifest.xml:25:13-65
 	android:name
-		ADDED from /Users/acrow/projects/artprizes/art-prizes-native/android/app/src/main/AndroidManifest.xml:25:21-62
+		ADDED from /Users/acrow/projects/artprizes/2018/android/app/src/main/AndroidManifest.xml:25:21-62
 category#android.intent.category.LAUNCHER
-ADDED from /Users/acrow/projects/artprizes/art-prizes-native/android/app/src/main/AndroidManifest.xml:26:13-73
+ADDED from /Users/acrow/projects/artprizes/2018/android/app/src/main/AndroidManifest.xml:26:13-73
 	android:name
-		ADDED from /Users/acrow/projects/artprizes/art-prizes-native/android/app/src/main/AndroidManifest.xml:26:23-70
+		ADDED from /Users/acrow/projects/artprizes/2018/android/app/src/main/AndroidManifest.xml:26:23-70
 activity#com.facebook.react.devsupport.DevSettingsActivity
-ADDED from /Users/acrow/projects/artprizes/art-prizes-native/android/app/src/main/AndroidManifest.xml:29:7-84
+ADDED from /Users/acrow/projects/artprizes/2018/android/app/src/main/AndroidManifest.xml:29:7-84
 	android:name
-		ADDED from /Users/acrow/projects/artprizes/art-prizes-native/android/app/src/main/AndroidManifest.xml:29:17-81
+		ADDED from /Users/acrow/projects/artprizes/2018/android/app/src/main/AndroidManifest.xml:29:17-81
 meta-data#com.facebook.sdk.ApplicationId
-ADDED from /Users/acrow/projects/artprizes/art-prizes-native/android/app/src/main/AndroidManifest.xml:30:9-107
+ADDED from /Users/acrow/projects/artprizes/2018/android/app/src/main/AndroidManifest.xml:30:9-107
 	android:value
-		ADDED from /Users/acrow/projects/artprizes/art-prizes-native/android/app/src/main/AndroidManifest.xml:30:66-105
+		ADDED from /Users/acrow/projects/artprizes/2018/android/app/src/main/AndroidManifest.xml:30:66-105
 	android:name
-		ADDED from /Users/acrow/projects/artprizes/art-prizes-native/android/app/src/main/AndroidManifest.xml:30:20-65
+		ADDED from /Users/acrow/projects/artprizes/2018/android/app/src/main/AndroidManifest.xml:30:20-65
 activity#com.facebook.FacebookActivity
 ADDED from [com.facebook.android:facebook-common:4.36.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-common-4.36.0.aar/a9dcf1b1dbddf8b421d56a5dd6731899/AndroidManifest.xml:29:9-32:66
 	android:configChanges
@@ -275,11 +275,11 @@ ADDED from [com.facebook.android:facebook-common:4.36.0] /Users/acrow/.gradle/ca
 	android:name
 		ADDED from [com.facebook.android:facebook-common:4.36.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-common-4.36.0.aar/a9dcf1b1dbddf8b421d56a5dd6731899/AndroidManifest.xml:34:19-64
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-IMPLIED from /Users/acrow/projects/artprizes/art-prizes-native/android/app/src/main/AndroidManifest.xml:1:1-34:12 reason: org.webkit.android_jsc has a targetSdkVersion < 4
+IMPLIED from /Users/acrow/projects/artprizes/2018/android/app/src/main/AndroidManifest.xml:1:1-34:12 reason: org.webkit.android_jsc has a targetSdkVersion < 4
 uses-permission#android.permission.READ_PHONE_STATE
-IMPLIED from /Users/acrow/projects/artprizes/art-prizes-native/android/app/src/main/AndroidManifest.xml:1:1-34:12 reason: org.webkit.android_jsc has a targetSdkVersion < 4
+IMPLIED from /Users/acrow/projects/artprizes/2018/android/app/src/main/AndroidManifest.xml:1:1-34:12 reason: org.webkit.android_jsc has a targetSdkVersion < 4
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-IMPLIED from /Users/acrow/projects/artprizes/art-prizes-native/android/app/src/main/AndroidManifest.xml:1:1-34:12 reason: org.webkit.android_jsc requested WRITE_EXTERNAL_STORAGE
+IMPLIED from /Users/acrow/projects/artprizes/2018/android/app/src/main/AndroidManifest.xml:1:1-34:12 reason: org.webkit.android_jsc requested WRITE_EXTERNAL_STORAGE
 provider#com.facebook.marketing.internal.MarketingInitProvider
 ADDED from [com.facebook.android:facebook-marketing:4.36.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-marketing-4.36.0.aar/41a0e9dcc56c20bbe8fd6dbfd65313bf/AndroidManifest.xml:29:9-32:40
 	android:authorities

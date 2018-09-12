@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/acrow/projects/artprizes/art-prizes-native/android/app/build/intermediates/res/merged/release/values-v23/values-v23.xml",
+            "outputFile": "/Users/acrow/projects/artprizes/2018/android/app/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-v23/values-v23.xml",
             "map": [
                 {
                     "source": "/Users/acrow/.gradle/caches/transforms-1/files-1.1/cardview-v7-25.0.0.aar/4556d57be2f5d06bef239ce0a0907ec0/res/values-v23/values-v23.xml",
@@ -36,7 +36,7 @@
             ]
         },
         {
-            "outputFile": "/Users/acrow/projects/artprizes/art-prizes-native/android/app/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-v23/values-v23.xml",
+            "outputFile": "/Users/acrow/projects/artprizes/2018/android/app/build/intermediates/res/merged/release/values-v23/values-v23.xml",
             "map": [
                 {
                     "source": "/Users/acrow/.gradle/caches/transforms-1/files-1.1/cardview-v7-25.0.0.aar/4556d57be2f5d06bef239ce0a0907ec0/res/values-v23/values-v23.xml",
