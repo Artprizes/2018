@@ -1,6 +1,6 @@
 
-git clone https://github.com/OutcomeLife/art-prizes-native
-
+git clone https://github.com/Artprizes/2018.git
+xcode-select --install
 brew install node
 brew install watchman
 brew install imagemagick

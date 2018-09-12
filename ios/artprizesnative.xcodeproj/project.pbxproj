@@ -1725,7 +1725,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.crowtech.artprizes;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.art-prizes.artprizes";
 				PRODUCT_NAME = artprizesnative;
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1767,7 +1767,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.crowtech.artprizes;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.art-prizes.artprizes";
 				PRODUCT_NAME = artprizesnative;
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
