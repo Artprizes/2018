@@ -103,7 +103,7 @@ class IntendedToEnterCard extends PureComponent {
                   flexDirection: "row"
                 }}
               >
-                <Text style={styles.subtitle}>Genre:{prizeType}</Text>
+                <Text style={styles.subtitle}>Genre: {prizeType}</Text>
                 {/* <Text style={{ marginRight: 10 }}>
                   <Entypo name="chevron-right" size={24} color="#000000" />
                 </Text> */}

@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/acrow/projects/artprizes/art-prizes-native/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-id/values-id.xml",
+            "outputFile": "/Users/acrow/projects/artprizes/2018/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-id/values-id.xml",
             "map": [
                 {
-                    "source": "/Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-common-4.35.0.aar/8dfdf74aef662a02fb58958d183eb90d/res/values-id/values-id.xml",
+                    "source": "/Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-common-4.36.0.aar/2f06c86756801eff3dbd0e90340899aa/res/values-id/values-id.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

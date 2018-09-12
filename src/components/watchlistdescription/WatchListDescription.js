@@ -178,7 +178,8 @@ class WatchListDescription extends PureComponent {
           <Image
             style={{
               resizeMode: "contain",
-              height: 400
+              height: 400,
+              backgroundColor: "#428bca"
             }}
             source={{
               uri: `https://art-prizes.com/` + this.state.advert.Image
@@ -226,13 +227,13 @@ class WatchListDescription extends PureComponent {
               justifyContent: "space-around"
             }}
           >
-            <TouchableOpacity style={{ borderRightWidth: 0.5, width: 100 }}>
+            <TouchableOpacity style={{ borderRightWidth: 0.5, padding: 10 }}>
               <Text onPress={() => this.handleWatchList(id)}>
                 <MaterialCommunityIcons name="set-none" size={18} />
                 {renderFollowCount()}
               </Text>
             </TouchableOpacity>
-            <TouchableOpacity style={{ borderRightWidth: 0.5, width: 180 }}>
+            <TouchableOpacity style={{ borderRightWidth: 0.5, padding: 10 }}>
               <Text onPress={() => this.handleEnterPrizes(id)}>
                 <FontAwesome
                   name="user"
@@ -243,7 +244,7 @@ class WatchListDescription extends PureComponent {
                 {renderIntendToEnter()}
               </Text>
             </TouchableOpacity>
-            <TouchableOpacity>
+            <TouchableOpacity style={{ padding: 10 }}>
               <Text
                 onPress={this.shareLinkWithShareDialog.bind(this)}
                 style={{ color: "#3B5998" }}
@@ -292,7 +293,7 @@ class WatchListDescription extends PureComponent {
               <View style={{ flexDirection: "column" }}>
                 <Text style={styles.title}>Application Close</Text>
                 <Text style={styles.titleContents}>
-                  {format(selectedPrize.close_date, "do MMM YYYY")}
+                  {format(selectedPrize.close_date, "DD MMM YYYY")}
                 </Text>
               </View>
             </View>
@@ -308,8 +309,8 @@ class WatchListDescription extends PureComponent {
               <View style={{ flexDirection: "column" }}>
                 <Text style={styles.title}>Application dates</Text>
                 <Text style={styles.titleContents}>
-                  {format(selectedPrize.ApplicationsStartDate, "do MMM YYYY")} -{" "}
-                  {format(selectedPrize.close_date, "do MMM YYYY")}
+                  {format(selectedPrize.ApplicationsStartDate, "DD MMM YYYY")} -{" "}
+                  {format(selectedPrize.close_date, "DD MMM YYYY")}
                 </Text>
               </View>
             </View>
@@ -325,7 +326,7 @@ class WatchListDescription extends PureComponent {
               <View style={{ flexDirection: "column" }}>
                 <Text style={styles.title}>Announced</Text>
                 <Text style={styles.titleContents}>
-                  {format(selectedPrize.ExhibitionStartDate, "do MMM YYYY")}
+                  {format(selectedPrize.ExhibitionStartDate, "DD MMM YYYY")}
                 </Text>
               </View>
             </View>
@@ -451,7 +452,7 @@ class WatchListDescription extends PureComponent {
               <View style={{ flexDirection: "column" }}>
                 <Text style={styles.title}>Finalist Notified</Text>
                 <Text style={styles.titleContents}>
-                  {format(selectedPrize.finalists_notified_date, "do MMM YYYY")}
+                  {format(selectedPrize.finalists_notified_date, "DD MMM YYYY")}
                 </Text>
               </View>
             </View>
@@ -499,10 +500,7 @@ class WatchListDescription extends PureComponent {
               <View style={{ flexDirection: "column" }}>
                 <Text style={styles.title}>Last updated </Text>
                 <Text style={styles.titleContents}>
-                  {format(selectedPrize.updated, "do MMM YYYY")}
-                </Text>
-                <Text style={styles.titleContents}>
-                  {format(selectedPrize.ExhibitionStartDate, "do MMM YYYY")}
+                  {format(selectedPrize.updated, "DD MMM YYYY")}
                 </Text>
               </View>
             </View>
@@ -532,7 +530,19 @@ class WatchListDescription extends PureComponent {
                 </Text>
               </View>
             </View>
-
+            <View style={styles.container}>
+              <View>
+                <MaterialIcons
+                  name="description"
+                  size={20}
+                  style={styles.icons}
+                  color="black"
+                />
+              </View>
+              <View style={{ flexDirection: "column" }}>
+                <Text style={styles.title}>Description</Text>
+              </View>
+            </View>
             <ScrollView>
               <HTML
                 html={selectedPrize.description}

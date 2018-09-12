@@ -8,11 +8,12 @@ import {
   Image,
   ImageBackground,
   navigate,
-  AsyncStorage
+  AsyncStorage,
+  StatusBar
 } from 'react-native';
 import Spinner from 'react-native-spinkit';
+import SplashImage from '../../assets/art-prizes-splash.jpg';
 
-import { StatusBar } from 'react-native';
 import { Navigator } from '../../../src/index';
 
 export default class Splash extends PureComponent {
@@ -34,7 +35,7 @@ export default class Splash extends PureComponent {
 
             borderColor: '#4527A0'
           }}
-          source={require('../../assets/art-prizes.jpg')}
+          source={SplashImage}
         />
       </View>
     );

@@ -2,7 +2,7 @@ import React, { PureComponent } from "react";
 import {
   TextInput,
   View,
-  ScrollView,
+  FlatList,
   Modal,
   Image,
   AsyncStorage,
@@ -12,7 +12,6 @@ import {
   Linking,
   List,
   Text,
-  FlatList,
   ActivityIndicator
 } from "react-native";
 import debounce from "lodash.debounce";
@@ -35,6 +34,7 @@ import DropDown from "../../src/components/DropDown";
 import FilterList from "../../src/components/FilterList";
 import {
   fetchPrizes,
+  fetchAllPrizes,
   fetchPrizesSuccess,
   fetchPrizesError,
   showPrizes,
@@ -81,7 +81,8 @@ class Feed extends PureComponent {
       searchResults: [],
       searchQuery: "",
       searching: false,
-      onlyShowPastPrizes: false
+      onlyShowPastPrizes: false,
+      status: ""
     };
 
     this.handleSearch = debounce(this.handleSearch, 700);
@@ -101,8 +102,7 @@ class Feed extends PureComponent {
     this.props.fetchPrizes();
     // This is for the bottom section of the page for Adverts
     this.props.fetchAdverts();
-    //console.log(this.props.prizes);
-    //this.props.fetchAllPrizes();
+    this.props.fetchAllPrizes();
   }
 
   // SEARCH BY ART PRIZES TITLE
@@ -119,8 +119,6 @@ class Feed extends PureComponent {
   handleSearch = () => {
     const { allPrizeList } = this.props.prizes;
 
-    const results = [];
-
     if (!this.state.searchQuery) {
       this.setState({
         searchResults: [],
@@ -129,20 +127,14 @@ class Feed extends PureComponent {
       return;
     }
 
-    for (let i = 0; i < allPrizeList.length; i++) {
-      if (
-        new RegExp(this.state.searchQuery.toLowerCase()).test(
-          allPrizeList[i].title.toLowerCase()
-        )
-      ) {
-        results.push(allPrizeList[i]);
-      }
-    }
+    const testPattern = new RegExp(this.state.searchQuery.toLowerCase());
+    const searchResults = allPrizeList
+      .filter(prize => testPattern.test(prize.title.toLowerCase()))
+      .filter(this.handleFilterByType)
+      .sort(this.handleSort);
 
     this.setState({
-      searchResults: results
-        .filter(this.handleFilterByType)
-        .sort(this.handleSort),
+      searchResults,
       searching: false
     });
   };
@@ -195,10 +187,6 @@ class Feed extends PureComponent {
     const { filterAdverts } = this.props.adverts;
     const currentDate = new Date().getTime();
     const prizeCloseDate = new Date(item.toDate).getTime();
-    console.log(
-      { currentDate: new Date(), prizeCloseDate: new Date(item.toDate) },
-      currentDate < prizeCloseDate
-    );
 
     return currentDate < prizeCloseDate;
   };
@@ -213,6 +201,8 @@ class Feed extends PureComponent {
   handleFilterByType = item => {
     const { filterType } = this.props.prizes;
     const { onlyShowPastPrizes } = this.state;
+
+    return !!item.id;
 
     const currentDate = Date.now();
     const prizeCloseDate = new Date(item.close_date).getTime();
@@ -257,6 +247,68 @@ class Feed extends PureComponent {
     });
   };
 
+  flatListItems = () => {
+    const { prizeList, allPrizeList } = this.props.prizes;
+    console.log(" flatListItems function called...........");
+    const {
+      searchResults,
+      searchQuery,
+      searching,
+      onlyShowPastPrizes
+    } = this.state;
+
+    const prizesToDisplay = onlyShowPastPrizes ? allPrizeList : prizeList;
+
+    const prizesDisplayFilter =
+      searchQuery.length === 0 && Array.isArray(prizeList)
+        ? prizesToDisplay.filter(this.handleFilterByType).sort(this.handleSort)
+        : [];
+
+    if (searchResults.length) {
+      return [...searchResults, this.renderFlatListFooter()];
+    }
+
+    if (prizesDisplayFilter.length) {
+      return [...prizesDisplayFilter, this.renderFlatListFooter()];
+    }
+
+    return [];
+  };
+
+  renderFlatListFooter = () => {
+    const { advertData } = this.props.adverts;
+    return {
+      advert: true,
+      component: (
+        <Swiper
+          autoplay
+          showsButtons={false}
+          showsPagination={false}
+          horizontal={true}
+          key="footer"
+        >
+          {advertData.filter(this.handleFilterAdverts).map((item, i) => (
+            <TouchableHighlight
+              onPress={() => Linking.openURL(item.url)}
+              key={i}
+            >
+              <Image
+                source={{
+                  uri: `https://art-prizes.com/${item.Image}`
+                }}
+                style={{
+                  resizeMode: "contain",
+                  height: 400
+                }}
+                key={i}
+              />
+            </TouchableHighlight>
+          ))}
+        </Swiper>
+      )
+    };
+  };
+
   static navigationOptions = {
     headerTitle: (
       <Image
@@ -268,6 +320,7 @@ class Feed extends PureComponent {
   };
   render() {
     const { fetchingAds, adverterror, advertData } = this.props.adverts;
+
     const {
       fetching,
       error,
@@ -284,13 +337,6 @@ class Feed extends PureComponent {
       searchQuery,
       searching
     } = this.state;
-
-    const prizesToDisplay = onlyShowPastPrizes ? allPrizeList : prizeList;
-
-    const prizesDisplayFilter =
-      searchQuery.length === 0 && prizeList != null && Array.isArray(prizeList)
-        ? prizesToDisplay.filter(this.handleFilterByType).sort(this.handleSort)
-        : [];
 
     return (
       /* this.props.searchBar toggles search bar on click */
@@ -327,6 +373,7 @@ class Feed extends PureComponent {
                   marginLeft: 25,
                   backgroundColor: "#FFFFFF"
                 }}
+                underlineColorAndroid="rgba(0,0,0,0)"
                 placeholder="Search ..."
                 placeholderTextColor="#767676"
                 onChangeText={this.handleChangeSearch}
@@ -361,60 +408,11 @@ class Feed extends PureComponent {
           <FilterList onPress={this.handleFilter} />
         </View>
 
-        <ScrollView>
-          {searchQuery.length > 0 ? (
-            searching ? (
-              <Text>Searching...</Text>
-            ) : searchResults.length === 0 ? (
-              <Text>No results found</Text>
-            ) : (
-              searchResults.map(prize => (
-                <Card
-                  id={prize.id}
-                  key={prize.id}
-                  title={prize.title}
-                  prizeAmount={parseInt(prize.PrizeAmount).toLocaleString("en")}
-                  country={prize.country}
-                  state={prize.state}
-                  navigationFn={this.props.navigation.navigate}
-                  prizeLogo={prize.prize_logo}
-                  sponsored={prize.sponsored}
-                  prizeType={prize.prize_type}
-                  eligibility={prize.eligibility}
-                  currencyType={prize.Currency}
-                  navigate={prize.id}
-                  viewCount={prize.ViewCount}
-                  followCount={prize.FollowCount}
-                  intentionToEnterCount={prize.IntentToEnterCount}
-                  daysCount={distanceInWordsStrict(
-                    prize.close_date,
-                    new Date()
-                  )}
-                />
-              ))
-            )
-          ) : prizesDisplayFilter.length > 0 ? (
-            prizesDisplayFilter.map(prize => (
-              <Card
-                id={prize.id}
-                key={prize.id}
-                title={prize.title}
-                prizeAmount={parseInt(prize.PrizeAmount).toLocaleString("en")}
-                country={prize.country}
-                state={prize.state}
-                navigationFn={this.props.navigation.navigate}
-                prizeLogo={prize.prize_logo}
-                sponsored={prize.sponsored}
-                prizeType={prize.prize_type}
-                eligibility={prize.eligibility}
-                currencyType={prize.Currency}
-                navigate={prize.id}
-                viewCount={prize.ViewCount}
-                followCount={prize.FollowCount}
-                intentionToEnterCount={prize.IntentToEnterCount}
-                daysCount={distanceInWordsStrict(prize.close_date, new Date())}
-              />
-            ))
+        {searchQuery.length > 0 ? (
+          searching ? (
+            <Text>Searching...</Text>
+          ) : searchResults.length === 0 ? (
+            <Text>No results found</Text>
           ) : fetching ? (
             <ActivityIndicator
               color="#9C68E8"
@@ -422,39 +420,40 @@ class Feed extends PureComponent {
               animating
               style={{ marginTop: 100 }}
             />
-          ) : error ? (
-            <Text>An error has occurred!</Text>
           ) : (
-            <Text>No Calling Art Prizes to show.</Text>
-          )}
-
-          <Swiper
-            autoplay
-            showsButtons={false}
-            showsPagination={false}
-            horizontal={true}
-          >
-            {advertData.filter(this.handleFilterAdverts).map((item, i) => (
-              <TouchableHighlight
-                onPress={() =>
-                  Linking.openURL(`https://art-prizes.com/${item.Image}`)
-                }
-                key={i}
-              >
-                <Image
-                  source={{
-                    uri: `https://art-prizes.com/${item.Image}`
-                  }}
-                  style={{
-                    resizeMode: "contain",
-                    height: 400
-                  }}
-                  key={i}
+            searchResults.length === 0 && <Text>No results found</Text>
+          )
+        ) : (
+          <FlatList
+            data={this.flatListItems()}
+            renderItem={({ item }) => {
+              if (item.advert) {
+                return item.component;
+              }
+              return (
+                <Card
+                  id={item.id}
+                  key={item.id}
+                  title={item.title}
+                  prizeAmount={parseInt(item.PrizeAmount).toLocaleString("en")}
+                  country={item.country}
+                  state={item.state}
+                  navigationFn={this.props.navigation.navigate}
+                  prizeLogo={item.prize_logo}
+                  sponsored={item.sponsored}
+                  prizeType={item.prize_type}
+                  eligibility={item.eligibility}
+                  currencyType={item.Currency}
+                  navigate={item.id}
+                  viewCount={item.ViewCount}
+                  followCount={item.FollowCount}
+                  intentionToEnterCount={item.IntentToEnterCount}
+                  daysCount={distanceInWordsStrict(item.close_date, new Date())}
                 />
-              </TouchableHighlight>
-            ))}
-          </Swiper>
-        </ScrollView>
+              );
+            }}
+          />
+        )}
       </View>
     );
   }
@@ -473,7 +472,7 @@ function matchDispatchToProps(dispatch) {
   return bindActionCreators(
     {
       fetchPrizes,
-
+      fetchAllPrizes,
       showPrizes,
       dataSort,
       dataFilter,

@@ -3,6 +3,7 @@ git clone https://github.com/OutcomeLife/art-prizes-native
 
 brew install node
 brew install watchman
+brew install imagemagick
 
 npm install -g react-native-cli
 cd art-prizes-native
@@ -19,7 +20,8 @@ react-native link react-native-fbsdk
 npm i -S react-native-fbsdk
 npm link
 
-
+npm install -g app-icon
+app-icon generate -i ./logo.png
 
 
 cd ios

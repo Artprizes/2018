@@ -3,45 +3,18 @@ import {
   TextInput,
   View,
   ScrollView,
-  Modal,
   Image,
-  AsyncStorage,
   TouchableHighlight,
-  TouchableOpacity,
-  Dimensions,
   Linking,
   ActivityIndicator
 } from "react-native";
 import debounce from "lodash.debounce";
-import {
-  Container,
-  Header,
-  Title,
-  Content,
-  Button,
-  Icon,
-  Right,
-  Body,
-  Left,
-  Picker,
-  Form,
-  List,
-  ListItem,
-  Text,
-  Radio,
-  CheckBox
-} from "native-base";
+import { Text } from "native-base";
 
 // /import { List, ListItem } from "react-native-elements";
 //import Icon from "react-native-vector-icons/Ionicons";
-import Entypo from "react-native-vector-icons/Entypo";
-import MaterialIcon from "react-native-vector-icons/MaterialIcons";
-import FontAwesome from "react-native-vector-icons/FontAwesome";
-import axios from "axios";
 import { bindActionCreators } from "redux";
 import { connect } from "react-redux";
-import authStorage from "../utils/authStorage";
-import { format } from "date-fns";
 import LinearGradient from "react-native-linear-gradient";
 import distanceInWordsStrict from "date-fns/distance_in_words_strict";
 import ExhibitionCard from "../../src/components/card/ExhibitionCard";
@@ -51,15 +24,10 @@ import FilterList from "../../src/components/FilterList";
 
 import {
   fetchExhibitions,
-  fetchExhibitionsSuccess,
-  fetchExhibitionsError,
   fetchAllPrizes,
   showExhibitions,
   dataSortExhibitions,
   dataFilterExhibitions,
-  fetchExhibitionId,
-  fetchExhibitionIdSuccess,
-  fetchExhibitionIdError,
   fetchAdverts,
   fetcAdvertsSuccess,
   fetcAdvertsError
@@ -412,9 +380,7 @@ class Exhibitions extends PureComponent {
           >
             {advertData.filter(this.handleFilterAdverts).map((item, i) => (
               <TouchableHighlight
-                onPress={() =>
-                  Linking.openURL(`https://art-prizes.com/${item.Image}`)
-                }
+                onPress={() => Linking.openURL(item.url)}
                 key={i}
               >
                 <Image

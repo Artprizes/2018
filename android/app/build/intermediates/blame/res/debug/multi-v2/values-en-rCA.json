@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/acrow/projects/artprizes/art-prizes-native/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rCA/values-en-rCA.xml",
+            "outputFile": "/Users/acrow/projects/artprizes/2018/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rCA/values-en-rCA.xml",
             "map": [
                 {
-                    "source": "/Users/acrow/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/394521c335769e75308a995c88271b2f/res/values-en-rCA/values-en-rCA.xml",
+                    "source": "/Users/acrow/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/52668ddfb577ae8576bcbb331aa3e831/res/values-en-rCA/values-en-rCA.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

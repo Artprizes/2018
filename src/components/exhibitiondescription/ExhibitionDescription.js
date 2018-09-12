@@ -1,19 +1,14 @@
 import React, { PureComponent } from "react";
 import {
-  StyleSheet,
   View,
   Text,
   Image,
   ScrollView,
-  Button,
-  WebView,
   TouchableOpacity,
   Dimensions,
   Linking
 } from "react-native";
-import { Grid, Row, Col } from "react-native-easy-grid";
 import styles from "./style";
-import { Icon } from "react-native-elements";
 import Entypo from "react-native-vector-icons/Entypo";
 import { ShareDialog } from "react-native-fbsdk";
 import MaterialIcons from "react-native-vector-icons/MaterialIcons";
@@ -22,7 +17,6 @@ import FontAwesome from "react-native-vector-icons/FontAwesome";
 import Ionicons from "react-native-vector-icons/Ionicons";
 import EvilIcons from "react-native-vector-icons/EvilIcons";
 import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
-import { SocialIcon } from "react-native-elements";
 import { bindActionCreators } from "redux";
 import { connect } from "react-redux";
 import { format } from "date-fns";
@@ -131,6 +125,15 @@ class ExhibitionDescription extends PureComponent {
       this.setState({
         enterCount: nextProps.exhibitions.selectedExhibition.IntendedToEnter
       });
+
+    const selectedExhibition = this.props.exhibitions.allPrizeList.filter(
+      prize => prize.id == nextProps.exhibitions.selectedExhibition.id
+    );
+
+    const selectedExhibitionImage = selectedExhibition[0].prize_logo;
+    this.setState({
+      selectedExhibitionImage
+    });
   }
 
   static navigationOptions = {
@@ -168,23 +171,6 @@ class ExhibitionDescription extends PureComponent {
         {this.state.watchCount ? "Unwatch" : "Watch"}
       </Text>
     );
-    const renderImages = () =>
-      this.state.advert != null ? (
-        <View>
-          <Image
-            style={{
-              resizeMode: "contain",
-              height: 400
-            }}
-            source={{
-              uri: `https://art-prizes.com/` + this.state.advert.Image
-            }}
-          />
-        </View>
-      ) : (
-        <Text />
-      );
-
     return (
       <View style={styles.wrapper}>
         <ScrollView>
@@ -215,7 +201,17 @@ class ExhibitionDescription extends PureComponent {
             />
           </TouchableOpacity>
 
-          {renderImages()}
+          <Image
+            style={{
+              resizeMode: "contain",
+              height: 400,
+              backgroundColor: "#428bca"
+            }}
+            source={{
+              uri:
+                `https://art-prizes.com/` + this.state.selectedExhibitionImage
+            }}
+          />
 
           <View
             style={{
@@ -223,13 +219,13 @@ class ExhibitionDescription extends PureComponent {
               justifyContent: "space-around"
             }}
           >
-            <TouchableOpacity style={{ borderRightWidth: 0.5, width: 100 }}>
+            <TouchableOpacity style={{ borderRightWidth: 0.5, padding: 10 }}>
               <Text onPress={() => this.handleWatchList(id)}>
                 <MaterialCommunityIcons name="set-none" size={18} />
                 {renderFollowCount()}
               </Text>
             </TouchableOpacity>
-            <TouchableOpacity style={{ borderRightWidth: 0.5, width: 180 }}>
+            <TouchableOpacity style={{ borderRightWidth: 0.5, padding: 10 }}>
               <Text onPress={() => this.handleEnterPrizes(id)}>
                 <FontAwesome
                   name="user"
@@ -240,7 +236,7 @@ class ExhibitionDescription extends PureComponent {
                 {renderIntendToEnter()}
               </Text>
             </TouchableOpacity>
-            <TouchableOpacity>
+            <TouchableOpacity style={{ padding: 10 }}>
               <Text
                 onPress={this.shareLinkWithShareDialog.bind(this)}
                 style={{ color: "#3B5998" }}
@@ -292,7 +288,7 @@ class ExhibitionDescription extends PureComponent {
               <View style={{ flexDirection: "column" }}>
                 <Text style={styles.title}>Application Close</Text>
                 <Text style={styles.titleContents}>
-                  {format(selectedExhibition.close_date, "do MMM YYYY")}
+                  {format(selectedExhibition.close_date, "DD MMM YYYY")}
                 </Text>
               </View>
             </View>
@@ -310,9 +306,9 @@ class ExhibitionDescription extends PureComponent {
                 <Text style={styles.titleContents}>
                   {format(
                     selectedExhibition.ApplicationsStartDate,
-                    "do MMM YYYY"
+                    "DD MMM YYYY"
                   )}{" "}
-                  - {format(selectedExhibition.close_date, "do MMM YYYY")}
+                  - {format(selectedExhibition.close_date, "DD MMM YYYY")}
                 </Text>
               </View>
             </View>
@@ -330,7 +326,7 @@ class ExhibitionDescription extends PureComponent {
                 <Text style={styles.titleContents}>
                   {format(
                     selectedExhibition.ExhibitionStartDate,
-                    "do MMM YYYY"
+                    "DD MMM YYYY"
                   )}
                 </Text>
               </View>
@@ -446,7 +442,7 @@ class ExhibitionDescription extends PureComponent {
                 <Text style={styles.titleContents}>
                   {format(
                     selectedExhibition.finalists_notified_date,
-                    "do MMM YYYY"
+                    "DD MMM YYYY"
                   )}
                 </Text>
               </View>
@@ -496,13 +492,7 @@ class ExhibitionDescription extends PureComponent {
               <View style={{ flexDirection: "column" }}>
                 <Text style={styles.title}>Last updated </Text>
                 <Text style={styles.titleContents}>
-                  {format(selectedExhibition.updated, "do MMM YYYY")}
-                </Text>
-                <Text style={styles.titleContents}>
-                  {format(
-                    selectedExhibition.ExhibitionStartDate,
-                    "do MMM YYYY"
-                  )}
+                  {format(selectedExhibition.updated, "DD MMM YYYY")}
                 </Text>
               </View>
             </View>
@@ -532,7 +522,19 @@ class ExhibitionDescription extends PureComponent {
                 </Text>
               </View>
             </View>
-
+            <View style={styles.container}>
+              <View>
+                <MaterialIcons
+                  name="description"
+                  size={20}
+                  style={styles.icons}
+                  color="black"
+                />
+              </View>
+              <View style={{ flexDirection: "column" }}>
+                <Text style={styles.title}>Description</Text>
+              </View>
+            </View>
             <ScrollView>
               <HTML
                 html={selectedExhibition.description}

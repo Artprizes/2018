@@ -118,6 +118,9 @@ class ArtDescription extends PureComponent {
     const advert = advertData.find(item => {
       return String(item.prizeid) === String(id);
     });
+
+    console.warn(this.props.prizes);
+    console.warn(this.props.allPrizes);
     if (advert != null) {
       // alert(advert.Image);
       this.setState({ advert });
@@ -141,6 +144,15 @@ class ArtDescription extends PureComponent {
       this.setState({
         enterCount: nextProps.prizes.selectedPrize.IntendedToEnter
       });
+
+    const selectedPrize = this.props.prizes.allPrizeList.filter(
+      prize => prize.id == nextProps.prizes.selectedPrize.id
+    );
+
+    const selectedPrizeImage = selectedPrize[0].prize_logo;
+    this.setState({
+      selectedPrizeImage
+    });
   }
   static navigationOptions = {
     headerTitle: (
@@ -176,27 +188,7 @@ class ArtDescription extends PureComponent {
     );
 
     const { id } = this.props.navigation.state.params;
-    // alert(id);
     const { navigate } = this.props.navigation;
-
-    //console.warn(this.state.watchCount, this.props);
-
-    const renderImages = () =>
-      this.state.advert != null ? (
-        <View>
-          <Image
-            style={{
-              resizeMode: "contain",
-              height: 400
-            }}
-            source={{
-              uri: `https://art-prizes.com/` + this.state.advert.Image
-            }}
-          />
-        </View>
-      ) : (
-        <Text />
-      );
 
     return (
       <View style={styles.wrapper}>
@@ -228,7 +220,18 @@ class ArtDescription extends PureComponent {
             />
           </TouchableOpacity>
 
-          {renderImages()}
+          <View>
+            <Image
+              style={{
+                height: 400,
+                resizeMode: "contain",
+                backgroundColor: "#428bca"
+              }}
+              source={{
+                uri: `https://art-prizes.com/` + this.state.selectedPrizeImage
+              }}
+            />
+          </View>
 
           <View
             style={{
@@ -236,13 +239,13 @@ class ArtDescription extends PureComponent {
               justifyContent: "space-around"
             }}
           >
-            <TouchableOpacity style={{ borderRightWidth: 0.5, width: 100 }}>
+            <TouchableOpacity style={{ borderRightWidth: 0.5, padding: 10 }}>
               <Text onPress={() => this.handleWatchList(id)}>
                 <MaterialCommunityIcons name="set-none" size={16} />
                 {renderFollowCount()}
               </Text>
             </TouchableOpacity>
-            <TouchableOpacity style={{ borderRightWidth: 0.5, width: 180 }}>
+            <TouchableOpacity style={{ borderRightWidth: 0.5, padding: 10 }}>
               <Text onPress={() => this.handleEnterPrizes(id)}>
                 <FontAwesome
                   name="user"
@@ -253,7 +256,7 @@ class ArtDescription extends PureComponent {
                 {renderIntendToEnter()}
               </Text>
             </TouchableOpacity>
-            <TouchableOpacity>
+            <TouchableOpacity style={{ padding: 10 }}>
               <Text
                 onPress={this.shareLinkWithShareDialog.bind(this)}
                 style={{ color: "#3B5998" }}
@@ -305,7 +308,7 @@ class ArtDescription extends PureComponent {
               <View style={{ flexDirection: "column" }}>
                 <Text style={styles.title}>Application Close</Text>
                 <Text style={styles.titleContents}>
-                  {format(selectedPrize.close_date, "do MMM YYYY")}
+                  {format(selectedPrize.close_date, "DD MMM YYYY")}
                 </Text>
               </View>
             </View>
@@ -321,8 +324,8 @@ class ArtDescription extends PureComponent {
               <View style={{ flexDirection: "column" }}>
                 <Text style={styles.title}>Application dates</Text>
                 <Text style={styles.titleContents}>
-                  {format(selectedPrize.ApplicationsStartDate, "do MMM YYYY")} -{" "}
-                  {format(selectedPrize.close_date, "do MMM YYYY")}
+                  {format(selectedPrize.ApplicationsStartDate, "DD MMM YYYY")} -{" "}
+                  {format(selectedPrize.close_date, "DD MMM YYYY")}
                 </Text>
               </View>
             </View>
@@ -338,7 +341,7 @@ class ArtDescription extends PureComponent {
               <View style={{ flexDirection: "column" }}>
                 <Text style={styles.title}>Announced</Text>
                 <Text style={styles.titleContents}>
-                  {format(selectedPrize.ExhibitionStartDate, "do MMMM YYYY")}
+                  {format(selectedPrize.ExhibitionStartDate, "DD MMMM YYYY")}
                 </Text>
               </View>
             </View>
@@ -462,7 +465,7 @@ class ArtDescription extends PureComponent {
               <View style={{ flexDirection: "column" }}>
                 <Text style={styles.title}>Finalist Notified</Text>
                 <Text style={styles.titleContents}>
-                  {format(selectedPrize.finalists_notified_date, "do MMM YYYY")}
+                  {format(selectedPrize.finalists_notified_date, "DD MMM YYYY")}
                 </Text>
               </View>
             </View>
@@ -511,10 +514,7 @@ class ArtDescription extends PureComponent {
               <View style={{ flexDirection: "column" }}>
                 <Text style={styles.title}>Last updated </Text>
                 <Text style={styles.titleContents}>
-                  {format(selectedPrize.updated, "do MMM YYYY")}
-                </Text>
-                <Text style={styles.titleContents}>
-                  {format(selectedPrize.ExhibitionStartDate, "do MMM YYYY")}
+                  {format(selectedPrize.updated, "DD MMM YYYY")}
                 </Text>
               </View>
             </View>
@@ -542,6 +542,19 @@ class ArtDescription extends PureComponent {
                     color="black"
                   />
                 </Text>
+              </View>
+            </View>
+            <View style={styles.container}>
+              <View>
+                <MaterialIcons
+                  name="description"
+                  size={20}
+                  style={styles.icons}
+                  color="black"
+                />
+              </View>
+              <View style={{ flexDirection: "column" }}>
+                <Text style={styles.title}>Description</Text>
               </View>
             </View>
             <ScrollView>
