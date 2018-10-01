@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/acrow/projects/artprizes/2018/android/app/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-de/values-de.xml",
+            "outputFile": "/Users/acrow/projects/artprizes/art-prizes-native/android/app/build/intermediates/res/merged/release/values-de/values-de.xml",
             "map": [
                 {
                     "source": "/Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-login-4.36.0.aar/18668c34a34b59a2f11904e4da251631/res/values-de/values-de.xml",
@@ -40,7 +40,7 @@
             ]
         },
         {
-            "outputFile": "/Users/acrow/projects/artprizes/2018/android/app/build/intermediates/res/merged/release/values-de/values-de.xml",
+            "outputFile": "/Users/acrow/projects/artprizes/art-prizes-native/android/app/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-de/values-de.xml",
             "map": [
                 {
                     "source": "/Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-login-4.36.0.aar/18668c34a34b59a2f11904e4da251631/res/values-de/values-de.xml",

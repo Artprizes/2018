@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/acrow/projects/artprizes/2018/android/app/build/intermediates/res/merged/release/values-id/values-id.xml",
+            "outputFile": "/Users/acrow/projects/artprizes/art-prizes-native/android/app/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-id/values-id.xml",
             "map": [
                 {
                     "source": "/Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-common-4.36.0.aar/a9dcf1b1dbddf8b421d56a5dd6731899/res/values-id/values-id.xml",
@@ -16,7 +16,7 @@
             ]
         },
         {
-            "outputFile": "/Users/acrow/projects/artprizes/2018/android/app/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-id/values-id.xml",
+            "outputFile": "/Users/acrow/projects/artprizes/art-prizes-native/android/app/build/intermediates/res/merged/release/values-id/values-id.xml",
             "map": [
                 {
                     "source": "/Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-common-4.36.0.aar/a9dcf1b1dbddf8b421d56a5dd6731899/res/values-id/values-id.xml",

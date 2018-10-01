@@ -11,7 +11,7 @@ import SimpleLineIcons from 'react-native-vector-icons/SimpleLineIcons';
 import { Content, Container, Header, Body, Footer } from 'native-base';
 import Logout from '../components/LogOut';
 import About from '../components/About';
-import { Root, Root2, Root3, Root4 } from '../config/router';
+import { Root, Root2, Root3 } from '../config/router';
 import { View, Text } from 'react-native';
 
 const DrawerScreen = DrawerNavigator(
@@ -72,54 +72,52 @@ const DrawerScreen = DrawerNavigator(
     drawerOpenRoute: 'DrawerOpen',
     drawerCloseRoute: 'DrawerClose',
     contentComponent: props => (
-      <LinearGradient colors={['#7B1FA2', '#4527A0']} style={{ flex: 1 }}>
-        <Container>
-          <Header
-            style={{
-              height: 200,
-              width: 300,
-              paddingTop: 0,
-              paddingLeft: 0,
-              paddingRight: 0
-            }}
-          >
-            <Body>
-              <Image
-                style={{
-                  width: 200,
-                  height: 200,
-                  alignSelf: 'center'
-                }}
-                source={require('../assets/ap_512by512.png')}
-              />
-              <View
-                style={{
-                  position: 'absolute',
-                  backgroundColor: '#9C68E8',
-                  width: '100%',
-                  height: 200,
-                  opacity: 0.4
-                }}
-              />
-              <Text
-                style={{
-                  position: 'absolute',
-                  top: 0,
-                  left: 20,
-                  fontFamily: 'OpenSans-Bold',
-                  fontSize: 24,
-                  color: 'white'
-                }}
-              >
-                ART PRIZES PLANNER
-              </Text>
-            </Body>
-          </Header>
-          <Content>
-            <DrawerItems {...props} />
-          </Content>
-        </Container>
-      </LinearGradient>
+      <Container>
+        <Header
+          style={{
+            height: 200,
+            width: 300,
+            paddingTop: 0,
+            paddingLeft: 0,
+            paddingRight: 0
+          }}
+        >
+          <Body>
+            <Image
+              style={{
+                width: 200,
+                height: 200,
+                alignSelf: 'center'
+              }}
+              source={require('../assets/ap_512by512.png')}
+            />
+            <View
+              style={{
+                position: 'absolute',
+                backgroundColor: '#9C68E8',
+                width: '100%',
+                height: 200,
+                opacity: 0.4
+              }}
+            />
+            <Text
+              style={{
+                position: 'absolute',
+                top: 0,
+                left: 20,
+                fontFamily: 'OpenSans-Bold',
+                fontSize: 24,
+                color: 'white'
+              }}
+            >
+              ART PRIZES PLANNER
+            </Text>
+          </Body>
+        </Header>
+        <LinearGradient style={{ flex: 1 }} colors={['#7B1FA2', '#4527A0']}>
+          <DrawerItems {...props} />
+        </LinearGradient>
+      </Container>
     ),
     contentOptions: {
       activeTintColor: 'white',

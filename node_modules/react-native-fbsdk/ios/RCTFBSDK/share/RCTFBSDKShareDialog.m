@@ -52,11 +52,6 @@ RCT_EXPORT_MODULE(FBShareDialog);
   return self;
 }
 
-+ (BOOL)requiresMainQueueSetup
-{
-  return YES;
-}
-
 #pragma mark - React Native Methods
 
 RCT_EXPORT_METHOD(canShow:(RCTFBSDKSharingContent)content resolver:(RCTPromiseResolveBlock)resolve rejecter:(RCTPromiseRejectBlock)reject)
@@ -81,10 +76,10 @@ RCT_EXPORT_METHOD(show:(RCTFBSDKSharingContent)content
   _showResolve = resolve;
   _showReject = reject;
   _shareDialog.shareContent = content;
+  if (!_shareDialog.fromViewController) {
+    _shareDialog.fromViewController = [UIApplication sharedApplication].delegate.window.rootViewController;
+  }
   dispatch_async(dispatch_get_main_queue(), ^{
-    if (!_shareDialog.fromViewController) {
-      _shareDialog.fromViewController = RCTPresentedViewController();
-    }
     [_shareDialog show];
   });
 }

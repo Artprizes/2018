@@ -130,7 +130,11 @@ class ExhibitionDescription extends PureComponent {
       prize => prize.id == nextProps.exhibitions.selectedExhibition.id
     );
 
-    const selectedExhibitionImage = selectedExhibition[0].prize_logo;
+    const selectedExhibitionImage =
+      Array.isArray(selectedExhibition) &&
+      selectedExhibition.length > 0 &&
+      selectedExhibition[0].prize_logo;
+
     this.setState({
       selectedExhibitionImage
     });
@@ -200,19 +204,27 @@ class ExhibitionDescription extends PureComponent {
               }}
             />
           </TouchableOpacity>
-
-          <Image
-            style={{
-              resizeMode: "contain",
-              height: 400,
-              backgroundColor: "#428bca"
-            }}
-            source={{
-              uri:
-                `https://art-prizes.com/` + this.state.selectedExhibitionImage
-            }}
-          />
-
+          {this.state.selectedExhibitionImage ? (
+            <Image
+              style={{
+                resizeMode: "contain",
+                height: 400,
+                backgroundColor: "#428bca"
+              }}
+              source={{
+                uri:
+                  `https://art-prizes.com/` + this.state.selectedExhibitionImage
+              }}
+            />
+          ) : (
+            <View
+              style={{
+                height: 400,
+                resizeMode: "contain",
+                backgroundColor: "#428bca"
+              }}
+            />
+          )}
           <View
             style={{
               flexDirection: "row",

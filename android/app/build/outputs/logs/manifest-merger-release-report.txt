@@ -1,21 +1,21 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/acrow/projects/artprizes/2018/android/app/src/main/AndroidManifest.xml:1:1-34:12
-INJECTED from /Users/acrow/projects/artprizes/2018/android/app/src/main/AndroidManifest.xml:1:1-34:12
-INJECTED from /Users/acrow/projects/artprizes/2018/android/app/src/main/AndroidManifest.xml:1:1-34:12
-INJECTED from /Users/acrow/projects/artprizes/2018/android/app/src/main/AndroidManifest.xml:1:1-34:12
-MERGED from [:react-native-svg] /Users/acrow/projects/artprizes/2018/node_modules/react-native-svg/android/build/intermediates/manifests/full/release/AndroidManifest.xml:2:1-11:12
-MERGED from [:react-native-fbsdk] /Users/acrow/projects/artprizes/2018/node_modules/react-native-fbsdk/android/build/intermediates/manifests/full/release/AndroidManifest.xml:21:1-30:12
-MERGED from [:react-native-popover-menu] /Users/acrow/projects/artprizes/2018/node_modules/react-native-popover-menu/android/build/intermediates/manifests/full/release/AndroidManifest.xml:2:1-11:12
-MERGED from [:react-native-vector-icons] /Users/acrow/projects/artprizes/2018/node_modules/react-native-vector-icons/android/build/intermediates/manifests/full/release/AndroidManifest.xml:2:1-11:12
-MERGED from [:react-native-linear-gradient] /Users/acrow/projects/artprizes/2018/node_modules/react-native-linear-gradient/android/build/intermediates/manifests/full/release/AndroidManifest.xml:2:1-11:12
-MERGED from [:react-native-spinkit] /Users/acrow/projects/artprizes/2018/node_modules/react-native-spinkit/android/build/intermediates/manifests/full/release/AndroidManifest.xml:2:1-16:12
-MERGED from [com.facebook.react:react-native:0.53.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/react-native-0.53.0.aar/55273a3ef959669350df80f956f0ca38/AndroidManifest.xml:2:1-15:12
+ADDED from /Users/acrow/projects/artprizes/art-prizes-native/android/app/src/main/AndroidManifest.xml:1:1-34:12
+INJECTED from /Users/acrow/projects/artprizes/art-prizes-native/android/app/src/main/AndroidManifest.xml:1:1-34:12
+INJECTED from /Users/acrow/projects/artprizes/art-prizes-native/android/app/src/main/AndroidManifest.xml:1:1-34:12
+INJECTED from /Users/acrow/projects/artprizes/art-prizes-native/android/app/src/main/AndroidManifest.xml:1:1-34:12
+MERGED from [:react-native-popover-menu] /Users/acrow/projects/artprizes/art-prizes-native/node_modules/react-native-popover-menu/android/build/intermediates/manifests/full/release/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-vector-icons] /Users/acrow/projects/artprizes/art-prizes-native/node_modules/react-native-vector-icons/android/build/intermediates/manifests/full/release/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-spinkit] /Users/acrow/projects/artprizes/art-prizes-native/node_modules/react-native-spinkit/android/build/intermediates/manifests/full/release/AndroidManifest.xml:2:1-16:12
+MERGED from [:react-native-linear-gradient] /Users/acrow/projects/artprizes/art-prizes-native/node_modules/react-native-linear-gradient/android/build/intermediates/manifests/full/release/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-fbsdk] /Users/acrow/projects/artprizes/art-prizes-native/node_modules/react-native-fbsdk/android/build/intermediates/manifests/full/release/AndroidManifest.xml:21:1-30:12
+MERGED from [:react-native-svg] /Users/acrow/projects/artprizes/art-prizes-native/node_modules/react-native-svg/android/build/intermediates/manifests/full/release/AndroidManifest.xml:2:1-11:12
+MERGED from [com.facebook.react:react-native:0.53.3] /Users/acrow/.gradle/caches/transforms-1/files-1.1/react-native-0.53.3.aar/dfcaebed22a01282819a84f3b58b5bfe/AndroidManifest.xml:2:1-15:12
 MERGED from [com.github.zawadz88.materialpopupmenu:material-popup-menu:1.4.1] /Users/acrow/.gradle/caches/transforms-1/files-1.1/material-popup-menu-1.4.1.aar/427a7b1d627eab11a0d4959294ac125e/AndroidManifest.xml:2:1-14:12
-MERGED from [com.facebook.android:facebook-android-sdk:4.36.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.36.0.aar/7b882c7efe7e11273be7dcf10f3a53b8/AndroidManifest.xml:21:1-31:12
-MERGED from [com.facebook.android:facebook-login:4.36.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-login-4.36.0.aar/18668c34a34b59a2f11904e4da251631/AndroidManifest.xml:21:1-31:12
-MERGED from [com.facebook.android:facebook-share:4.36.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-share-4.36.0.aar/aa27bd962bb61e98753ec78e3ab4b1af/AndroidManifest.xml:21:1-31:12
-MERGED from [com.facebook.android:facebook-common:4.36.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-common-4.36.0.aar/a9dcf1b1dbddf8b421d56a5dd6731899/AndroidManifest.xml:21:1-37:12
+MERGED from [com.facebook.android:facebook-android-sdk:4.37.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.37.0.aar/5e73147d0e1d72c472324f6d3dc468e3/AndroidManifest.xml:21:1-31:12
+MERGED from [com.facebook.android:facebook-login:4.37.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-login-4.37.0.aar/a19b69de2848ddece52a66a0f58598ce/AndroidManifest.xml:21:1-31:12
+MERGED from [com.facebook.android:facebook-share:4.37.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-share-4.37.0.aar/e0ac2250e4012dba98092d06ffb04e6d/AndroidManifest.xml:21:1-31:12
+MERGED from [com.facebook.android:facebook-common:4.37.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-common-4.37.0.aar/f09c055830b2de6ee1a679014b8a53f9/AndroidManifest.xml:21:1-37:12
 MERGED from [com.android.support:appcompat-v7:25.0.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.0.0.aar/d98dfa35080ca3cdbc054172396b705e/AndroidManifest.xml:17:1-27:12
 MERGED from [com.github.ybq:Android-SpinKit:1.1.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/Android-SpinKit-1.1.0.aar/8d072ec935f86b7d9d690c6856345643/AndroidManifest.xml:2:1-10:12
 MERGED from [com.android.support:support-v4:25.0.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/support-v4-25.0.0.aar/b00d040e6eed2136ee104d0d389ee505/AndroidManifest.xml:17:1-27:12
@@ -26,12 +26,12 @@ MERGED from [com.facebook.fresco:fresco:1.3.0] /Users/acrow/.gradle/caches/trans
 MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.3.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.3.0.aar/3f616dce9244c488ad6220ea43bb6286/AndroidManifest.xml:2:1-9:12
 MERGED from [com.facebook.soloader:soloader:0.1.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/soloader-0.1.0.aar/2c00a5894c802010cbc15c075d5b5b2d/AndroidManifest.xml:1:1-4:12
 MERGED from [org.webkit:android-jsc:r174650] /Users/acrow/.gradle/caches/transforms-1/files-1.1/android-jsc-r174650.aar/c7e1d78ab28ad217f3b71ce86b0e194d/AndroidManifest.xml:1:1-3:12
-MERGED from [com.facebook.android:facebook-places:4.36.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-places-4.36.0.aar/460ddb579813d5b2500ca63c56a3620b/AndroidManifest.xml:21:1-31:12
-MERGED from [com.facebook.android:facebook-applinks:4.36.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-applinks-4.36.0.aar/75c66518f261f29c9204d28db5f2b26c/AndroidManifest.xml:21:1-31:12
-MERGED from [com.facebook.android:facebook-messenger:4.36.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.36.0.aar/650411e6ae116f6653f071e75dd9a78b/AndroidManifest.xml:21:1-31:12
-MERGED from [com.facebook.android:facebook-marketing:4.36.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-marketing-4.36.0.aar/41a0e9dcc56c20bbe8fd6dbfd65313bf/AndroidManifest.xml:21:1-35:12
-MERGED from [com.facebook.android:facebook-core:4.36.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-core-4.36.0.aar/f843193428f681f49cf7e40caedacdf9/AndroidManifest.xml:21:1-53:12
 MERGED from [com.android.support:recyclerview-v7:25.0.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-25.0.0.aar/fd281351205f87e75cd913dd4420324e/AndroidManifest.xml:17:1-22:12
+MERGED from [com.facebook.android:facebook-places:4.37.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-places-4.37.0.aar/d7b737a79b068027a9174a7d3c82ec15/AndroidManifest.xml:21:1-31:12
+MERGED from [com.facebook.android:facebook-applinks:4.37.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-applinks-4.37.0.aar/519c76369a70f345d1d6baf3030e14d8/AndroidManifest.xml:21:1-31:12
+MERGED from [com.facebook.android:facebook-messenger:4.37.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.37.0.aar/170c9f0e43d58ffd2bfb6fa50e973d6c/AndroidManifest.xml:21:1-31:12
+MERGED from [com.facebook.android:facebook-marketing:4.37.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-marketing-4.37.0.aar/af6f53158e2bc93086880ca6a680e7f8/AndroidManifest.xml:21:1-35:12
+MERGED from [com.facebook.android:facebook-core:4.37.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-core-4.37.0.aar/52deccc0dbf8498b6bd04b011f849702/AndroidManifest.xml:21:1-53:12
 MERGED from [com.android.support:support-fragment:25.0.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/support-fragment-25.0.0.aar/dce3dfea6b6ea2fd03c0285b113b72a7/AndroidManifest.xml:17:1-27:12
 MERGED from [com.android.support:support-media-compat:25.0.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.0.0.aar/dae495557d04fd77143425763fb0fc2f/AndroidManifest.xml:17:1-27:12
 MERGED from [com.android.support:support-core-utils:25.0.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.0.0.aar/629235d5d69fb0750fd6694f52047f5b/AndroidManifest.xml:17:1-27:12
@@ -43,61 +43,61 @@ MERGED from [com.facebook.fresco:imagepipeline:1.3.0] /Users/acrow/.gradle/cache
 MERGED from [com.facebook.fresco:imagepipeline-base:1.3.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.3.0.aar/957c496cc14de24676babd3b78bedecf/AndroidManifest.xml:2:1-9:12
 MERGED from [com.facebook.fresco:fbcore:1.3.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/fbcore-1.3.0.aar/b394c458fae2c6f57f974e1dabd36451/AndroidManifest.xml:2:1-9:12
 MERGED from [com.android.support:cardview-v7:25.0.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/cardview-v7-25.0.0.aar/4556d57be2f5d06bef239ce0a0907ec0/AndroidManifest.xml:17:1-24:12
-INJECTED from /Users/acrow/projects/artprizes/2018/android/app/src/main/AndroidManifest.xml:1:1-34:12
-INJECTED from /Users/acrow/projects/artprizes/2018/android/app/src/main/AndroidManifest.xml:1:1-34:12
-INJECTED from /Users/acrow/projects/artprizes/2018/android/app/src/main/AndroidManifest.xml:1:1-34:12
+INJECTED from /Users/acrow/projects/artprizes/art-prizes-native/android/app/src/main/AndroidManifest.xml:1:1-34:12
+INJECTED from /Users/acrow/projects/artprizes/art-prizes-native/android/app/src/main/AndroidManifest.xml:1:1-34:12
+INJECTED from /Users/acrow/projects/artprizes/art-prizes-native/android/app/src/main/AndroidManifest.xml:1:1-34:12
 	package
-		ADDED from /Users/acrow/projects/artprizes/2018/android/app/src/main/AndroidManifest.xml:2:5-34
-		INJECTED from /Users/acrow/projects/artprizes/2018/android/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/acrow/projects/artprizes/2018/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/acrow/projects/artprizes/art-prizes-native/android/app/src/main/AndroidManifest.xml:2:5-34
+		INJECTED from /Users/acrow/projects/artprizes/art-prizes-native/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/acrow/projects/artprizes/art-prizes-native/android/app/src/main/AndroidManifest.xml
 	android:versionName
-		ADDED from /Users/acrow/projects/artprizes/2018/android/app/src/main/AndroidManifest.xml:4:5-30
-		INJECTED from /Users/acrow/projects/artprizes/2018/android/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/acrow/projects/artprizes/2018/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/acrow/projects/artprizes/art-prizes-native/android/app/src/main/AndroidManifest.xml:4:5-30
+		INJECTED from /Users/acrow/projects/artprizes/art-prizes-native/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/acrow/projects/artprizes/art-prizes-native/android/app/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from /Users/acrow/projects/artprizes/2018/android/app/src/main/AndroidManifest.xml:1:11-69
+		ADDED from /Users/acrow/projects/artprizes/art-prizes-native/android/app/src/main/AndroidManifest.xml:1:11-69
 	android:versionCode
-		ADDED from /Users/acrow/projects/artprizes/2018/android/app/src/main/AndroidManifest.xml:3:5-28
-		INJECTED from /Users/acrow/projects/artprizes/2018/android/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/acrow/projects/artprizes/2018/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/acrow/projects/artprizes/art-prizes-native/android/app/src/main/AndroidManifest.xml:3:5-28
+		INJECTED from /Users/acrow/projects/artprizes/art-prizes-native/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/acrow/projects/artprizes/art-prizes-native/android/app/src/main/AndroidManifest.xml
 uses-permission#android.permission.INTERNET
-ADDED from /Users/acrow/projects/artprizes/2018/android/app/src/main/AndroidManifest.xml:6:5-67
+ADDED from /Users/acrow/projects/artprizes/art-prizes-native/android/app/src/main/AndroidManifest.xml:6:5-67
 	android:name
-		ADDED from /Users/acrow/projects/artprizes/2018/android/app/src/main/AndroidManifest.xml:6:22-64
+		ADDED from /Users/acrow/projects/artprizes/art-prizes-native/android/app/src/main/AndroidManifest.xml:6:22-64
 uses-permission#android.permission.SYSTEM_ALERT_WINDOW
-ADDED from /Users/acrow/projects/artprizes/2018/android/app/src/main/AndroidManifest.xml:7:5-77
-MERGED from [com.facebook.react:react-native:0.53.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/react-native-0.53.0.aar/55273a3ef959669350df80f956f0ca38/AndroidManifest.xml:11:5-78
-MERGED from [com.facebook.react:react-native:0.53.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/react-native-0.53.0.aar/55273a3ef959669350df80f956f0ca38/AndroidManifest.xml:11:5-78
+ADDED from /Users/acrow/projects/artprizes/art-prizes-native/android/app/src/main/AndroidManifest.xml:7:5-77
+MERGED from [com.facebook.react:react-native:0.53.3] /Users/acrow/.gradle/caches/transforms-1/files-1.1/react-native-0.53.3.aar/dfcaebed22a01282819a84f3b58b5bfe/AndroidManifest.xml:11:5-78
+MERGED from [com.facebook.react:react-native:0.53.3] /Users/acrow/.gradle/caches/transforms-1/files-1.1/react-native-0.53.3.aar/dfcaebed22a01282819a84f3b58b5bfe/AndroidManifest.xml:11:5-78
 	android:name
-		ADDED from /Users/acrow/projects/artprizes/2018/android/app/src/main/AndroidManifest.xml:7:22-75
+		ADDED from /Users/acrow/projects/artprizes/art-prizes-native/android/app/src/main/AndroidManifest.xml:7:22-75
 uses-sdk
-ADDED from /Users/acrow/projects/artprizes/2018/android/app/src/main/AndroidManifest.xml:9:5-11:41
-INJECTED from /Users/acrow/projects/artprizes/2018/android/app/src/main/AndroidManifest.xml:9:5-11:41
-INJECTED from /Users/acrow/projects/artprizes/2018/android/app/src/main/AndroidManifest.xml:9:5-11:41
-MERGED from [:react-native-svg] /Users/acrow/projects/artprizes/2018/node_modules/react-native-svg/android/build/intermediates/manifests/full/release/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-svg] /Users/acrow/projects/artprizes/2018/node_modules/react-native-svg/android/build/intermediates/manifests/full/release/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-fbsdk] /Users/acrow/projects/artprizes/2018/node_modules/react-native-fbsdk/android/build/intermediates/manifests/full/release/AndroidManifest.xml:24:5-26:41
-MERGED from [:react-native-fbsdk] /Users/acrow/projects/artprizes/2018/node_modules/react-native-fbsdk/android/build/intermediates/manifests/full/release/AndroidManifest.xml:24:5-26:41
-MERGED from [:react-native-popover-menu] /Users/acrow/projects/artprizes/2018/node_modules/react-native-popover-menu/android/build/intermediates/manifests/full/release/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-popover-menu] /Users/acrow/projects/artprizes/2018/node_modules/react-native-popover-menu/android/build/intermediates/manifests/full/release/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-vector-icons] /Users/acrow/projects/artprizes/2018/node_modules/react-native-vector-icons/android/build/intermediates/manifests/full/release/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-vector-icons] /Users/acrow/projects/artprizes/2018/node_modules/react-native-vector-icons/android/build/intermediates/manifests/full/release/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-linear-gradient] /Users/acrow/projects/artprizes/2018/node_modules/react-native-linear-gradient/android/build/intermediates/manifests/full/release/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-linear-gradient] /Users/acrow/projects/artprizes/2018/node_modules/react-native-linear-gradient/android/build/intermediates/manifests/full/release/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-spinkit] /Users/acrow/projects/artprizes/2018/node_modules/react-native-spinkit/android/build/intermediates/manifests/full/release/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-spinkit] /Users/acrow/projects/artprizes/2018/node_modules/react-native-spinkit/android/build/intermediates/manifests/full/release/AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.react:react-native:0.53.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/react-native-0.53.0.aar/55273a3ef959669350df80f956f0ca38/AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.react:react-native:0.53.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/react-native-0.53.0.aar/55273a3ef959669350df80f956f0ca38/AndroidManifest.xml:7:5-9:41
+ADDED from /Users/acrow/projects/artprizes/art-prizes-native/android/app/src/main/AndroidManifest.xml:9:5-11:41
+INJECTED from /Users/acrow/projects/artprizes/art-prizes-native/android/app/src/main/AndroidManifest.xml:9:5-11:41
+INJECTED from /Users/acrow/projects/artprizes/art-prizes-native/android/app/src/main/AndroidManifest.xml:9:5-11:41
+MERGED from [:react-native-popover-menu] /Users/acrow/projects/artprizes/art-prizes-native/node_modules/react-native-popover-menu/android/build/intermediates/manifests/full/release/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-popover-menu] /Users/acrow/projects/artprizes/art-prizes-native/node_modules/react-native-popover-menu/android/build/intermediates/manifests/full/release/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-vector-icons] /Users/acrow/projects/artprizes/art-prizes-native/node_modules/react-native-vector-icons/android/build/intermediates/manifests/full/release/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-vector-icons] /Users/acrow/projects/artprizes/art-prizes-native/node_modules/react-native-vector-icons/android/build/intermediates/manifests/full/release/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-spinkit] /Users/acrow/projects/artprizes/art-prizes-native/node_modules/react-native-spinkit/android/build/intermediates/manifests/full/release/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-spinkit] /Users/acrow/projects/artprizes/art-prizes-native/node_modules/react-native-spinkit/android/build/intermediates/manifests/full/release/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-linear-gradient] /Users/acrow/projects/artprizes/art-prizes-native/node_modules/react-native-linear-gradient/android/build/intermediates/manifests/full/release/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-linear-gradient] /Users/acrow/projects/artprizes/art-prizes-native/node_modules/react-native-linear-gradient/android/build/intermediates/manifests/full/release/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-fbsdk] /Users/acrow/projects/artprizes/art-prizes-native/node_modules/react-native-fbsdk/android/build/intermediates/manifests/full/release/AndroidManifest.xml:24:5-26:41
+MERGED from [:react-native-fbsdk] /Users/acrow/projects/artprizes/art-prizes-native/node_modules/react-native-fbsdk/android/build/intermediates/manifests/full/release/AndroidManifest.xml:24:5-26:41
+MERGED from [:react-native-svg] /Users/acrow/projects/artprizes/art-prizes-native/node_modules/react-native-svg/android/build/intermediates/manifests/full/release/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-svg] /Users/acrow/projects/artprizes/art-prizes-native/node_modules/react-native-svg/android/build/intermediates/manifests/full/release/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.53.3] /Users/acrow/.gradle/caches/transforms-1/files-1.1/react-native-0.53.3.aar/dfcaebed22a01282819a84f3b58b5bfe/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.53.3] /Users/acrow/.gradle/caches/transforms-1/files-1.1/react-native-0.53.3.aar/dfcaebed22a01282819a84f3b58b5bfe/AndroidManifest.xml:7:5-9:41
 MERGED from [com.github.zawadz88.materialpopupmenu:material-popup-menu:1.4.1] /Users/acrow/.gradle/caches/transforms-1/files-1.1/material-popup-menu-1.4.1.aar/427a7b1d627eab11a0d4959294ac125e/AndroidManifest.xml:8:5-10:41
 MERGED from [com.github.zawadz88.materialpopupmenu:material-popup-menu:1.4.1] /Users/acrow/.gradle/caches/transforms-1/files-1.1/material-popup-menu-1.4.1.aar/427a7b1d627eab11a0d4959294ac125e/AndroidManifest.xml:8:5-10:41
-MERGED from [com.facebook.android:facebook-android-sdk:4.36.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.36.0.aar/7b882c7efe7e11273be7dcf10f3a53b8/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-android-sdk:4.36.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.36.0.aar/7b882c7efe7e11273be7dcf10f3a53b8/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-login:4.36.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-login-4.36.0.aar/18668c34a34b59a2f11904e4da251631/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-login:4.36.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-login-4.36.0.aar/18668c34a34b59a2f11904e4da251631/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-share:4.36.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-share-4.36.0.aar/aa27bd962bb61e98753ec78e3ab4b1af/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-share:4.36.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-share-4.36.0.aar/aa27bd962bb61e98753ec78e3ab4b1af/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-common:4.36.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-common-4.36.0.aar/a9dcf1b1dbddf8b421d56a5dd6731899/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-common:4.36.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-common-4.36.0.aar/a9dcf1b1dbddf8b421d56a5dd6731899/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-android-sdk:4.37.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.37.0.aar/5e73147d0e1d72c472324f6d3dc468e3/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-android-sdk:4.37.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.37.0.aar/5e73147d0e1d72c472324f6d3dc468e3/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-login:4.37.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-login-4.37.0.aar/a19b69de2848ddece52a66a0f58598ce/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-login:4.37.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-login-4.37.0.aar/a19b69de2848ddece52a66a0f58598ce/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-share:4.37.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-share-4.37.0.aar/e0ac2250e4012dba98092d06ffb04e6d/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-share:4.37.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-share-4.37.0.aar/e0ac2250e4012dba98092d06ffb04e6d/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-common:4.37.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-common-4.37.0.aar/f09c055830b2de6ee1a679014b8a53f9/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-common:4.37.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-common-4.37.0.aar/f09c055830b2de6ee1a679014b8a53f9/AndroidManifest.xml:24:5-26:41
 MERGED from [com.android.support:appcompat-v7:25.0.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.0.0.aar/d98dfa35080ca3cdbc054172396b705e/AndroidManifest.xml:21:5-23:78
 MERGED from [com.android.support:appcompat-v7:25.0.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.0.0.aar/d98dfa35080ca3cdbc054172396b705e/AndroidManifest.xml:21:5-23:78
 MERGED from [com.github.ybq:Android-SpinKit:1.1.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/Android-SpinKit-1.1.0.aar/8d072ec935f86b7d9d690c6856345643/AndroidManifest.xml:6:5-8:41
@@ -116,18 +116,18 @@ MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.3.0] /Users/acrow/.grad
 MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.3.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.3.0.aar/3f616dce9244c488ad6220ea43bb6286/AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.soloader:soloader:0.1.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/soloader-0.1.0.aar/2c00a5894c802010cbc15c075d5b5b2d/AndroidManifest.xml:2:3-70
 MERGED from [com.facebook.soloader:soloader:0.1.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/soloader-0.1.0.aar/2c00a5894c802010cbc15c075d5b5b2d/AndroidManifest.xml:2:3-70
-MERGED from [com.facebook.android:facebook-places:4.36.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-places-4.36.0.aar/460ddb579813d5b2500ca63c56a3620b/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-places:4.36.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-places-4.36.0.aar/460ddb579813d5b2500ca63c56a3620b/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-applinks:4.36.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-applinks-4.36.0.aar/75c66518f261f29c9204d28db5f2b26c/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-applinks:4.36.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-applinks-4.36.0.aar/75c66518f261f29c9204d28db5f2b26c/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-messenger:4.36.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.36.0.aar/650411e6ae116f6653f071e75dd9a78b/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-messenger:4.36.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.36.0.aar/650411e6ae116f6653f071e75dd9a78b/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-marketing:4.36.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-marketing-4.36.0.aar/41a0e9dcc56c20bbe8fd6dbfd65313bf/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-marketing:4.36.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-marketing-4.36.0.aar/41a0e9dcc56c20bbe8fd6dbfd65313bf/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-core:4.36.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-core-4.36.0.aar/f843193428f681f49cf7e40caedacdf9/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-core:4.36.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-core-4.36.0.aar/f843193428f681f49cf7e40caedacdf9/AndroidManifest.xml:24:5-26:41
 MERGED from [com.android.support:recyclerview-v7:25.0.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-25.0.0.aar/fd281351205f87e75cd913dd4420324e/AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:recyclerview-v7:25.0.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-25.0.0.aar/fd281351205f87e75cd913dd4420324e/AndroidManifest.xml:20:5-43
+MERGED from [com.facebook.android:facebook-places:4.37.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-places-4.37.0.aar/d7b737a79b068027a9174a7d3c82ec15/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-places:4.37.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-places-4.37.0.aar/d7b737a79b068027a9174a7d3c82ec15/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-applinks:4.37.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-applinks-4.37.0.aar/519c76369a70f345d1d6baf3030e14d8/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-applinks:4.37.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-applinks-4.37.0.aar/519c76369a70f345d1d6baf3030e14d8/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-messenger:4.37.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.37.0.aar/170c9f0e43d58ffd2bfb6fa50e973d6c/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-messenger:4.37.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.37.0.aar/170c9f0e43d58ffd2bfb6fa50e973d6c/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-marketing:4.37.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-marketing-4.37.0.aar/af6f53158e2bc93086880ca6a680e7f8/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-marketing:4.37.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-marketing-4.37.0.aar/af6f53158e2bc93086880ca6a680e7f8/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-core:4.37.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-core-4.37.0.aar/52deccc0dbf8498b6bd04b011f849702/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-core:4.37.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-core-4.37.0.aar/52deccc0dbf8498b6bd04b011f849702/AndroidManifest.xml:24:5-26:41
 MERGED from [com.android.support:support-fragment:25.0.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/support-fragment-25.0.0.aar/dce3dfea6b6ea2fd03c0285b113b72a7/AndroidManifest.xml:21:5-23:60
 MERGED from [com.android.support:support-fragment:25.0.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/support-fragment-25.0.0.aar/dce3dfea6b6ea2fd03c0285b113b72a7/AndroidManifest.xml:21:5-23:60
 MERGED from [com.android.support:support-media-compat:25.0.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.0.0.aar/dae495557d04fd77143425763fb0fc2f/AndroidManifest.xml:21:5-23:63
@@ -150,36 +150,36 @@ MERGED from [com.facebook.fresco:fbcore:1.3.0] /Users/acrow/.gradle/caches/trans
 MERGED from [com.facebook.fresco:fbcore:1.3.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/fbcore-1.3.0.aar/b394c458fae2c6f57f974e1dabd36451/AndroidManifest.xml:5:5-7:41
 MERGED from [com.android.support:cardview-v7:25.0.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/cardview-v7-25.0.0.aar/4556d57be2f5d06bef239ce0a0907ec0/AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:cardview-v7:25.0.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/cardview-v7-25.0.0.aar/4556d57be2f5d06bef239ce0a0907ec0/AndroidManifest.xml:20:5-43
-INJECTED from /Users/acrow/projects/artprizes/2018/android/app/src/main/AndroidManifest.xml:9:5-11:41
-INJECTED from /Users/acrow/projects/artprizes/2018/android/app/src/main/AndroidManifest.xml:9:5-11:41
+INJECTED from /Users/acrow/projects/artprizes/art-prizes-native/android/app/src/main/AndroidManifest.xml:9:5-11:41
+INJECTED from /Users/acrow/projects/artprizes/art-prizes-native/android/app/src/main/AndroidManifest.xml:9:5-11:41
 	tools:overrideLibrary
 		ADDED from [com.android.support:appcompat-v7:25.0.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.0.0.aar/d98dfa35080ca3cdbc054172396b705e/AndroidManifest.xml:23:9-75
 	android:targetSdkVersion
-		ADDED from /Users/acrow/projects/artprizes/2018/android/app/src/main/AndroidManifest.xml:11:9-38
-		INJECTED from /Users/acrow/projects/artprizes/2018/android/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/acrow/projects/artprizes/2018/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/acrow/projects/artprizes/art-prizes-native/android/app/src/main/AndroidManifest.xml:11:9-38
+		INJECTED from /Users/acrow/projects/artprizes/art-prizes-native/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/acrow/projects/artprizes/art-prizes-native/android/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		ADDED from /Users/acrow/projects/artprizes/2018/android/app/src/main/AndroidManifest.xml:10:9-35
-		INJECTED from /Users/acrow/projects/artprizes/2018/android/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/acrow/projects/artprizes/2018/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/acrow/projects/artprizes/art-prizes-native/android/app/src/main/AndroidManifest.xml:10:9-35
+		INJECTED from /Users/acrow/projects/artprizes/art-prizes-native/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/acrow/projects/artprizes/art-prizes-native/android/app/src/main/AndroidManifest.xml
 application
-ADDED from /Users/acrow/projects/artprizes/2018/android/app/src/main/AndroidManifest.xml:13:5-32:19
-MERGED from [:react-native-fbsdk] /Users/acrow/projects/artprizes/2018/node_modules/react-native-fbsdk/android/build/intermediates/manifests/full/release/AndroidManifest.xml:28:5-20
-MERGED from [:react-native-fbsdk] /Users/acrow/projects/artprizes/2018/node_modules/react-native-fbsdk/android/build/intermediates/manifests/full/release/AndroidManifest.xml:28:5-20
-MERGED from [:react-native-spinkit] /Users/acrow/projects/artprizes/2018/node_modules/react-native-spinkit/android/build/intermediates/manifests/full/release/AndroidManifest.xml:11:5-14:19
-MERGED from [:react-native-spinkit] /Users/acrow/projects/artprizes/2018/node_modules/react-native-spinkit/android/build/intermediates/manifests/full/release/AndroidManifest.xml:11:5-14:19
-MERGED from [com.facebook.react:react-native:0.53.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/react-native-0.53.0.aar/55273a3ef959669350df80f956f0ca38/AndroidManifest.xml:13:5-20
-MERGED from [com.facebook.react:react-native:0.53.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/react-native-0.53.0.aar/55273a3ef959669350df80f956f0ca38/AndroidManifest.xml:13:5-20
+ADDED from /Users/acrow/projects/artprizes/art-prizes-native/android/app/src/main/AndroidManifest.xml:13:5-32:19
+MERGED from [:react-native-spinkit] /Users/acrow/projects/artprizes/art-prizes-native/node_modules/react-native-spinkit/android/build/intermediates/manifests/full/release/AndroidManifest.xml:11:5-14:19
+MERGED from [:react-native-spinkit] /Users/acrow/projects/artprizes/art-prizes-native/node_modules/react-native-spinkit/android/build/intermediates/manifests/full/release/AndroidManifest.xml:11:5-14:19
+MERGED from [:react-native-fbsdk] /Users/acrow/projects/artprizes/art-prizes-native/node_modules/react-native-fbsdk/android/build/intermediates/manifests/full/release/AndroidManifest.xml:28:5-20
+MERGED from [:react-native-fbsdk] /Users/acrow/projects/artprizes/art-prizes-native/node_modules/react-native-fbsdk/android/build/intermediates/manifests/full/release/AndroidManifest.xml:28:5-20
+MERGED from [com.facebook.react:react-native:0.53.3] /Users/acrow/.gradle/caches/transforms-1/files-1.1/react-native-0.53.3.aar/dfcaebed22a01282819a84f3b58b5bfe/AndroidManifest.xml:13:5-20
+MERGED from [com.facebook.react:react-native:0.53.3] /Users/acrow/.gradle/caches/transforms-1/files-1.1/react-native-0.53.3.aar/dfcaebed22a01282819a84f3b58b5bfe/AndroidManifest.xml:13:5-20
 MERGED from [com.github.zawadz88.materialpopupmenu:material-popup-menu:1.4.1] /Users/acrow/.gradle/caches/transforms-1/files-1.1/material-popup-menu-1.4.1.aar/427a7b1d627eab11a0d4959294ac125e/AndroidManifest.xml:12:5-20
 MERGED from [com.github.zawadz88.materialpopupmenu:material-popup-menu:1.4.1] /Users/acrow/.gradle/caches/transforms-1/files-1.1/material-popup-menu-1.4.1.aar/427a7b1d627eab11a0d4959294ac125e/AndroidManifest.xml:12:5-20
-MERGED from [com.facebook.android:facebook-android-sdk:4.36.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.36.0.aar/7b882c7efe7e11273be7dcf10f3a53b8/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-android-sdk:4.36.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.36.0.aar/7b882c7efe7e11273be7dcf10f3a53b8/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-login:4.36.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-login-4.36.0.aar/18668c34a34b59a2f11904e4da251631/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-login:4.36.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-login-4.36.0.aar/18668c34a34b59a2f11904e4da251631/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-share:4.36.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-share-4.36.0.aar/aa27bd962bb61e98753ec78e3ab4b1af/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-share:4.36.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-share-4.36.0.aar/aa27bd962bb61e98753ec78e3ab4b1af/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-common:4.36.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-common-4.36.0.aar/a9dcf1b1dbddf8b421d56a5dd6731899/AndroidManifest.xml:28:5-35:19
-MERGED from [com.facebook.android:facebook-common:4.36.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-common-4.36.0.aar/a9dcf1b1dbddf8b421d56a5dd6731899/AndroidManifest.xml:28:5-35:19
+MERGED from [com.facebook.android:facebook-android-sdk:4.37.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.37.0.aar/5e73147d0e1d72c472324f6d3dc468e3/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-android-sdk:4.37.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.37.0.aar/5e73147d0e1d72c472324f6d3dc468e3/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-login:4.37.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-login-4.37.0.aar/a19b69de2848ddece52a66a0f58598ce/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-login:4.37.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-login-4.37.0.aar/a19b69de2848ddece52a66a0f58598ce/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-share:4.37.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-share-4.37.0.aar/e0ac2250e4012dba98092d06ffb04e6d/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-share:4.37.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-share-4.37.0.aar/e0ac2250e4012dba98092d06ffb04e6d/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-common:4.37.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-common-4.37.0.aar/f09c055830b2de6ee1a679014b8a53f9/AndroidManifest.xml:28:5-35:19
+MERGED from [com.facebook.android:facebook-common:4.37.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-common-4.37.0.aar/f09c055830b2de6ee1a679014b8a53f9/AndroidManifest.xml:28:5-35:19
 MERGED from [com.android.support:appcompat-v7:25.0.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.0.0.aar/d98dfa35080ca3cdbc054172396b705e/AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:appcompat-v7:25.0.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.0.0.aar/d98dfa35080ca3cdbc054172396b705e/AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-v4:25.0.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/support-v4-25.0.0.aar/b00d040e6eed2136ee104d0d389ee505/AndroidManifest.xml:25:5-20
@@ -192,16 +192,16 @@ MERGED from [com.facebook.soloader:soloader:0.1.0] /Users/acrow/.gradle/caches/t
 MERGED from [com.facebook.soloader:soloader:0.1.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/soloader-0.1.0.aar/2c00a5894c802010cbc15c075d5b5b2d/AndroidManifest.xml:3:3-17
 MERGED from [org.webkit:android-jsc:r174650] /Users/acrow/.gradle/caches/transforms-1/files-1.1/android-jsc-r174650.aar/c7e1d78ab28ad217f3b71ce86b0e194d/AndroidManifest.xml:2:3-17
 MERGED from [org.webkit:android-jsc:r174650] /Users/acrow/.gradle/caches/transforms-1/files-1.1/android-jsc-r174650.aar/c7e1d78ab28ad217f3b71ce86b0e194d/AndroidManifest.xml:2:3-17
-MERGED from [com.facebook.android:facebook-places:4.36.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-places-4.36.0.aar/460ddb579813d5b2500ca63c56a3620b/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-places:4.36.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-places-4.36.0.aar/460ddb579813d5b2500ca63c56a3620b/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-applinks:4.36.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-applinks-4.36.0.aar/75c66518f261f29c9204d28db5f2b26c/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-applinks:4.36.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-applinks-4.36.0.aar/75c66518f261f29c9204d28db5f2b26c/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-messenger:4.36.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.36.0.aar/650411e6ae116f6653f071e75dd9a78b/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-messenger:4.36.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.36.0.aar/650411e6ae116f6653f071e75dd9a78b/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-marketing:4.36.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-marketing-4.36.0.aar/41a0e9dcc56c20bbe8fd6dbfd65313bf/AndroidManifest.xml:28:5-33:19
-MERGED from [com.facebook.android:facebook-marketing:4.36.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-marketing-4.36.0.aar/41a0e9dcc56c20bbe8fd6dbfd65313bf/AndroidManifest.xml:28:5-33:19
-MERGED from [com.facebook.android:facebook-core:4.36.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-core-4.36.0.aar/f843193428f681f49cf7e40caedacdf9/AndroidManifest.xml:28:5-51:19
-MERGED from [com.facebook.android:facebook-core:4.36.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-core-4.36.0.aar/f843193428f681f49cf7e40caedacdf9/AndroidManifest.xml:28:5-51:19
+MERGED from [com.facebook.android:facebook-places:4.37.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-places-4.37.0.aar/d7b737a79b068027a9174a7d3c82ec15/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-places:4.37.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-places-4.37.0.aar/d7b737a79b068027a9174a7d3c82ec15/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-applinks:4.37.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-applinks-4.37.0.aar/519c76369a70f345d1d6baf3030e14d8/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-applinks:4.37.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-applinks-4.37.0.aar/519c76369a70f345d1d6baf3030e14d8/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-messenger:4.37.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.37.0.aar/170c9f0e43d58ffd2bfb6fa50e973d6c/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-messenger:4.37.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.37.0.aar/170c9f0e43d58ffd2bfb6fa50e973d6c/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-marketing:4.37.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-marketing-4.37.0.aar/af6f53158e2bc93086880ca6a680e7f8/AndroidManifest.xml:28:5-33:19
+MERGED from [com.facebook.android:facebook-marketing:4.37.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-marketing-4.37.0.aar/af6f53158e2bc93086880ca6a680e7f8/AndroidManifest.xml:28:5-33:19
+MERGED from [com.facebook.android:facebook-core:4.37.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-core-4.37.0.aar/52deccc0dbf8498b6bd04b011f849702/AndroidManifest.xml:28:5-51:19
+MERGED from [com.facebook.android:facebook-core:4.37.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-core-4.37.0.aar/52deccc0dbf8498b6bd04b011f849702/AndroidManifest.xml:28:5-51:19
 MERGED from [com.android.support:support-fragment:25.0.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/support-fragment-25.0.0.aar/dce3dfea6b6ea2fd03c0285b113b72a7/AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-fragment:25.0.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/support-fragment-25.0.0.aar/dce3dfea6b6ea2fd03c0285b113b72a7/AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-media-compat:25.0.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.0.0.aar/dae495557d04fd77143425763fb0fc2f/AndroidManifest.xml:25:5-20
@@ -217,94 +217,94 @@ MERGED from [com.android.support:support-compat:25.0.0] /Users/acrow/.gradle/cac
 MERGED from [com.android.support:cardview-v7:25.0.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/cardview-v7-25.0.0.aar/4556d57be2f5d06bef239ce0a0907ec0/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:cardview-v7:25.0.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/cardview-v7-25.0.0.aar/4556d57be2f5d06bef239ce0a0907ec0/AndroidManifest.xml:22:5-20
 	android:supportsRtl
-		ADDED from [:react-native-spinkit] /Users/acrow/projects/artprizes/2018/node_modules/react-native-spinkit/android/build/intermediates/manifests/full/release/AndroidManifest.xml:13:9-35
+		ADDED from [:react-native-spinkit] /Users/acrow/projects/artprizes/art-prizes-native/node_modules/react-native-spinkit/android/build/intermediates/manifests/full/release/AndroidManifest.xml:13:9-35
 	android:label
-		ADDED from /Users/acrow/projects/artprizes/2018/android/app/src/main/AndroidManifest.xml:16:7-39
+		ADDED from /Users/acrow/projects/artprizes/art-prizes-native/android/app/src/main/AndroidManifest.xml:16:7-39
 	android:icon
-		ADDED from /Users/acrow/projects/artprizes/2018/android/app/src/main/AndroidManifest.xml:17:7-41
+		ADDED from /Users/acrow/projects/artprizes/art-prizes-native/android/app/src/main/AndroidManifest.xml:17:7-41
 	android:allowBackup
-		ADDED from /Users/acrow/projects/artprizes/2018/android/app/src/main/AndroidManifest.xml:15:7-33
+		ADDED from /Users/acrow/projects/artprizes/art-prizes-native/android/app/src/main/AndroidManifest.xml:15:7-33
 	android:theme
-		ADDED from /Users/acrow/projects/artprizes/2018/android/app/src/main/AndroidManifest.xml:18:7-38
+		ADDED from /Users/acrow/projects/artprizes/art-prizes-native/android/app/src/main/AndroidManifest.xml:18:7-38
 	android:name
-		ADDED from /Users/acrow/projects/artprizes/2018/android/app/src/main/AndroidManifest.xml:14:7-38
+		ADDED from /Users/acrow/projects/artprizes/art-prizes-native/android/app/src/main/AndroidManifest.xml:14:7-38
 activity#com.artprizesnative.MainActivity
-ADDED from /Users/acrow/projects/artprizes/2018/android/app/src/main/AndroidManifest.xml:19:7-28:18
+ADDED from /Users/acrow/projects/artprizes/art-prizes-native/android/app/src/main/AndroidManifest.xml:19:7-28:18
 	android:label
-		ADDED from /Users/acrow/projects/artprizes/2018/android/app/src/main/AndroidManifest.xml:21:9-41
+		ADDED from /Users/acrow/projects/artprizes/art-prizes-native/android/app/src/main/AndroidManifest.xml:21:9-41
 	android:windowSoftInputMode
-		ADDED from /Users/acrow/projects/artprizes/2018/android/app/src/main/AndroidManifest.xml:23:9-51
+		ADDED from /Users/acrow/projects/artprizes/art-prizes-native/android/app/src/main/AndroidManifest.xml:23:9-51
 	android:configChanges
-		ADDED from /Users/acrow/projects/artprizes/2018/android/app/src/main/AndroidManifest.xml:22:9-79
+		ADDED from /Users/acrow/projects/artprizes/art-prizes-native/android/app/src/main/AndroidManifest.xml:22:9-79
 	android:name
-		ADDED from /Users/acrow/projects/artprizes/2018/android/app/src/main/AndroidManifest.xml:20:9-37
+		ADDED from /Users/acrow/projects/artprizes/art-prizes-native/android/app/src/main/AndroidManifest.xml:20:9-37
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/acrow/projects/artprizes/2018/android/app/src/main/AndroidManifest.xml:24:9-27:25
+ADDED from /Users/acrow/projects/artprizes/art-prizes-native/android/app/src/main/AndroidManifest.xml:24:9-27:25
 action#android.intent.action.MAIN
-ADDED from /Users/acrow/projects/artprizes/2018/android/app/src/main/AndroidManifest.xml:25:13-65
+ADDED from /Users/acrow/projects/artprizes/art-prizes-native/android/app/src/main/AndroidManifest.xml:25:13-65
 	android:name
-		ADDED from /Users/acrow/projects/artprizes/2018/android/app/src/main/AndroidManifest.xml:25:21-62
+		ADDED from /Users/acrow/projects/artprizes/art-prizes-native/android/app/src/main/AndroidManifest.xml:25:21-62
 category#android.intent.category.LAUNCHER
-ADDED from /Users/acrow/projects/artprizes/2018/android/app/src/main/AndroidManifest.xml:26:13-73
+ADDED from /Users/acrow/projects/artprizes/art-prizes-native/android/app/src/main/AndroidManifest.xml:26:13-73
 	android:name
-		ADDED from /Users/acrow/projects/artprizes/2018/android/app/src/main/AndroidManifest.xml:26:23-70
+		ADDED from /Users/acrow/projects/artprizes/art-prizes-native/android/app/src/main/AndroidManifest.xml:26:23-70
 activity#com.facebook.react.devsupport.DevSettingsActivity
-ADDED from /Users/acrow/projects/artprizes/2018/android/app/src/main/AndroidManifest.xml:29:7-84
+ADDED from /Users/acrow/projects/artprizes/art-prizes-native/android/app/src/main/AndroidManifest.xml:29:7-84
 	android:name
-		ADDED from /Users/acrow/projects/artprizes/2018/android/app/src/main/AndroidManifest.xml:29:17-81
+		ADDED from /Users/acrow/projects/artprizes/art-prizes-native/android/app/src/main/AndroidManifest.xml:29:17-81
 meta-data#com.facebook.sdk.ApplicationId
-ADDED from /Users/acrow/projects/artprizes/2018/android/app/src/main/AndroidManifest.xml:30:9-107
+ADDED from /Users/acrow/projects/artprizes/art-prizes-native/android/app/src/main/AndroidManifest.xml:30:9-107
 	android:value
-		ADDED from /Users/acrow/projects/artprizes/2018/android/app/src/main/AndroidManifest.xml:30:66-105
+		ADDED from /Users/acrow/projects/artprizes/art-prizes-native/android/app/src/main/AndroidManifest.xml:30:66-105
 	android:name
-		ADDED from /Users/acrow/projects/artprizes/2018/android/app/src/main/AndroidManifest.xml:30:20-65
+		ADDED from /Users/acrow/projects/artprizes/art-prizes-native/android/app/src/main/AndroidManifest.xml:30:20-65
 activity#com.facebook.FacebookActivity
-ADDED from [com.facebook.android:facebook-common:4.36.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-common-4.36.0.aar/a9dcf1b1dbddf8b421d56a5dd6731899/AndroidManifest.xml:29:9-32:66
+ADDED from [com.facebook.android:facebook-common:4.37.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-common-4.37.0.aar/f09c055830b2de6ee1a679014b8a53f9/AndroidManifest.xml:29:9-32:66
 	android:configChanges
-		ADDED from [com.facebook.android:facebook-common:4.36.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-common-4.36.0.aar/a9dcf1b1dbddf8b421d56a5dd6731899/AndroidManifest.xml:31:13-96
+		ADDED from [com.facebook.android:facebook-common:4.37.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-common-4.37.0.aar/f09c055830b2de6ee1a679014b8a53f9/AndroidManifest.xml:31:13-96
 	android:theme
-		ADDED from [com.facebook.android:facebook-common:4.36.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-common-4.36.0.aar/a9dcf1b1dbddf8b421d56a5dd6731899/AndroidManifest.xml:32:13-63
+		ADDED from [com.facebook.android:facebook-common:4.37.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-common-4.37.0.aar/f09c055830b2de6ee1a679014b8a53f9/AndroidManifest.xml:32:13-63
 	android:name
-		ADDED from [com.facebook.android:facebook-common:4.36.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-common-4.36.0.aar/a9dcf1b1dbddf8b421d56a5dd6731899/AndroidManifest.xml:30:13-57
+		ADDED from [com.facebook.android:facebook-common:4.37.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-common-4.37.0.aar/f09c055830b2de6ee1a679014b8a53f9/AndroidManifest.xml:30:13-57
 activity#com.facebook.CustomTabMainActivity
-ADDED from [com.facebook.android:facebook-common:4.36.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-common-4.36.0.aar/a9dcf1b1dbddf8b421d56a5dd6731899/AndroidManifest.xml:33:9-71
+ADDED from [com.facebook.android:facebook-common:4.37.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-common-4.37.0.aar/f09c055830b2de6ee1a679014b8a53f9/AndroidManifest.xml:33:9-71
 	android:name
-		ADDED from [com.facebook.android:facebook-common:4.36.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-common-4.36.0.aar/a9dcf1b1dbddf8b421d56a5dd6731899/AndroidManifest.xml:33:19-68
+		ADDED from [com.facebook.android:facebook-common:4.37.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-common-4.37.0.aar/f09c055830b2de6ee1a679014b8a53f9/AndroidManifest.xml:33:19-68
 activity#com.facebook.CustomTabActivity
-ADDED from [com.facebook.android:facebook-common:4.36.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-common-4.36.0.aar/a9dcf1b1dbddf8b421d56a5dd6731899/AndroidManifest.xml:34:9-67
+ADDED from [com.facebook.android:facebook-common:4.37.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-common-4.37.0.aar/f09c055830b2de6ee1a679014b8a53f9/AndroidManifest.xml:34:9-67
 	android:name
-		ADDED from [com.facebook.android:facebook-common:4.36.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-common-4.36.0.aar/a9dcf1b1dbddf8b421d56a5dd6731899/AndroidManifest.xml:34:19-64
+		ADDED from [com.facebook.android:facebook-common:4.37.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-common-4.37.0.aar/f09c055830b2de6ee1a679014b8a53f9/AndroidManifest.xml:34:19-64
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-IMPLIED from /Users/acrow/projects/artprizes/2018/android/app/src/main/AndroidManifest.xml:1:1-34:12 reason: org.webkit.android_jsc has a targetSdkVersion < 4
+IMPLIED from /Users/acrow/projects/artprizes/art-prizes-native/android/app/src/main/AndroidManifest.xml:1:1-34:12 reason: org.webkit.android_jsc has a targetSdkVersion < 4
 uses-permission#android.permission.READ_PHONE_STATE
-IMPLIED from /Users/acrow/projects/artprizes/2018/android/app/src/main/AndroidManifest.xml:1:1-34:12 reason: org.webkit.android_jsc has a targetSdkVersion < 4
+IMPLIED from /Users/acrow/projects/artprizes/art-prizes-native/android/app/src/main/AndroidManifest.xml:1:1-34:12 reason: org.webkit.android_jsc has a targetSdkVersion < 4
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-IMPLIED from /Users/acrow/projects/artprizes/2018/android/app/src/main/AndroidManifest.xml:1:1-34:12 reason: org.webkit.android_jsc requested WRITE_EXTERNAL_STORAGE
+IMPLIED from /Users/acrow/projects/artprizes/art-prizes-native/android/app/src/main/AndroidManifest.xml:1:1-34:12 reason: org.webkit.android_jsc requested WRITE_EXTERNAL_STORAGE
 provider#com.facebook.marketing.internal.MarketingInitProvider
-ADDED from [com.facebook.android:facebook-marketing:4.36.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-marketing-4.36.0.aar/41a0e9dcc56c20bbe8fd6dbfd65313bf/AndroidManifest.xml:29:9-32:40
+ADDED from [com.facebook.android:facebook-marketing:4.37.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-marketing-4.37.0.aar/af6f53158e2bc93086880ca6a680e7f8/AndroidManifest.xml:29:9-32:40
 	android:authorities
-		ADDED from [com.facebook.android:facebook-marketing:4.36.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-marketing-4.36.0.aar/41a0e9dcc56c20bbe8fd6dbfd65313bf/AndroidManifest.xml:31:13-73
+		ADDED from [com.facebook.android:facebook-marketing:4.37.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-marketing-4.37.0.aar/af6f53158e2bc93086880ca6a680e7f8/AndroidManifest.xml:31:13-73
 	android:exported
-		ADDED from [com.facebook.android:facebook-marketing:4.36.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-marketing-4.36.0.aar/41a0e9dcc56c20bbe8fd6dbfd65313bf/AndroidManifest.xml:32:13-37
+		ADDED from [com.facebook.android:facebook-marketing:4.37.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-marketing-4.37.0.aar/af6f53158e2bc93086880ca6a680e7f8/AndroidManifest.xml:32:13-37
 	android:name
-		ADDED from [com.facebook.android:facebook-marketing:4.36.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-marketing-4.36.0.aar/41a0e9dcc56c20bbe8fd6dbfd65313bf/AndroidManifest.xml:30:13-81
+		ADDED from [com.facebook.android:facebook-marketing:4.37.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-marketing-4.37.0.aar/af6f53158e2bc93086880ca6a680e7f8/AndroidManifest.xml:30:13-81
 provider#com.facebook.internal.FacebookInitProvider
-ADDED from [com.facebook.android:facebook-core:4.36.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-core-4.36.0.aar/f843193428f681f49cf7e40caedacdf9/AndroidManifest.xml:39:9-42:40
+ADDED from [com.facebook.android:facebook-core:4.37.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-core-4.37.0.aar/52deccc0dbf8498b6bd04b011f849702/AndroidManifest.xml:39:9-42:40
 	android:authorities
-		ADDED from [com.facebook.android:facebook-core:4.36.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-core-4.36.0.aar/f843193428f681f49cf7e40caedacdf9/AndroidManifest.xml:41:13-72
+		ADDED from [com.facebook.android:facebook-core:4.37.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-core-4.37.0.aar/52deccc0dbf8498b6bd04b011f849702/AndroidManifest.xml:41:13-72
 	android:exported
-		ADDED from [com.facebook.android:facebook-core:4.36.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-core-4.36.0.aar/f843193428f681f49cf7e40caedacdf9/AndroidManifest.xml:42:13-37
+		ADDED from [com.facebook.android:facebook-core:4.37.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-core-4.37.0.aar/52deccc0dbf8498b6bd04b011f849702/AndroidManifest.xml:42:13-37
 	android:name
-		ADDED from [com.facebook.android:facebook-core:4.36.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-core-4.36.0.aar/f843193428f681f49cf7e40caedacdf9/AndroidManifest.xml:40:13-70
+		ADDED from [com.facebook.android:facebook-core:4.37.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-core-4.37.0.aar/52deccc0dbf8498b6bd04b011f849702/AndroidManifest.xml:40:13-70
 receiver#com.facebook.CurrentAccessTokenExpirationBroadcastReceiver
-ADDED from [com.facebook.android:facebook-core:4.36.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-core-4.36.0.aar/f843193428f681f49cf7e40caedacdf9/AndroidManifest.xml:44:9-50:20
+ADDED from [com.facebook.android:facebook-core:4.37.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-core-4.37.0.aar/52deccc0dbf8498b6bd04b011f849702/AndroidManifest.xml:44:9-50:20
 	android:exported
-		ADDED from [com.facebook.android:facebook-core:4.36.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-core-4.36.0.aar/f843193428f681f49cf7e40caedacdf9/AndroidManifest.xml:46:13-37
+		ADDED from [com.facebook.android:facebook-core:4.37.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-core-4.37.0.aar/52deccc0dbf8498b6bd04b011f849702/AndroidManifest.xml:46:13-37
 	android:name
-		ADDED from [com.facebook.android:facebook-core:4.36.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-core-4.36.0.aar/f843193428f681f49cf7e40caedacdf9/AndroidManifest.xml:45:13-86
+		ADDED from [com.facebook.android:facebook-core:4.37.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-core-4.37.0.aar/52deccc0dbf8498b6bd04b011f849702/AndroidManifest.xml:45:13-86
 intent-filter#action:name:com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED
-ADDED from [com.facebook.android:facebook-core:4.36.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-core-4.36.0.aar/f843193428f681f49cf7e40caedacdf9/AndroidManifest.xml:47:13-49:29
+ADDED from [com.facebook.android:facebook-core:4.37.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-core-4.37.0.aar/52deccc0dbf8498b6bd04b011f849702/AndroidManifest.xml:47:13-49:29
 action#com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED
-ADDED from [com.facebook.android:facebook-core:4.36.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-core-4.36.0.aar/f843193428f681f49cf7e40caedacdf9/AndroidManifest.xml:48:17-95
+ADDED from [com.facebook.android:facebook-core:4.37.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-core-4.37.0.aar/52deccc0dbf8498b6bd04b011f849702/AndroidManifest.xml:48:17-95
 	android:name
-		ADDED from [com.facebook.android:facebook-core:4.36.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-core-4.36.0.aar/f843193428f681f49cf7e40caedacdf9/AndroidManifest.xml:48:25-92
+		ADDED from [com.facebook.android:facebook-core:4.37.0] /Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-core-4.37.0.aar/52deccc0dbf8498b6bd04b011f849702/AndroidManifest.xml:48:25-92

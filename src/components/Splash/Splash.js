@@ -32,11 +32,11 @@ export default class Splash extends PureComponent {
             width: '90%',
             height: '90%',
             resizeMode: 'contain',
-
             borderColor: '#4527A0'
           }}
           source={SplashImage}
         />
+        <Text> Version 3.0.21 </Text>
       </View>
     );
   }

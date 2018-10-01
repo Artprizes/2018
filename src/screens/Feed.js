@@ -249,7 +249,7 @@ class Feed extends PureComponent {
 
   flatListItems = () => {
     const { prizeList, allPrizeList } = this.props.prizes;
-    console.log(" flatListItems function called...........");
+
     const {
       searchResults,
       searchQuery,
@@ -318,6 +318,41 @@ class Feed extends PureComponent {
     ),
     headerTitleStyle: { alignSelf: "center" }
   };
+
+  renderList() {
+    return (
+      <FlatList
+        data={this.flatListItems()}
+        renderItem={({ item }) => {
+          if (item.advert) {
+            return item.component;
+          }
+          return (
+            <Card
+              id={item.id}
+              key={item.id}
+              title={item.title}
+              prizeAmount={parseInt(item.PrizeAmount).toLocaleString("en")}
+              country={item.country}
+              state={item.state}
+              navigationFn={this.props.navigation.navigate}
+              prizeLogo={item.prize_logo}
+              sponsored={item.sponsored}
+              prizeType={item.prize_type}
+              eligibility={item.eligibility}
+              currencyType={item.Currency}
+              navigate={item.id}
+              viewCount={item.ViewCount}
+              followCount={item.FollowCount}
+              intentionToEnterCount={item.IntentToEnterCount}
+              daysCount={distanceInWordsStrict(item.close_date, new Date())}
+            />
+          );
+        }}
+      />
+    );
+  }
+
   render() {
     const { fetchingAds, adverterror, advertData } = this.props.adverts;
 
@@ -378,8 +413,9 @@ class Feed extends PureComponent {
                 placeholderTextColor="#767676"
                 onChangeText={this.handleChangeSearch}
                 value={searchQuery}
+                clearButtonMode="always"
               />
-              <CheckBox
+              {/* <CheckBox
                 checked={this.state.onlyShowPastPrizes}
                 title="All Prizes "
                 containerStyle={{
@@ -392,7 +428,7 @@ class Feed extends PureComponent {
                   color: "white"
                 }}
                 onPress={this.handlePastPrizes}
-              />
+              /> */}
             </LinearGradient>
           )}
         </View>
@@ -411,8 +447,6 @@ class Feed extends PureComponent {
         {searchQuery.length > 0 ? (
           searching ? (
             <Text>Searching...</Text>
-          ) : searchResults.length === 0 ? (
-            <Text>No results found</Text>
           ) : fetching ? (
             <ActivityIndicator
               color="#9C68E8"
@@ -420,39 +454,13 @@ class Feed extends PureComponent {
               animating
               style={{ marginTop: 100 }}
             />
+          ) : searchResults.length > 0 ? (
+            this.renderList()
           ) : (
-            searchResults.length === 0 && <Text>No results found</Text>
+            <Text>No results found</Text>
           )
         ) : (
-          <FlatList
-            data={this.flatListItems()}
-            renderItem={({ item }) => {
-              if (item.advert) {
-                return item.component;
-              }
-              return (
-                <Card
-                  id={item.id}
-                  key={item.id}
-                  title={item.title}
-                  prizeAmount={parseInt(item.PrizeAmount).toLocaleString("en")}
-                  country={item.country}
-                  state={item.state}
-                  navigationFn={this.props.navigation.navigate}
-                  prizeLogo={item.prize_logo}
-                  sponsored={item.sponsored}
-                  prizeType={item.prize_type}
-                  eligibility={item.eligibility}
-                  currencyType={item.Currency}
-                  navigate={item.id}
-                  viewCount={item.ViewCount}
-                  followCount={item.FollowCount}
-                  intentionToEnterCount={item.IntentToEnterCount}
-                  daysCount={distanceInWordsStrict(item.close_date, new Date())}
-                />
-              );
-            }}
-          />
+          this.renderList()
         )}
       </View>
     );
