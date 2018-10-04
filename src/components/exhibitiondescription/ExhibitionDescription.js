@@ -134,7 +134,6 @@ class ExhibitionDescription extends PureComponent {
       Array.isArray(selectedExhibition) &&
       selectedExhibition.length > 0 &&
       selectedExhibition[0].prize_logo;
-
     this.setState({
       selectedExhibitionImage
     });
@@ -204,27 +203,19 @@ class ExhibitionDescription extends PureComponent {
               }}
             />
           </TouchableOpacity>
-          {this.state.selectedExhibitionImage ? (
-            <Image
-              style={{
-                resizeMode: "contain",
-                height: 400,
-                backgroundColor: "#428bca"
-              }}
-              source={{
-                uri:
-                  `https://art-prizes.com/` + this.state.selectedExhibitionImage
-              }}
-            />
-          ) : (
-            <View
-              style={{
-                height: 400,
-                resizeMode: "contain",
-                backgroundColor: "#428bca"
-              }}
-            />
-          )}
+
+          <Image
+            style={{
+              resizeMode: "contain",
+              height: 400,
+              backgroundColor: "#428bca"
+            }}
+            source={{
+              uri:
+                `https://art-prizes.com/` + this.state.selectedExhibitionImage
+            }}
+          />
+
           <View
             style={{
               flexDirection: "row",

@@ -96,7 +96,7 @@ export default class About extends PureComponent {
                 fontSize: 18
               }}
             >
-              artprizes v 3.0.11
+              artprizes v 3.0.22
             </Text>
             <Text style={{ marginTop: 20 }}>
               {" "}

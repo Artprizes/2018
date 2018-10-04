@@ -1,13 +1,3 @@
-/**
- * ArtDescription:
- *  - componentDidMount:
- *   - use the navigation id to find the prize in your reducer
- *   - save that prize to ArtDescriptin's state
- *
- *   - render:
- *    - use this.state.[artprize] instead of using selectedPrize from redux
- */
-
 import React, { PureComponent } from "react";
 import {
   StyleSheet,
@@ -122,15 +112,15 @@ class ArtDescription extends PureComponent {
 
     this.props.fetchAdverts(); //Retrun all ads with corresponding prize id..
     const { fetchingAds, adverterror, advertData } = this.props.adverts;
-    const { id } = this.props.navigation.state.params;
     this.props.fetchPrizeId(this.props.navigation.state.params);
-
+    const { id } = this.props.navigation.state.params;
+    //alert(id);
     const advert = advertData.find(item => {
       return String(item.prizeid) === String(id);
     });
 
-    //console.warn(this.props.prizes);
-    //console.warn(this.props.allPrizes);
+    console.warn(this.props.prizes);
+    console.warn(this.props.allPrizes);
     if (advert != null) {
       // alert(advert.Image);
       this.setState({ advert });
@@ -163,7 +153,6 @@ class ArtDescription extends PureComponent {
       Array.isArray(selectedPrize) &&
       selectedPrize.length > 0 &&
       selectedPrize[0].prize_logo;
-
     this.setState({
       selectedPrizeImage
     });
@@ -179,14 +168,11 @@ class ArtDescription extends PureComponent {
   };
 
   render() {
-    const {
-      fetching,
-      error,
-      selectedPrize,
-      cachedPrizeDetails
-    } = this.props.prizes;
-
+    const { fetching, error, selectedPrize } = this.props.prizes;
+    //const { fetchingAds, errorAdvert, selectedAd } = this.props.advertsId;
     const { fetchingAds, adverterror, advertData } = this.props.adverts;
+    // console.log("You have Selected *************************" + advertData);
+    //alert(advertData.find(selectedPrize.id));
     const renderIntendToEnter = () => (
       <Text
         style={this.state.enterCount ? styles.followText : { color: "black" }}
@@ -203,11 +189,9 @@ class ArtDescription extends PureComponent {
         {this.state.watchCount ? "Unwatch" : "Watch"}
       </Text>
     );
-    const { id } = this.props.navigation.state.params;
-    console.log(id);
-    const { navigate } = this.props.navigation;
 
-    const detailPrize = error ? cachedPrizeDetails[id] : selectedPrize;
+    const { id } = this.props.navigation.state.params;
+    const { navigate } = this.props.navigation;
 
     return (
       <View style={styles.wrapper}>
@@ -240,26 +224,16 @@ class ArtDescription extends PureComponent {
           </TouchableOpacity>
 
           <View>
-            {this.state.selectedPrizeImage ? (
-              <Image
-                style={{
-                  height: 400,
-                  resizeMode: "contain",
-                  backgroundColor: "#428bca"
-                }}
-                source={{
-                  uri: `https://art-prizes.com/` + this.state.selectedPrizeImage
-                }}
-              />
-            ) : (
-              <View
-                style={{
-                  height: 400,
-                  resizeMode: "contain",
-                  backgroundColor: "#428bca"
-                }}
-              />
-            )}
+            <Image
+              style={{
+                height: 400,
+                resizeMode: "contain",
+                backgroundColor: "#428bca"
+              }}
+              source={{
+                uri: `https://art-prizes.com/` + this.state.selectedPrizeImage
+              }}
+            />
           </View>
 
           <View
@@ -308,11 +282,10 @@ class ArtDescription extends PureComponent {
                 fontWeight: "bold"
               }}
             >
-              {detailPrize.title}
+              {selectedPrize.title}
             </Text>
-
             <Text style={{ textAlign: "center" }}>
-              {detailPrize.state} {detailPrize.country}
+              {selectedPrize.state} {selectedPrize.country}
             </Text>
             <Text
               style={{
@@ -320,8 +293,9 @@ class ArtDescription extends PureComponent {
                 color: "#007AFF"
               }}
             >
-              {distanceInWordsStrict(detailPrize.close_date, new Date())}
-              {new Date(detailPrize.close_date).getTime() > new Date().getTime()
+              {distanceInWordsStrict(selectedPrize.close_date, new Date())}
+              {new Date(selectedPrize.close_date).getTime() >
+              new Date().getTime()
                 ? " to go"
                 : " ago"}
             </Text>
@@ -337,7 +311,7 @@ class ArtDescription extends PureComponent {
               <View style={{ flexDirection: "column" }}>
                 <Text style={styles.title}>Application Close</Text>
                 <Text style={styles.titleContents}>
-                  {format(detailPrize.close_date, "DD MMM YYYY")}
+                  {format(selectedPrize.close_date, "DD MMM YYYY")}
                 </Text>
               </View>
             </View>
@@ -353,8 +327,8 @@ class ArtDescription extends PureComponent {
               <View style={{ flexDirection: "column" }}>
                 <Text style={styles.title}>Application dates</Text>
                 <Text style={styles.titleContents}>
-                  {format(detailPrize.ApplicationsStartDate, "DD MMM YYYY")} -{" "}
-                  {format(detailPrize.close_date, "DD MMM YYYY")}
+                  {format(selectedPrize.ApplicationsStartDate, "DD MMM YYYY")} -{" "}
+                  {format(selectedPrize.close_date, "DD MMM YYYY")}
                 </Text>
               </View>
             </View>
@@ -370,7 +344,7 @@ class ArtDescription extends PureComponent {
               <View style={{ flexDirection: "column" }}>
                 <Text style={styles.title}>Announced</Text>
                 <Text style={styles.titleContents}>
-                  {format(detailPrize.ExhibitionStartDate, "DD MMMM YYYY")}
+                  {format(selectedPrize.ExhibitionStartDate, "DD MMMM YYYY")}
                 </Text>
               </View>
             </View>
@@ -386,8 +360,8 @@ class ArtDescription extends PureComponent {
               <View style={{ flexDirection: "column" }}>
                 <Text style={styles.title}>Prize money</Text>
                 <Text style={styles.titleContents}>
-                  {detailPrize.currency}
-                  {parseInt(detailPrize.prize_money).toLocaleString("en")}
+                  {selectedPrize.currency}
+                  {parseInt(selectedPrize.prize_money).toLocaleString("en")}
                 </Text>
               </View>
             </View>
@@ -406,13 +380,13 @@ class ArtDescription extends PureComponent {
                   style={styles.titleContents}
                   onPress={() =>
                     Linking.openURL(
-                      `http://maps.apple.com/?q=${detailPrize.latitude},${
-                        detailPrize.longtitude
+                      `http://maps.apple.com/?q=${selectedPrize.latitude},${
+                        selectedPrize.longtitude
                       }`
                     )
                   }
                 >
-                  {detailPrize.venue}{" "}
+                  {selectedPrize.venue}{" "}
                 </Text>
               </View>
             </View>
@@ -428,7 +402,7 @@ class ArtDescription extends PureComponent {
               <View style={{ flexDirection: "column" }}>
                 <Text style={styles.title}>Prize Genre </Text>
                 <Text style={styles.titleContents}>
-                  {detailPrize.prize_type}
+                  {selectedPrize.prize_type}
                 </Text>
               </View>
             </View>
@@ -443,7 +417,7 @@ class ArtDescription extends PureComponent {
               </View>
               <View style={{ flexDirection: "column" }}>
                 <Text style={styles.title}>Judges </Text>
-                <Text style={styles.titleContents}>{detailPrize.judges}</Text>
+                <Text style={styles.titleContents}>{selectedPrize.judges}</Text>
               </View>
             </View>
             <View style={styles.container}>
@@ -459,7 +433,7 @@ class ArtDescription extends PureComponent {
                 <Text style={styles.title}>Fees and Commission </Text>
                 <Text style={styles.titleContents}>
                   <Text style={styles.titleContents}>
-                    {detailPrize.fees_and_commission}
+                    {selectedPrize.fees_and_commission}
                   </Text>
                 </Text>
               </View>
@@ -477,7 +451,7 @@ class ArtDescription extends PureComponent {
                 <Text style={styles.title}>Eligibility</Text>
                 <Text style={styles.titleContents}>
                   <Text style={styles.titleContents}>
-                    {detailPrize.eligibility}
+                    {selectedPrize.eligibility}
                   </Text>
                 </Text>
               </View>
@@ -494,10 +468,11 @@ class ArtDescription extends PureComponent {
               <View style={{ flexDirection: "column" }}>
                 <Text style={styles.title}>Finalist Notified</Text>
                 <Text style={styles.titleContents}>
-                  {format(detailPrize.finalists_notified_date, "DD MMM YYYY")}
+                  {format(selectedPrize.finalists_notified_date, "DD MMM YYYY")}
                 </Text>
               </View>
             </View>
+
             <View style={styles.container}>
               <View>
                 <Entypo
@@ -510,7 +485,7 @@ class ArtDescription extends PureComponent {
               <View style={{ flexDirection: "column" }}>
                 <Text style={styles.title}>Frequency</Text>
                 <Text style={styles.titleContents}>
-                  {detailPrize.frequency}
+                  {selectedPrize.frequency}
                 </Text>
               </View>
             </View>
@@ -526,7 +501,7 @@ class ArtDescription extends PureComponent {
               <View style={{ flexDirection: "column" }}>
                 <Text style={styles.title}>Past Winners</Text>
                 <Text style={styles.titleContents}>
-                  {detailPrize.past_winners}
+                  {selectedPrize.past_winners}
                 </Text>
               </View>
             </View>
@@ -542,7 +517,7 @@ class ArtDescription extends PureComponent {
               <View style={{ flexDirection: "column" }}>
                 <Text style={styles.title}>Last updated </Text>
                 <Text style={styles.titleContents}>
-                  {format(detailPrize.updated, "DD MMM YYYY")}
+                  {format(selectedPrize.updated, "DD MMM YYYY")}
                 </Text>
               </View>
             </View>
@@ -560,9 +535,9 @@ class ArtDescription extends PureComponent {
                 <Text style={styles.title}>Website</Text>
                 <Text
                   style={styles.titleContents}
-                  onPress={() => Linking.openURL(`${detailPrize.URL}`)}
+                  onPress={() => Linking.openURL(`${selectedPrize.URL}`)}
                 >
-                  {detailPrize.URL}{" "}
+                  {selectedPrize.URL}{" "}
                   <FontAwesome
                     name="link"
                     size={20}
@@ -587,8 +562,8 @@ class ArtDescription extends PureComponent {
             </View>
             <ScrollView>
               <HTML
-                html={detailPrize.description}
-                uri={detailPrize.description}
+                html={selectedPrize.description}
+                uri={selectedPrize.description}
                 imagesMaxWidth={Dimensions.get("window").width}
                 containerStyle={{ marginLeft: 50, marginRight: 50 }}
               />

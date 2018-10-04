@@ -370,7 +370,7 @@ class IntendedToEnter extends PureComponent {
               {prizeList
                 .filter(this.handleFilterSearchText)
                 .filter(this.handleFilterByType)
-                .filter(this.handleFilterWatched)
+                .filter(this.handleFilterIntendedToEnter)
                 .sort(this.handleSort)
                 .map(prize => (
                   <IntendedToEnterCard
@@ -402,7 +402,7 @@ class IntendedToEnter extends PureComponent {
                 ? exhibitionList
                     .filter(this.handleFilterSearchText)
                     .filter(this.handleFilterByType)
-                    .filter(this.handleFilterWatched)
+                    .filter(this.handleFilterIntendedToEnter)
                     .sort(this.handleSort)
                     .map(prize => (
                       <IntendedToEnterCard

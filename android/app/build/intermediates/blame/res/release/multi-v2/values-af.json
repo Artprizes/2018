@@ -4,7 +4,7 @@
             "outputFile": "/Users/acrow/projects/artprizes/art-prizes-native/android/app/build/intermediates/res/merged/release/values-af/values-af.xml",
             "map": [
                 {
-                    "source": "/Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-login-4.36.0.aar/18668c34a34b59a2f11904e4da251631/res/values-af/values-af.xml",
+                    "source": "/Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-login-4.37.0.aar/a19b69de2848ddece52a66a0f58598ce/res/values-af/values-af.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -43,7 +43,7 @@
             "outputFile": "/Users/acrow/projects/artprizes/art-prizes-native/android/app/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-af/values-af.xml",
             "map": [
                 {
-                    "source": "/Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-login-4.36.0.aar/18668c34a34b59a2f11904e4da251631/res/values-af/values-af.xml",
+                    "source": "/Users/acrow/.gradle/caches/transforms-1/files-1.1/facebook-login-4.37.0.aar/a19b69de2848ddece52a66a0f58598ce/res/values-af/values-af.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

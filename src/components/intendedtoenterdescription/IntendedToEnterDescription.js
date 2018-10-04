@@ -163,7 +163,7 @@ class IntendedToEnterDescription extends PureComponent {
       <Text
         style={this.state.watchCount ? styles.followText : { color: "black" }}
       >
-        {this.state.watchCount ? "Following" : "Follow"}
+        {this.state.watchCount ? "Unwatch" : "Watch"}
       </Text>
     );
 
