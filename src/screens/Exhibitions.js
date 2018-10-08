@@ -268,12 +268,12 @@ class Exhibitions extends PureComponent {
             >
               <TextInput
                 style={{
-                  height: 35,
+                  height: 40,
                   borderRadius: 10,
                   marginVertical: 3,
                   marginHorizontal: 3,
                   padding: 10,
-                  color: "#767676",
+                  color: "#231F20",
                   fontFamily: "OpenSans-Regular",
                   fontSize: 14,
                   backgroundColor: "#fff"

@@ -96,10 +96,9 @@ export default class About extends PureComponent {
                 fontSize: 18
               }}
             >
-              artprizes v 3.0.22
+              artprizes v 3.0.25
             </Text>
             <Text style={{ marginTop: 20 }}>
-              {" "}
               Copyright © Discovery Media 2018
             </Text>
             <Text style={{ marginTop: 20 }}>Developed By</Text>

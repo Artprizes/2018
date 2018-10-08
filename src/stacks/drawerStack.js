@@ -4,6 +4,7 @@ import LinearGradient from 'react-native-linear-gradient';
 import React from 'react';
 import { store } from '../store';
 import DrawerScreen from './drawerScreen';
+import Feed from '../screens/Feed';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import MaterialIcon from 'react-native-vector-icons/MaterialIcons';
 import { toggleSearchBar } from '../actions/search-bar';
@@ -46,14 +47,31 @@ const DrawerNavigation = StackNavigator(
         </TouchableOpacity>
       ),
       headerRight: (
-        <Text>
+        <View
+          style={{
+            flex: 1,
+            width: 100,
+            justifyContent: 'space-between',
+            flexDirection: 'row'
+          }}
+        >
+          <MaterialIcon
+            name="home"
+            size={30}
+            color="black"
+            onPress={() => {
+              navigation.navigate('Feed');
+            }}
+          />
+
           <MaterialIcon
             name="search"
             size={30}
             color="black"
             onPress={handleToggleSearchBar}
+            style={{}}
           />
-        </Text>
+        </View>
       )
     })
   }

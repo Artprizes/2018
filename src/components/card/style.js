@@ -42,7 +42,7 @@ const styles = StyleSheet.create({
     flexBasis: 40,
     color: '#EA6D6D',
     fontSize: 14,
-    margin: 10
+    marginTop: 2
   },
 
   title: {

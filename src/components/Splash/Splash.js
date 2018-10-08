@@ -36,7 +36,7 @@ export default class Splash extends PureComponent {
           }}
           source={SplashImage}
         />
-        <Text> Version 3.0.23 </Text>
+        <Text> Version 3.0.25 </Text>
       </View>
     );
   }

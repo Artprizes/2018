@@ -175,7 +175,7 @@ class DropDown extends PureComponent {
                   color: "#262938"
                 }}
               >
-                Home
+                Clear
               </Text>
             </TouchableOpacity>
           </View>

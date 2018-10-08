@@ -203,19 +203,50 @@ class ExhibitionDescription extends PureComponent {
               }}
             />
           </TouchableOpacity>
-
-          <Image
+          <Text
             style={{
-              resizeMode: "contain",
-              height: 400,
-              backgroundColor: "#428bca"
+              textAlign: "center",
+              fontWeight: "bold",
+              fontSize: 17,
+              color: "#007AFF",
+              fontFamily: "OpenSans-Regular"
             }}
-            source={{
-              uri:
-                `https://art-prizes.com/` + this.state.selectedExhibitionImage
-            }}
-          />
-
+          >
+            Exhibition Prize Details
+          </Text>
+          {this.state.selectedExhibitionImage != null ? (
+            <Image
+              style={{
+                resizeMode: "contain",
+                height: 400,
+                backgroundColor: "#428bca"
+              }}
+              source={{
+                uri:
+                  `https://art-prizes.com/` + this.state.selectedExhibitionImage
+              }}
+            />
+          ) : (
+            <View
+              style={{
+                height: 400,
+                resizeMode: "contain",
+                backgroundColor: "#428bca"
+              }}
+            >
+              <Text
+                style={{
+                  fontSize: 22,
+                  color: "white",
+                  textAlign: "center",
+                  margin: 20,
+                  fontWeight: "bold"
+                }}
+              >
+                {selectedExhibition.title}
+              </Text>
+            </View>
+          )}
           <View
             style={{
               flexDirection: "row",
@@ -224,14 +255,18 @@ class ExhibitionDescription extends PureComponent {
           >
             <TouchableOpacity style={{ borderRightWidth: 0.5, padding: 10 }}>
               <Text onPress={() => this.handleWatchList(id)}>
-                <MaterialCommunityIcons name="set-none" size={18} />
+                <MaterialCommunityIcons
+                  name="set-none"
+                  size={18}
+                  color="#bdc3c7"
+                />
                 {renderFollowCount()}
               </Text>
             </TouchableOpacity>
             <TouchableOpacity style={{ borderRightWidth: 0.5, padding: 10 }}>
               <Text onPress={() => this.handleEnterPrizes(id)}>
                 <FontAwesome
-                  name="user"
+                  name="users"
                   type="font-awesome"
                   size={16}
                   color="#bdc3c7"
@@ -244,14 +279,14 @@ class ExhibitionDescription extends PureComponent {
                 onPress={this.shareLinkWithShareDialog.bind(this)}
                 style={{ color: "#3B5998" }}
               >
-                <Image
+                <Entypo name="share" size={16} color="#bdc3c7" />
+                {/* <Image
                   source={require("../../assets/ic_share_black_24px.png")}
-                />
+                /> */}
                 Share
               </Text>
             </TouchableOpacity>
           </View>
-
           <View style={styles.footer}>
             <Text
               style={{

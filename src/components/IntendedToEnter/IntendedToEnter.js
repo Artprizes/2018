@@ -289,6 +289,20 @@ class IntendedToEnter extends PureComponent {
     const { searchResults, searchQuery, searching } = this.state;
     // console.log(data, "Data in feed component");
 
+    const prizesListFiltered =
+      prizeList &&
+      prizeList
+        .filter(this.handleFilterSearchText)
+        .filter(this.handleFilterByType)
+        .filter(this.handleFilterIntendedToEnter);
+
+    const exhibitionListFiltered =
+      exhibitionList &&
+      exhibitionList
+        .filter(this.handleFilterSearchText)
+        .filter(this.handleFilterByType)
+        .filter(this.handleFilterIntendedToEnter);
+
     return (
       /* this.props.searchBar toggles search bar on click */
       <View
@@ -301,16 +315,16 @@ class IntendedToEnter extends PureComponent {
             backgroundColor: "#fcfcfc"
           }}
         >
-          {this.props.searchBar && (
+          {this.props.searchBar ? (
             <LinearGradient colors={["#7B1FA2", "#4527A0"]}>
               <TextInput
                 style={{
-                  height: 35,
+                  height: 40,
                   borderRadius: 10,
                   marginVertical: 3,
                   marginHorizontal: 3,
                   padding: 10,
-                  color: "#767676",
+                  color: "#231F20",
                   fontFamily: "OpenSans-Regular",
                   fontSize: 14,
                   backgroundColor: "#FFFFFF"
@@ -320,6 +334,10 @@ class IntendedToEnter extends PureComponent {
                 value={searchQuery}
               />
             </LinearGradient>
+          ) : (
+            <Text style={{ textAlign: "center", fontWeight: "bold" }}>
+              Intend To Enter Prizes
+            </Text>
           )}
         </View>
         <View
@@ -364,45 +382,35 @@ class IntendedToEnter extends PureComponent {
                 />
               ))
             )
-          ) : (prizeList && prizeList.length > 0) ||
-          (exhibitionList && exhibitionList.length > 0) ? (
+          ) : (prizesListFiltered && prizesListFiltered.length > 0) ||
+          (exhibitionListFiltered && exhibitionListFiltered.length > 0) ? (
             <View>
-              {prizeList
-                .filter(this.handleFilterSearchText)
-                .filter(this.handleFilterByType)
-                .filter(this.handleFilterIntendedToEnter)
-                .sort(this.handleSort)
-                .map(prize => (
-                  <IntendedToEnterCard
-                    id={prize.id}
-                    key={prize.id}
-                    title={prize.title}
-                    prizeAmount={parseInt(prize.PrizeAmount).toLocaleString(
-                      "en"
-                    )}
-                    country={prize.country}
-                    state={prize.state}
-                    navigationFn={this.props.navigation.navigate}
-                    prizeLogo={prize.prize_logo}
-                    sponsored={prize.sponsored}
-                    prizeType={prize.prize_type}
-                    eligibility={prize.eligibility}
-                    currencyType={prize.Currency}
-                    navigate={prize.id}
-                    viewCount={prize.ViewCount}
-                    followCount={prize.FollowCount}
-                    intentionToEnterCount={prize.IntentToEnterCount}
-                    daysCount={distanceInWordsStrict(
-                      prize.close_date,
-                      new Date()
-                    )}
-                  />
-                ))}
-              {exhibitionList && exhibitionList.length > 0
-                ? exhibitionList
-                    .filter(this.handleFilterSearchText)
-                    .filter(this.handleFilterByType)
-                    .filter(this.handleFilterIntendedToEnter)
+              {prizesListFiltered.sort(this.handleSort).map(prize => (
+                <IntendedToEnterCard
+                  id={prize.id}
+                  key={prize.id}
+                  title={prize.title}
+                  prizeAmount={parseInt(prize.PrizeAmount).toLocaleString("en")}
+                  country={prize.country}
+                  state={prize.state}
+                  navigationFn={this.props.navigation.navigate}
+                  prizeLogo={prize.prize_logo}
+                  sponsored={prize.sponsored}
+                  prizeType={prize.prize_type}
+                  eligibility={prize.eligibility}
+                  currencyType={prize.Currency}
+                  navigate={prize.id}
+                  viewCount={prize.ViewCount}
+                  followCount={prize.FollowCount}
+                  intentionToEnterCount={prize.IntentToEnterCount}
+                  daysCount={distanceInWordsStrict(
+                    prize.close_date,
+                    new Date()
+                  )}
+                />
+              ))}
+              {exhibitionListFiltered && exhibitionListFiltered.length > 0
+                ? exhibitionListFiltered
                     .sort(this.handleSort)
                     .map(prize => (
                       <IntendedToEnterCard
@@ -430,7 +438,9 @@ class IntendedToEnter extends PureComponent {
                     ))
                 : null}
             </View>
-          ) : null}
+          ) : (
+            <Text>No data to display...</Text>
+          )}
         </ScrollView>
       </View>
     );

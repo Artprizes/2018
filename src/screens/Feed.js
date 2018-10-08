@@ -395,17 +395,16 @@ class Feed extends PureComponent {
             >
               <TextInput
                 style={{
-                  height: 35,
+                  height: 40,
                   alignItems: "stretch",
                   flexGrow: 1,
                   borderRadius: 10,
                   marginVertical: 3,
                   marginHorizontal: 3,
                   padding: 10,
-                  color: "#767676",
+                  color: "#231F20",
                   fontFamily: "OpenSans-Regular",
                   fontSize: 14,
-                  marginLeft: 25,
                   backgroundColor: "#FFFFFF"
                 }}
                 underlineColorAndroid="rgba(0,0,0,0)"

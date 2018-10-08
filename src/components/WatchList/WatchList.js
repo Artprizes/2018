@@ -51,8 +51,6 @@ import {
   fetchPrizesSuccess,
   fetchPrizesError,
   fetchAllPrizes,
-  fetchAllPrizesSuccess,
-  fetchAllPrizesError,
   fetchExhibitions,
   fetchExhibitionsSuccess,
   fetchExhibitionsError,
@@ -87,9 +85,9 @@ const Slider = props => (
     <Image style={props.style} source={props.source} />
   </View>
 );
-class WatchList extends PureComponent {
-  constructor() {
-    super();
+class IntendedToEnter extends PureComponent {
+  constructor(props) {
+    super(props);
     this.state = {
       selected: undefined,
       modalVisible: false,
@@ -219,10 +217,13 @@ class WatchList extends PureComponent {
     this.props.dataFilter(value);
   };
 
+  handleFilterIntendedToEnter = prize => {
+    return prize.IntendedToEnter;
+  };
+
   handleFilterWatched = prize => {
     return prize.watched;
   };
-
   handleFilterByType = item => {
     const { filterType } = this.props.prizes;
 
@@ -261,16 +262,19 @@ class WatchList extends PureComponent {
       }
     });
   };
+
+  // static navigationOptions = () => {
+  //   headerMode: "none";
+  // };
   static navigationOptions = {
     headerTitle: (
       <Image
-        style={{ width: 100, height: 100, alignSelf: "center" }}
+        style={{ width: 100, height: 100 }}
         source={require("../../assets/ap_512by512.png")}
       />
     ),
     headerTitleStyle: { textAlign: "center", alignSelf: "center" }
   };
-  //static navigationOptions = { header: null };
   render() {
     const { prizes, exhibitions } = this.props;
     const {
@@ -284,29 +288,43 @@ class WatchList extends PureComponent {
     const { loading, allprizeserror, allPrizeList } = this.props.prizes;
     const { searchResults, searchQuery, searching } = this.state;
     // console.log(data, "Data in feed component");
+
+    const prizesListFiltered =
+      prizeList &&
+      prizeList
+        .filter(this.handleFilterSearchText)
+        .filter(this.handleFilterByType)
+        .filter(this.handleFilterWatched);
+
+    const exhibitionListFiltered =
+      exhibitionList &&
+      exhibitionList
+        .filter(this.handleFilterSearchText)
+        .filter(this.handleFilterByType)
+        .filter(this.handleFilterWatched);
+
     return (
       /* this.props.searchBar toggles search bar on click */
-      <View>
+      <View
+        style={{
+          flex: 1
+        }}
+      >
         <View
           style={{
             backgroundColor: "#fcfcfc"
           }}
         >
-          {this.props.searchBar && (
-            <LinearGradient
-              colors={["#7B1FA2", "#4527A0"]}
-              style={{
-                margin: 0
-              }}
-            >
+          {this.props.searchBar ? (
+            <LinearGradient colors={["#7B1FA2", "#4527A0"]}>
               <TextInput
                 style={{
-                  height: 35,
+                  height: 40,
                   borderRadius: 10,
                   marginVertical: 3,
                   marginHorizontal: 3,
                   padding: 10,
-                  color: "#767676",
+                  color: "#231F20",
                   fontFamily: "OpenSans-Regular",
                   fontSize: 14,
                   backgroundColor: "#FFFFFF"
@@ -316,8 +334,13 @@ class WatchList extends PureComponent {
                 value={searchQuery}
               />
             </LinearGradient>
+          ) : (
+            <Text style={{ textAlign: "center", fontWeight: "bold" }}>
+              Watch List Prizes
+            </Text>
           )}
         </View>
+
         <View
           style={{
             flex: 1,
@@ -360,48 +383,38 @@ class WatchList extends PureComponent {
                 />
               ))
             )
-          ) : (prizeList && prizeList.length > 0) ||
-          (exhibitionList && exhibitionList.length > 0) ? (
+          ) : (prizesListFiltered && prizesListFiltered.length > 0) ||
+          (exhibitionListFiltered && exhibitionListFiltered.length > 0) ? (
             <View>
-              {prizeList
-                .filter(this.handleFilterSearchText)
-                .filter(this.handleFilterByType)
-                .filter(this.handleFilterWatched)
-                .sort(this.handleSort)
-                .map(prize => (
-                  <WatchListCard
-                    id={prize.id}
-                    key={prize.id}
-                    title={prize.title}
-                    prizeAmount={parseInt(prize.PrizeAmount).toLocaleString(
-                      "en"
-                    )}
-                    country={prize.country}
-                    state={prize.state}
-                    navigationFn={this.props.navigation.navigate}
-                    prizeLogo={prize.prize_logo}
-                    sponsored={prize.sponsored}
-                    prizeType={prize.prize_type}
-                    eligibility={prize.eligibility}
-                    currencyType={prize.Currency}
-                    navigate={prize.id}
-                    viewCount={prize.ViewCount}
-                    followCount={prize.FollowCount}
-                    intentionToEnterCount={prize.IntentToEnterCount}
-                    daysCount={distanceInWordsStrict(
-                      prize.close_date,
-                      new Date()
-                    )}
-                  />
-                ))}
-              {exhibitionList && exhibitionList.length > 0
-                ? exhibitionList
-                    .filter(this.handleFilterSearchText)
-                    .filter(this.handleFilterByType)
-                    .filter(this.handleFilterWatched)
+              {prizesListFiltered.sort(this.handleSort).map(prize => (
+                <WatchListCard
+                  id={prize.id}
+                  key={prize.id}
+                  title={prize.title}
+                  prizeAmount={parseInt(prize.PrizeAmount).toLocaleString("en")}
+                  country={prize.country}
+                  state={prize.state}
+                  navigationFn={this.props.navigation.navigate}
+                  prizeLogo={prize.prize_logo}
+                  sponsored={prize.sponsored}
+                  prizeType={prize.prize_type}
+                  eligibility={prize.eligibility}
+                  currencyType={prize.Currency}
+                  navigate={prize.id}
+                  viewCount={prize.ViewCount}
+                  followCount={prize.FollowCount}
+                  intentionToEnterCount={prize.IntentToEnterCount}
+                  daysCount={distanceInWordsStrict(
+                    prize.close_date,
+                    new Date()
+                  )}
+                />
+              ))}
+              {exhibitionListFiltered && exhibitionListFiltered.length > 0
+                ? exhibitionListFiltered
                     .sort(this.handleSort)
                     .map(prize => (
-                      <WatchListCard
+                      <IntendedToEnterCard
                         id={prize.id}
                         key={prize.id}
                         title={prize.title}
@@ -426,7 +439,9 @@ class WatchList extends PureComponent {
                     ))
                 : null}
             </View>
-          ) : null}
+          ) : (
+            <Text>No data to display...</Text>
+          )}
         </ScrollView>
       </View>
     );
@@ -461,4 +476,4 @@ function matchDispatchToProps(dispatch) {
 export default connect(
   mapStateToProps,
   matchDispatchToProps
-)(WatchList);
+)(IntendedToEnter);

@@ -15,6 +15,10 @@ import App from './App';
 
 import { rootEpic } from './src/epic';
 
+global.persistor = persistor;
+
+console.disableYellowBox = true;
+persistor.purge();
 const ReduxApp = () => (
   <Provider store={store}>
     <PersistGate loading={null} persistor={persistor}>
