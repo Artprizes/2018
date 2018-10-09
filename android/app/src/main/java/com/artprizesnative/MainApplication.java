@@ -47,7 +47,6 @@ public class MainApplication extends Application implements ReactApplication {
             new RNSpinkitPackage(),
             new RNPopoverMenuPackage(),
             new LinearGradientPackage(),
-            new FBSDKPackage(),
             new SvgPackage(),
             new FBSDKPackage(mCallbackManager),
             new VectorIconsPackage(),
