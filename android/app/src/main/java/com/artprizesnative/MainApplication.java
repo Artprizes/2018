@@ -3,10 +3,6 @@ package com.artprizesnative;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
-import com.react.rnspinkit.RNSpinkitPackage;
-import ui.popovermenu.RNPopoverMenuPackage;
-import com.BV.LinearGradient.LinearGradientPackage;
-import com.facebook.reactnative.androidsdk.FBSDKPackage;
 import com.horcrux.svg.SvgPackage;
 import com.facebook.reactnative.androidsdk.FBSDKPackage;
 import com.oblador.vectoricons.VectorIconsPackage;
@@ -44,9 +40,6 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
-            new RNSpinkitPackage(),
-            new RNPopoverMenuPackage(),
-            new LinearGradientPackage(),
             new SvgPackage(),
             new FBSDKPackage(mCallbackManager),
             new VectorIconsPackage(),
