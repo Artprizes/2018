@@ -353,19 +353,20 @@ class ExhibitionDescription extends PureComponent {
             <View style={styles.container}>
               <View>
                 <FontAwesome
-                  name="bullhorn"
+                  name="clock-o"
                   size={20}
                   color="black"
                   style={styles.icons}
                 />
               </View>
               <View style={{ flexDirection: "column" }}>
-                <Text style={styles.title}>Announced</Text>
+                <Text style={styles.title}>Exhibition dates</Text>
                 <Text style={styles.titleContents}>
                   {format(
                     selectedExhibition.ExhibitionStartDate,
                     "DD MMM YYYY"
-                  )}
+                  )}{" "}
+                  - {format(selectedExhibition.ExhibitionEndDate, "DD MMM YYYY")}
                 </Text>
               </View>
             </View>
