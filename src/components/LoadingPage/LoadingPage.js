@@ -11,7 +11,7 @@ export default class LoadingPage extends PureComponent {
     const { navigation } = this.props;
     return (
       <View style={styles.container}>
-        <Text style={styles.text}> Planner ... V 3.0.27 </Text>
+        <Text style={styles.text}> Planner ... V 3.0.29 </Text>
       </View>
     );
   }

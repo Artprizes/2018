@@ -388,6 +388,22 @@ class ArtDescription extends PureComponent {
             <View style={styles.container}>
               <View>
                 <FontAwesome
+                  name="clock-o"
+                  size={20}
+                  color="black"
+                  style={styles.icons}
+                />
+              </View>
+              <View style={{ flexDirection: "column" }}>
+                <Text style={styles.title}>Exhibition dates</Text>
+                <Text style={styles.titleContents}>
+                  {selectedPrize.exhDates}
+                </Text>
+              </View>
+            </View>
+            <View style={styles.container}>
+              <View>
+                <FontAwesome
                   name="money"
                   size={20}
                   color="black"

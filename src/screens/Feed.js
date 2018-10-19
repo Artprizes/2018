@@ -202,7 +202,7 @@ class Feed extends PureComponent {
     const { filterType } = this.props.prizes;
     const { onlyShowPastPrizes } = this.state;
 
-    return !!item.id;
+  //  return !!item.id;
 
     const currentDate = Date.now();
     const prizeCloseDate = new Date(item.close_date).getTime();
