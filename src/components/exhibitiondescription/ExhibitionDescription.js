@@ -94,7 +94,7 @@ class ExhibitionDescription extends PureComponent {
 
   componentDidMount() {
     // PASS ID AS AN ARGUMENT TO GET EXHIBITION DETAILS ON PARTICULAR ID...
-    this.props.fetchAdverts(); //Retrun all ads with corresponding prize id..
+    this.props.fetchAdverts(); //Return all ads with corresponding prize id..
     const { fetchingAds, adverterror, advertData } = this.props.adverts;
     this.props.fetchExhibitionId(this.props.navigation.state.params);
     const { id } = this.props.navigation.state.params;
