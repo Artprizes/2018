@@ -125,15 +125,6 @@ class Me extends PureComponent {
   handleSort = (item1, item2) => {
     const { filterSort } = this.props.exhibitions;
     switch (filterSort) {
-      case "daysSort": {
-        console.log(item1.close_date);
-        console.log(item2.close_date);
-        // SHOW DAYS IN NUMERICAL ASCENDING ORDER
-        return new Date(item2.close_date).getTime() <=
-          new Date(item1.close_date).getTime()
-          ? 1
-          : -1;
-      }
       case "Prizedescending": {
         // SHOW PRIZE AMOUNT IN DESCNDING ORDER
         return item2.PrizeAmount > item1.PrizeAmount ? 1 : -1;
@@ -150,8 +141,18 @@ class Me extends PureComponent {
         // SHOW PRIZE TYPES IN ALPHABETICAL ASCENDING ORDER
         return item1.prize_type.localeCompare(item2.prize_type);
       }
+      case "daysSort":      
       default:
-        return item2.sponsored > item1.sponsored ? 1 : -1;
+
+     //   return item2.sponsored > item1.sponsored ? 1 : -1;
+       console.log(item1.close_date);
+        console.log(item2.close_date);
+        // SHOW DAYS IN NUMERICAL ASCENDING ORDER
+        return new Date(item2.close_date).getTime()  <= 
+          new Date(item1.close_date).getTime()
+          ? 1
+          : -1;
+
     }
   };
 

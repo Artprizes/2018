@@ -8,10 +8,10 @@ import {
   Alert,
   ImageBackground,
   Image,
+  KeyboardAvoidingView,
   ScrollView
 } from "react-native";
 import styles from "./style";
-import { KeyboardAwareScrollView } from "react-native-keyboard-aware-scroll-view";
 import LinearGradient from "react-native-linear-gradient";
 import Icon from "react-native-vector-icons/Ionicons";
 import MaterialIcon from "react-native-vector-icons/MaterialIcons";
@@ -133,7 +133,7 @@ export default class Signp extends Component {
 
   render() {
     return (
-      <View style={styles.container}>
+      <KeyboardAvoidingView style={styles.container} behavior="padding" enabled>
         <Image
           style={{
             width: 150,
@@ -253,7 +253,7 @@ export default class Signp extends Component {
             </Text>
           </TouchableOpacity>
         </View>
-      </View>
+      </KeyboardAvoidingView>
     );
   }
 }

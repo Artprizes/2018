@@ -186,9 +186,15 @@ class Feed extends PureComponent {
   handleFilterAdverts = item => {
     const { filterAdverts } = this.props.adverts;
     const currentDate = new Date().getTime();
-    const prizeCloseDate = new Date(item.toDate).getTime();
+    const prizeCloseDate = new Date(item.ExhibitionBannerDateTo).getTime();
+    const todaysDate = Date.now();
 
-    return currentDate < prizeCloseDate;
+    switch (filterAdverts) {
+      default:
+        return (todaysDate >= new Date( item.ExhibitionBannerDateFrom ).valueOf() &&
+          todaysDate <= new Date( item.ExhibitionBannerDateTo ).valueOf())
+    }
+   
   };
   // FILTER FUNCTIONS...
   handleFilter = value => {
@@ -202,7 +208,7 @@ class Feed extends PureComponent {
     const { filterType } = this.props.prizes;
     const { onlyShowPastPrizes } = this.state;
 
-  //  return !!item.id;
+    //  return !!item.id;
 
     const currentDate = Date.now();
     const prizeCloseDate = new Date(item.close_date).getTime();
@@ -287,23 +293,40 @@ class Feed extends PureComponent {
           horizontal={true}
           key="footer"
         >
-          {advertData.filter(this.handleFilterAdverts).map((item, i) => (
-            <TouchableHighlight
-              onPress={() => Linking.openURL(item.url)}
-              key={i}
-            >
-              <Image
-                source={{
-                  uri: `https://art-prizes.com/${item.Image}`
-                }}
-                style={{
-                  resizeMode: "contain",
-                  height: 400
-                }}
-                key={i}
-              />
-            </TouchableHighlight>
-          ))}
+                     {advertData.filter(this.handleFilterAdverts).map((item, i) => {
+              const liveAd = (
+                Date.now() >= new Date( item.ExhibitionBannerDateFrom ).valueOf() &&
+                Date.now() <= new Date( item.ExhibitionBannerDateTo ).valueOf()
+              )
+                ? item.ExhibitionBannerImage
+                : (
+                  item.toDate && item.fromDate &&
+                  Date.now() >= new Date( item.fromDate ).valueOf() &&
+                  Date.now() <= new Date( item.toDate ).valueOf()
+                )
+                  ? item.Image
+                  : null;
+
+                  console.warn({ liveAd, item })
+
+              return (
+                <TouchableHighlight
+                  onPress={() => Linking.openURL(item.url)}
+                  key={i}
+                >
+                  <Image
+                    source={{
+                      uri: `https://art-prizes.com/${liveAd}`
+                    }}
+                    style={{
+                      resizeMode: "contain",
+                      height: 400
+                    }}
+                    key={i}
+                  />
+                </TouchableHighlight>
+              );
+            })}
         </Swiper>
       )
     };
@@ -442,7 +465,19 @@ class Feed extends PureComponent {
           <DropDown onPress={this.handleChangeSort} />
           <FilterList onPress={this.handleFilter} />
         </View>
-
+        <Text
+          style={{
+            color: "#1F1F1F",
+            fontFamily: "Open Sans",
+            fontWeight: "500",
+            fontSize: 15,
+            marginTop: 20,
+            textAlign: "center",
+            lineHeight: 20
+          }}
+        >
+          {prizeList.filter(this.handleFilterByType).length} Prizes Calling
+        </Text>
         {searchQuery.length > 0 ? (
           searching ? (
             <Text>Searching...</Text>

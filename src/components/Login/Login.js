@@ -10,9 +10,9 @@ import {
   ImageBackground,
   AsyncStorage,
   ScrollView,
-  Image
+  Image,
+  KeyboardAvoidingView
 } from "react-native";
-import { KeyboardAwareScrollView } from "react-native-keyboard-aware-scroll-view";
 import styles from "./style";
 import LinearGradient from "react-native-linear-gradient";
 import Icon from "react-native-vector-icons/Ionicons";
@@ -65,7 +65,7 @@ class Login extends Component {
 
   render() {
     return (
-      <View style={styles.container}>
+      <KeyboardAvoidingView style={styles.container} behavior="padding" enabled>
         <Image
           style={{
             width: 150,
@@ -139,7 +139,7 @@ class Login extends Component {
             Forgot Password ?
           </Text>
         </TouchableOpacity>
-      </View>
+      </KeyboardAvoidingView>
     );
   }
 }

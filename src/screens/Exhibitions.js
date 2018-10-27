@@ -178,10 +178,22 @@ class Exhibitions extends PureComponent {
 
   handleFilterAdverts = item1 => {
     const { filterAdverts } = this.props.adverts;
+    const todaysDate = Date.now();
+
     switch (filterAdverts) {
       default:
-        return new Date() > item1.toDate ? 1 : -1;
+        return (todaysDate >= new Date( item1.ExhibitionBannerDateFrom ).valueOf() &&
+          todaysDate <= new Date( item1.ExhibitionBannerDateTo ).valueOf())
     }
+    if(todaysDate >= item1.ExhibitionBannerDateFrom &&
+      todaysDate <= item1.ExhibitionBannerDateTo){
+        liveAd = "ExhibitionBannerImage";
+      }
+      else if(todaysDate >= item1.fromDate &&
+          todaysDate <= item1.toDate)
+          {
+           liveAd = "Image";
+      }
   };
   // FILTER FUNCTIONS...
   handleFilter = value => {
@@ -251,6 +263,7 @@ class Exhibitions extends PureComponent {
     const { fetchingAds, adverterror, advertData } = this.props.adverts;
     const { loading, allprizeserror, allPrizeList } = this.props.exhibitions;
     const { searchResults, searchQuery, searching } = this.state;
+
     // console.log(data, "Data in feed component");
     return (
       <View>
@@ -298,6 +311,20 @@ class Exhibitions extends PureComponent {
           <FilterList onPress={this.handleFilter} />
         </View>
         <ScrollView>
+          <Text
+            style={{
+              color: "#1F1F1F",
+              fontFamily: "Open Sans",
+              fontWeight: "500",
+              fontSize: 15,
+              marginTop: 20,
+              textAlign: "center",
+              lineHeight: 20
+            }}
+          >
+            {exhibitionList.filter(this.handleFilterByType).length} Prizes
+            Exhibiting
+          </Text>
           {searchQuery.length > 0 ? (
             searching ? (
               <Text>Searching...</Text>
@@ -378,23 +405,40 @@ class Exhibitions extends PureComponent {
             showsPagination={false}
             horizontal={true}
           >
-            {advertData.filter(this.handleFilterAdverts).map((item, i) => (
-              <TouchableHighlight
-                onPress={() => Linking.openURL(item.url)}
-                key={i}
-              >
-                <Image
-                  source={{
-                    uri: `https://art-prizes.com/${item.Image}`
-                  }}
-                  style={{
-                    resizeMode: "contain",
-                    height: 400
-                  }}
+            {advertData.filter(this.handleFilterAdverts).map((item, i) => {
+              const liveAd = (
+                Date.now() >= new Date( item.ExhibitionBannerDateFrom ).valueOf() &&
+                Date.now() <= new Date( item.ExhibitionBannerDateTo ).valueOf()
+              )
+                ? item.ExhibitionBannerImage
+                : (
+                  item.toDate && item.fromDate &&
+                  Date.now() >= new Date( item.fromDate ).valueOf() &&
+                  Date.now() <= new Date( item.toDate ).valueOf()
+                )
+                  ? item.Image
+                  : null;
+
+                  console.warn({ liveAd, item })
+
+              return (
+                <TouchableHighlight
+                  onPress={() => Linking.openURL(item.url)}
                   key={i}
-                />
-              </TouchableHighlight>
-            ))}
+                >
+                  <Image
+                    source={{
+                      uri: `https://art-prizes.com/${liveAd}`
+                    }}
+                    style={{
+                      resizeMode: "contain",
+                      height: 400
+                    }}
+                    key={i}
+                  />
+                </TouchableHighlight>
+              );
+            })}
           </Swiper>
         </ScrollView>
       </View>

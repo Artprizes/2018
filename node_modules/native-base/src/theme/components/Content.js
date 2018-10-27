@@ -1,8 +1,6 @@
-// @flow
-
 import variable from "./../variables/platform";
 
-export default (variables /*: * */ = variable) => {
+export default (variables = variable) => {
   const contentTheme = {
     flex: 1,
     backgroundColor: "transparent",

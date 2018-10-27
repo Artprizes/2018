@@ -11,7 +11,7 @@ cd art-prizes-native
 npm install
 
 npm install -D fsevents@1.2.4
-npm install --save react-native-fbsdk@0.6.0 react-native link react-native-fbsdk
+npm install --save react-native-fbsdk@0.8.0 react-native link react-native-fbsdk
 
 (Ensure in your xcode build settings that facebook sdk link ok)
 react-native install react-native-fbsdk
@@ -22,7 +22,7 @@ npm link
 
 npm install -g app-icon
 app-icon generate -i ./logo.png
-
+cd ./node_modules/react-native/third-party/glog-0.3.4 && ../../scripts/ios-configure-glog.sh
 
 cd ios
 

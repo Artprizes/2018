@@ -28,6 +28,10 @@ class Api {
   };
 
   getPrize = prizeId => {
+    this.call({
+      url: "/PrizeHits/${prizeId}",
+      method: "get"
+    });
     return this.call({
       url: `/artprize/GetPrize/${prizeId}`
     });

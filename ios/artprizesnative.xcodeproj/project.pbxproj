@@ -51,6 +51,7 @@
 		522468D1FCB14EDEAA566A09 /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 360F36F979F44535893856D2 /* SimpleLineIcons.ttf */; };
 		5BF28111BC5749079561793A /* libRNTableView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C3E5756A84ED414DA6E0AFCF /* libRNTableView.a */; };
 		5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
+		624518542183F0B900CAB212 /* libRNSpinkit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B765DF34208C9473000194BB /* libRNSpinkit.a */; };
 		67C550A218734CE28F8CE14C /* OpenSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6DD24C14C7484FFFB7B944A2 /* OpenSans-LightItalic.ttf */; };
 		7E776F3E1931483EBCAE17DB /* libRNSearchBar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B498254215E446CB5EAC077 /* libRNSearchBar.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
@@ -74,8 +75,6 @@
 		CA328AAB30E048C2812E8D70 /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7DF6647E23F94C1BAF9A58D9 /* MaterialCommunityIcons.ttf */; };
 		D2A748C48F28428FB3E6FFDD /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D9A6BD755EC14A3E9EF925CE /* Foundation.ttf */; };
 		D83CE20A57414B699CA05276 /* OpenSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6812856BC82D4440A78D605E /* OpenSans-Italic.ttf */; };
-		E1A7F3EA37EA4CA8B60B8919 /* libRNSpinkit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 21A4DF26D19246A3ACF0D4EA /* libRNSpinkit.a */; };
-		E39B2A46A5DD4049BE377DC0 /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CBD7F284885D459EAE338023 /* Feather.ttf */; };
 		E7EC734A21532566006B09C0 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7EC734721532565006B09C0 /* FBSDKShareKit.framework */; };
 		E7EC734B21532566006B09C0 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7EC734821532565006B09C0 /* FBSDKCoreKit.framework */; };
 		E7EC734C21532566006B09C0 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7EC734921532566006B09C0 /* FBSDKLoginKit.framework */; };
@@ -531,6 +530,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				624518542183F0B900CAB212 /* libRNSpinkit.a in Frameworks */,
 				ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */,
 				5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */,
 				146834051AC3E58100842450 /* libReact.a in Frameworks */,
@@ -550,7 +550,6 @@
 				E7EC734B21532566006B09C0 /* FBSDKCoreKit.framework in Frameworks */,
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
 				E7EC734C21532566006B09C0 /* FBSDKLoginKit.framework in Frameworks */,
-				E1A7F3EA37EA4CA8B60B8919 /* libRNSpinkit.a in Frameworks */,
 				0EDA7E1C826E48B7A56D777C /* libRNVectorIcons.a in Frameworks */,
 				B7D1482820AD3EFC00D800E0 /* (null) in Frameworks */,
 				006DFA44BBD1448186CDC486 /* libBVLinearGradient.a in Frameworks */,
@@ -1020,7 +1019,7 @@
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
-						DevelopmentTeam = TRU7S39L5Z;
+						DevelopmentTeam = 25TWQNW4US;
 						ProvisioningStyle = Automatic;
 					};
 					2D02E47A1E0B4A5D006451C7 = {
@@ -1522,7 +1521,6 @@
 				91BE0991F2924044B2AFB534 /* OpenSans-Regular.ttf in Resources */,
 				4AC3B70ED95549EF845A5FC2 /* OpenSans-SemiBold.ttf in Resources */,
 				4973E38BD2D84DCF95028A62 /* OpenSans-SemiBoldItalic.ttf in Resources */,
-				E39B2A46A5DD4049BE377DC0 /* Feather.ttf in Resources */,
 				84C5460822D4430686C4EB74 /* MaterialCommunityIcons.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1557,7 +1555,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
+			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
 		};
 		2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1717,7 +1715,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 5;
 				DEAD_CODE_STRIPPING = NO;
-				DEVELOPMENT_TEAM = TRU7S39L5Z;
+				DEVELOPMENT_TEAM = 25TWQNW4US;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -1741,7 +1739,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.crowtech.artprizes;
+				PRODUCT_BUNDLE_IDENTIFIER = com.artprizes.ios;
 				PRODUCT_NAME = artprizesnative;
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1759,7 +1757,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 5;
-				DEVELOPMENT_TEAM = TRU7S39L5Z;
+				DEVELOPMENT_TEAM = 25TWQNW4US;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -1783,7 +1781,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.crowtech.artprizes;
+				PRODUCT_BUNDLE_IDENTIFIER = com.artprizes.ios;
 				PRODUCT_NAME = artprizesnative;
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";

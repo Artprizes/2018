@@ -134,6 +134,7 @@ class ExhibitionDescription extends PureComponent {
       Array.isArray(selectedExhibition) &&
       selectedExhibition.length > 0 &&
       selectedExhibition[0].prize_logo;
+
     this.setState({
       selectedExhibitionImage
     });
