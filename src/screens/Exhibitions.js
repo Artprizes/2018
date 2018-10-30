@@ -172,7 +172,13 @@ class Exhibitions extends PureComponent {
         return item1.prize_type.localeCompare(item2.prize_type);
       }
       default:
-        return item2.sponsored > item1.sponsored ? 1 : -1;
+        if (item2.sponsored  != item1.sponsored) {
+           return item2.sponsored > item1.sponsored ? 1 : -1;
+        }
+        return new Date(item2.close_date).getTime() <=
+          new Date(item1.close_date).getTime()
+          ? 1
+          : -1;
     }
   };
 

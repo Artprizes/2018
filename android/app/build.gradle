@@ -100,8 +100,8 @@ android {
         applicationId "com.artprizesnative"
         minSdkVersion 16
         targetSdkVersion 26
-        versionCode  22 
-        versionName "3.0.31"
+        versionCode  25 
+        versionName "3.0.32"
         ndk {
             abiFilters "armeabi-v7a", "x86"
         }
