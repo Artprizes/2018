@@ -188,8 +188,9 @@ class Exhibitions extends PureComponent {
 
     switch (filterAdverts) {
       default:
-        return (todaysDate >= new Date( item1.ExhibitionBannerDateFrom ).valueOf() &&
-          todaysDate <= new Date( item1.ExhibitionBannerDateTo ).valueOf())
+return (todaysDate >= new Date( item1.ExhibitionBannerDateFrom ).valueOf() &&
+         todaysDate <= new Date( item1.ExhibitionBannerDateTo ).valueOf()) || (todaysDate >= new Date( item1.fromDate ).valueOf() &&
+         todaysDate <= new Date( item1.toDate ).valueOf())
     }
     if(todaysDate >= item1.ExhibitionBannerDateFrom &&
       todaysDate <= item1.ExhibitionBannerDateTo){

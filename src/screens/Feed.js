@@ -197,8 +197,9 @@ class Feed extends PureComponent {
 
     switch (filterAdverts) {
       default:
-        return (todaysDate >= new Date( item.ExhibitionBannerDateFrom ).valueOf() &&
-          todaysDate <= new Date( item.ExhibitionBannerDateTo ).valueOf())
+return (todaysDate >= new Date( item.ExhibitionBannerDateFrom ).valueOf() &&
+         todaysDate <= new Date( item.ExhibitionBannerDateTo ).valueOf()) || (todaysDate >= new Date( item.fromDate ).valueOf() &&
+         todaysDate <= new Date( item.toDate ).valueOf())
     }
    
   };
