@@ -32,7 +32,7 @@ class Loading extends PureComponent {
       >
         <ActivityIndicator />
         <Text>Loading..</Text>
-        <Text style={styles.text}> Art Prizes Planner ... V 3.0.33 </Text>
+        <Text style={styles.text}> Art Prizes ... V 2.0.4 </Text>
       </View>
     );
   }
